@@ -30,7 +30,7 @@
                             <span class="hide-menu">Home</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="" id="get-url" aria-expanded="false">
+                            <a class="sidebar-link" href="?page=home" id="get-url" aria-expanded="false">
                                 <span>
                                     <iconify-icon icon="tabler:device-analytics"></iconify-icon>
                                 </span>
