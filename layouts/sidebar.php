@@ -49,12 +49,30 @@
                             <span class="hide-menu">Master Data</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="#" aria-expanded="false">
+                            <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
                                 <span>
                                     <iconify-icon icon="tabler:book-2"></iconify-icon>
                                 </span>
                                 <span class="hide-menu">Buku</span>
                             </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <iconify-icon icon="tabler:circle"></iconify-icon>
+                                        </div>
+                                        <span class="hide-menu">Link</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <iconify-icon icon="tabler:circle"></iconify-icon>
+                                        </div>
+                                        <span class="hide-menu">Link</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
