@@ -87,7 +87,7 @@
                                 <span class="d-flex">
                                     <iconify-icon icon="tabler:link-plus"></iconify-icon>
                                 </span>
-                                <span class="hide-menu">Sub Menu</span>
+                                <span class="hide-menu">Anggota</span>
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
