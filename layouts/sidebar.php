@@ -85,7 +85,7 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
                                 <span class="d-flex">
-                                    <iconify-icon icon="tabler:link-plus"></iconify-icon>
+                                    <iconify-icon icon="tabler:users"></iconify-icon>
                                 </span>
                                 <span class="hide-menu">Anggota</span>
                             </a>
