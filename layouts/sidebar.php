@@ -89,11 +89,11 @@
                         
                         
                         <!-- ---------------------------------- -->
-                        <!-- Start OTHER -->
+                        <!-- Start Transaksi -->
                         <!-- ---------------------------------- -->
                         <li class="nav-small-cap">
                             <iconify-icon icon="tabler:dots" class="nav-small-cap-icon fs-4"></iconify-icon>
-                            <span class="hide-menu">OTHER</span>
+                            <span class="hide-menu">Transaksi</span>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="#" aria-expanded="false">
@@ -165,6 +165,7 @@
                                 </li>
                             </ul>
                         </li>
+
                     </ul>
                 </nav>
                 <!-- End Sidebari Items -->
