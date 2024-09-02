@@ -51,7 +51,7 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="#" aria-expanded="false">
                                 <span>
-                                    <iconify-icon icon="tabler:link"></iconify-icon>
+                                    <iconify-icon icon="tabler:book-2"></iconify-icon>
                                 </span>
                                 <span class="hide-menu">Buku</span>
                             </a>
