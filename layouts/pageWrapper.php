@@ -39,9 +39,9 @@
                         <!-- Start Logo width <= 992px -->
                         <div class="d-block d-lg-none py-3">
                             <a href="#" class="text-nowrap logo-img">
-                                <h1 class="mb-0">
+                                <h3 class="mb-0">
                                     <iconify-icon icon="tdesign:system-code" class="align-middle ms-1 me-1"></iconify-icon> <span class="align-middle">APP</span>
-                                </h1>
+                                </h3>
                             </a>
                         </div>
                         <!-- End Logo width <= 992px -->
