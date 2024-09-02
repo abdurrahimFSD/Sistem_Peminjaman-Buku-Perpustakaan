@@ -53,7 +53,7 @@
                                 <span>
                                     <iconify-icon icon="tabler:link"></iconify-icon>
                                 </span>
-                                <span class="hide-menu">Menu</span>
+                                <span class="hide-menu">Buku</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
