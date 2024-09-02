@@ -9,7 +9,7 @@
                 <div class="brand-logo d-flex align-items-center justify-content-between">
                     <a href="#" class="text-nowrap logo-img">
                         <h3 class="mb-0">
-                            <iconify-icon icon="tdesign:system-code" class="align-middle ms-1 me-1"></iconify-icon> <span class="align-middle">APP</span>
+                            <iconify-icon icon="tdesign:system-code" class="align-middle ms-2 me-1"></iconify-icon> <span class="align-middle">APP</span>
                         </h3>
                     </a>
                     <a href="javascript:void(0)" class="sidebartoggler ms-auto mt-2 text-decoration-none fs-5 d-block d-xl-none">
