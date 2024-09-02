@@ -95,7 +95,7 @@
                                         <div class="round-16 d-flex align-items-center justify-content-center">
                                             <iconify-icon icon="tabler:circle"></iconify-icon>
                                         </div>
-                                        <span class="hide-menu">Link</span>
+                                        <span class="hide-menu">Data Anggota</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
