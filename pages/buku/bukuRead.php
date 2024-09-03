@@ -40,15 +40,6 @@
                     <div class="table-responsive">
                         <table class="table search-table align-middle text-nowrap">
                             <thead class="header-item">
-                                <th>
-                                    <div class="n-chk align-self-center text-center">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input primary" id="contact-check-all" />
-                                            <label class="form-check-label" for="contact-check-all"></label>
-                                            <span class="new-control-indicator"></span>
-                                        </div>
-                                    </div>
-                                </th>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Location</th>
