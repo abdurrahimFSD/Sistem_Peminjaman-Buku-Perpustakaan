@@ -138,7 +138,7 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="?page=anggotaData" class="sidebar-link">
+                                    <a href="?page=peminjamanData" class="sidebar-link">
                                         <div class="round-16 d-flex align-items-center justify-content-center">
                                             <iconify-icon icon="tabler:circle"></iconify-icon>
                                         </div>
