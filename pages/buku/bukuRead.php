@@ -73,7 +73,7 @@
                                             <a href="javascript:void(0)" class="btn btn-outline-info btn-sm d-inline-flex" data-bs-toggle="tooltip" data-bs-title="Detail">
                                                 <iconify-icon icon="tabler:info-square" class="fs-5"></iconify-icon>
                                             </a>
-                                            <a href="javascript:void(0)" class="btn btn-outline-warning btn-sm d-inline-flex mx-1">
+                                            <a href="javascript:void(0)" class="btn btn-outline-warning btn-sm d-inline-flex mx-1" data-bs-toggle="tooltip" data-bs-title="Edit">
                                                 <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
                                             </a>
                                             <a href="javascript:void(0)" class="btn btn-outline-danger btn-sm d-inline-flex delete">
