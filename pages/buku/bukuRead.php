@@ -55,22 +55,14 @@
                                         <div class="d-flex align-items-center">
                                             <img src="./assets/images/profile/user-2.jpg" alt="avatar" class="rounded-circle" width="35" />
                                             <div class="ms-3">
-                                                <div class="user-meta-info">
-                                                    <h6 class="user-name mb-0" data-name="Emma Adams">Emma Adams</h6>
-                                                    <span class="user-work fs-3" data-occupation="Web Developer">Web Developer</span>
+                                                <div>
+                                                    <h6>JavaScript Programming</h6>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         978-10-0001
-                                    </td>
-                                    <td>
-                                        <span class="usr-location" data-location="Boston, USA">Boston, USA</span>
-                                    </td>
-                                    <td>
-                                        <span class="usr-ph-no" data-phone="+1 (070) 123-4567">+91 (070) 123-4567</span>
-                                    </td>
                                     <td>
                                         <div class="action-btn">
                                             <a href="javascript:void(0)" class="text-primary edit">
