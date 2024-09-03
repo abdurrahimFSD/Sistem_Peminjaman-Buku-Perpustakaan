@@ -53,7 +53,7 @@
                                     </td>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <img src="./assets/images/profile/user-2.jpg" alt="avatar" class="rounded-circle" width="35" />
+                                            <img src="./assets/images/profile/user-2.jpg" alt="avatar" class="rounded" width="35" />
                                             <div class="ms-3">
                                                 <div>
                                                     <h6>JavaScript Programming</h6>
