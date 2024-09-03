@@ -18,6 +18,10 @@ switch($_GET['page']) {
         include('./pages/buku/bukuUpdate.php');
         break;
 
+    case 'anggotaData':
+        include('./pages/anggota/anggotaRead.php');
+        break;
+
     default:
         include('./home.php');
 }
