@@ -132,7 +132,7 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
                                 <span class="d-flex">
-                                    <iconify-icon icon="tabler:users"></iconify-icon>
+                                    <iconify-icon icon="tabler:book-upload"></iconify-icon>
                                 </span>
                                 <span class="hide-menu">Peminjaman</span>
                             </a>
