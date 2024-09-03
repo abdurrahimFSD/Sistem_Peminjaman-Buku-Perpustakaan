@@ -44,7 +44,7 @@
                                 <th>Judul Buku</th>
                                 <th>ISBN</th>
                                 <th>Kategori</th>
-                                <th>Action</th>
+                                <th class="text-center">Action</th>
                             </thead>
                             <tbody>
                                 <!-- start row -->
@@ -68,7 +68,7 @@
                                     <td>
                                         Teknologi
                                     </td>
-                                    <td>
+                                    <td class="text-center">
                                         <div class="action-btn">
                                             <a href="javascript:void(0)" class="btn btn-outline-info btn-sm d-inline-flex">
                                                 <iconify-icon icon="tabler:info-square" class="fs-5"></iconify-icon>
