@@ -40,7 +40,7 @@
                     <div class="table-responsive">
                         <table class="table search-table align-middle text-nowrap">
                             <thead class="header-item">
-                                <th>Name</th>
+                                <th>No</th>
                                 <th>Email</th>
                                 <th>Location</th>
                                 <th>Phone</th>
