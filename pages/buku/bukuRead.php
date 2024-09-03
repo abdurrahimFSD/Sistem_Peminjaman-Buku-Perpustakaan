@@ -63,7 +63,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <span class="usr-email-addr" data-email="adams@mail.com">adams@mail.com</span>
+                                        978-10-0001
                                     </td>
                                     <td>
                                         <span class="usr-location" data-location="Boston, USA">Boston, USA</span>
