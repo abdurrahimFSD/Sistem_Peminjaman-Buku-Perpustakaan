@@ -32,6 +32,11 @@
 
                 <!-- Start card body content -->
                 <div class="card card-body">
+                    <div class="d-flex justify-content-end mb-9">
+                        <a href="?page=bukuCreate" class="btn btn-primary">
+                            Tambah Data
+                        </a>
+                    </div>
                     <div class="table-responsive">
                         <table class="table search-table align-middle text-nowrap">
                             <thead class="header-item">
