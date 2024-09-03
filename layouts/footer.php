@@ -54,5 +54,8 @@
     <script src="./assets/js/theme/theme.js"></script>
     <script src="./assets/js/theme/app.min.js"></script>
     <script src="./assets/js/theme/sidebarmenu.js"></script>
+
+    <!-- Datatable -->
+    <script src="./assets/libs/datatable/datatables.min.js"></script>
 </body>
 </html>
