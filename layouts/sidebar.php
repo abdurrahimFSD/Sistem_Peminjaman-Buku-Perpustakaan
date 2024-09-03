@@ -129,7 +129,40 @@
                             <iconify-icon icon="tabler:dots" class="nav-small-cap-icon fs-4"></iconify-icon>
                             <span class="hide-menu">Transaksi</span>
                         </li>
-
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                                <span class="d-flex">
+                                    <iconify-icon icon="tabler:users"></iconify-icon>
+                                </span>
+                                <span class="hide-menu">Peminjaman</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="?page=anggotaData" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <iconify-icon icon="tabler:circle"></iconify-icon>
+                                        </div>
+                                        <span class="hide-menu">Data Anggota</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="?page=anggotaCreate" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <iconify-icon icon="tabler:circle"></iconify-icon>
+                                        </div>
+                                        <span class="hide-menu">Tambah Data</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">
+                                        <div class="round-16 d-flex align-items-center justify-content-center">
+                                            <iconify-icon icon="tabler:circle"></iconify-icon>
+                                        </div>
+                                        <span class="hide-menu">Edit Data</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebari Items -->
