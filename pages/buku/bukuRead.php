@@ -43,6 +43,7 @@
                                 <th>No</th>
                                 <th>Judul Buku</th>
                                 <th>ISBN</th>
+                                <th>Kategori</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>
