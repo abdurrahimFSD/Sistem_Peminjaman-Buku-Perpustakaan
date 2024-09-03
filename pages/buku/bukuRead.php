@@ -64,16 +64,19 @@
                                     </td>
                                     <td>
                                         978-10-0001
-                                    <td>
+                                    </td>
                                     <td>
                                         Teknologi
                                     </td>
                                     <td>
                                         <div class="action-btn">
-                                            <a href="javascript:void(0)" class="text-primary edit">
-                                                <iconify-icon icon="tabler:eye" class="fs-5"></iconify-icon>
+                                            <a href="javascript:void(0)" class="btn btn-outline-info btn-sm d-inline-flex">
+                                                <iconify-icon icon="tabler:info-square" class="fs-5"></iconify-icon>
                                             </a>
-                                            <a href="javascript:void(0)" class="text-dark delete ms-2">
+                                            <a href="javascript:void(0)" class="btn btn-outline-warning btn-sm d-inline-flex mx-1">
+                                                <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
+                                            </a>
+                                            <a href="javascript:void(0)" class="btn btn-outline-danger btn-sm d-inline-flex delete">
                                                 <iconify-icon icon="tabler:trash" class="fs-5"></iconify-icon>
                                             </a>
                                         </div>
