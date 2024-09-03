@@ -42,7 +42,7 @@
                             <thead class="header-item">
                                 <th>No</th>
                                 <th>Judul Buku</th>
-                                <th>Location</th>
+                                <th>ISBN</th>
                                 <th>Phone</th>
                                 <th>Action</th>
                             </thead>
