@@ -27,14 +27,6 @@
                             <!-- End Searching -->
 
                         </ul>
-                        <ul class="navbar-nav quick-links d-none d-lg-flex align-items-center">
-
-                            <!-- Start Topbar Menu -->
-                            <li class="nav-item d-none d-lg-block">
-                                <a class="nav-link" href="#">Topbar Menu</a>
-                            </li>
-                            <!-- End Topbar Menu -->
-                        </ul>
                         
                         <!-- Start Logo width <= 992px -->
                         <div class="d-block d-lg-none py-3">
