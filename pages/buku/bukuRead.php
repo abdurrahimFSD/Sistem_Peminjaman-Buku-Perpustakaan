@@ -50,14 +50,6 @@
                                 <!-- start row -->
                                 <tr class="search-items">
                                     <td>
-                                        <div class="n-chk align-self-center text-center">
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input contact-chkbox primary" id="checkbox1" />
-                                                <label class="form-check-label" for="checkbox1"></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
                                         <div class="d-flex align-items-center">
                                             <img src="./assets/images/profile/user-2.jpg" alt="avatar" class="rounded-circle" width="35" />
                                             <div class="ms-3">
