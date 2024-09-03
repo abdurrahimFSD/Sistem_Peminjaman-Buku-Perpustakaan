@@ -24,6 +24,9 @@ switch($_GET['page']) {
     case 'anggotaCreate':
         include('./pages/anggota/anggotaCreate.php');
         break;
+    case 'anggotaUpdate':
+        include('./pages/anggota/anggotaUpdate.php');
+        break;
 
     default:
         include('./home.php');
