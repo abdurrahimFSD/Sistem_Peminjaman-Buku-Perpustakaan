@@ -11,6 +11,9 @@ switch($_GET['page']) {
     case 'bukuData':
         include('./pages/buku/bukuRead.php');
         break;
+    case 'bukuCreate':
+        include('./pages/buku/bukuCreate.php');
+        break;
 
     default:
         include('./home.php');
