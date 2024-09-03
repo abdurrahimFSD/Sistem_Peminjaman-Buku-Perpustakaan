@@ -28,6 +28,10 @@ switch($_GET['page']) {
         include('./pages/anggota/anggotaUpdate.php');
         break;
 
+    case 'peminjamanData':
+        include('./pages/peminjaman/peminjamanRead.php');
+        break;
+
     default:
         include('./home.php');
 }
