@@ -43,7 +43,6 @@
                                 <th>No</th>
                                 <th>Judul Buku</th>
                                 <th>ISBN</th>
-                                <th>Phone</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>
