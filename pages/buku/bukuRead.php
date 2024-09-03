@@ -76,7 +76,7 @@
                                             <a href="javascript:void(0)" class="btn btn-outline-warning btn-sm d-inline-flex mx-1" data-bs-toggle="tooltip" data-bs-title="Edit">
                                                 <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
                                             </a>
-                                            <a href="javascript:void(0)" class="btn btn-outline-danger btn-sm d-inline-flex delete">
+                                            <a href="javascript:void(0)" class="btn btn-outline-danger btn-sm d-inline-flex delete" data-bs-toggle="tooltip" data-bs-title="Hapus">
                                                 <iconify-icon icon="tabler:trash" class="fs-5"></iconify-icon>
                                             </a>
                                         </div>
