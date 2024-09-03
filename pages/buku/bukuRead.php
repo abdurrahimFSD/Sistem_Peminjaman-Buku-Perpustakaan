@@ -41,7 +41,7 @@
                         <table class="table search-table align-middle text-nowrap">
                             <thead class="header-item">
                                 <th>No</th>
-                                <th>Email</th>
+                                <th>Judul Buku</th>
                                 <th>Location</th>
                                 <th>Phone</th>
                                 <th>Action</th>
