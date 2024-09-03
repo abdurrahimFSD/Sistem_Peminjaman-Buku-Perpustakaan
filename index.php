@@ -8,6 +8,10 @@ switch($_GET['page']) {
         include('./home.php');
         break;
 
+    case 'bukuData':
+        include('./pages/buku/bukuRead.php');
+        break;
+
     default:
         include('./home.php');
 }
