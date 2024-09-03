@@ -13,7 +13,7 @@
                                     <li class="breadcrumb-item">
                                         <a class="text-muted text-decoration-none" href="./">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item" aria-current="page">Data</li>
+                                    <li class="breadcrumb-item" aria-current="page">Data Buku</li>
                                 </ol>
                             </nav>
                         </div>
