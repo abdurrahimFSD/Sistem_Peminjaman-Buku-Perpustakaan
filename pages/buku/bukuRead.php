@@ -70,7 +70,7 @@
                                     </td>
                                     <td class="text-center">
                                         <div class="action-btn">
-                                            <a href="javascript:void(0)" class="btn btn-outline-info btn-sm d-inline-flex" data-bs-toggle="tooltip" data-bs-title="Detail">
+                                            <a href="javascript:void(0)" class="btn btn-outline-info btn-sm d-inline-flex" data-bs-toggle="tooltip" data-bs-title="Detail" aria-label="Detail">
                                                 <iconify-icon icon="tabler:info-square" class="fs-5"></iconify-icon>
                                             </a>
                                             <a href="javascript:void(0)" class="btn btn-outline-warning btn-sm d-inline-flex mx-1" data-bs-toggle="tooltip" data-bs-title="Edit">
