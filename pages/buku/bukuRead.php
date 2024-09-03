@@ -56,7 +56,7 @@
                                             <img src="./assets/images/book/JavaScript The Good Parts.jpg" alt="avatar" class="rounded" width="50" />
                                             <div class="ms-3">
                                                 <div>
-                                                    <h6>JavaScript Programming</h6>
+                                                    <h6 class="mb-0">JavaScript Programming</h6>
                                                 </div>
                                             </div>
                                         </div>
