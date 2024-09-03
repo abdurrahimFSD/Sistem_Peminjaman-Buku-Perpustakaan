@@ -31,6 +31,9 @@ switch($_GET['page']) {
     case 'peminjamanData':
         include('./pages/peminjaman/peminjamanRead.php');
         break;
+    case 'peminjamanCreate':
+        include('./pages/peminjaman/peminjamanCreate.php');
+        break;
 
     default:
         include('./home.php');
