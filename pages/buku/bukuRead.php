@@ -65,6 +65,10 @@
                                     <td>
                                         978-10-0001
                                     <td>
+                                    <td>
+                                        Teknologi
+                                    </td>
+                                    <td>
                                         <div class="action-btn">
                                             <a href="javascript:void(0)" class="text-primary edit">
                                                 <iconify-icon icon="tabler:eye" class="fs-5"></iconify-icon>
