@@ -33,6 +33,7 @@
                 <!-- Start Card body main content -->
                 <div class="card card-body">
                     <h4 class="card-title">Masukkan Data Buku</h4>
+                    <hr class="mb-4"></hr>
                 </div>
                 <!-- ENd Card body main content -->
 
