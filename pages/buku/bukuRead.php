@@ -38,7 +38,7 @@
                         </a>
                     </div>
                     <div class="table-responsive">
-                        <table class="table search-table align-middle text-nowrap">
+                        <table id="dataTables" class="table search-table align-middle text-nowrap">
                             <thead class="header-item">
                                 <th>No</th>
                                 <th>Judul Buku</th>
