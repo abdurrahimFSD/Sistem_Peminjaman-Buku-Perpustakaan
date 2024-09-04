@@ -55,26 +55,29 @@ $bukuData = fetchData('buku');
                                 <th class="text-center">Action</th>
                             </thead>
                             <tbody>
+                                <?php foreach ($bukuData as $row) { ?>
                                 <!-- start row -->
                                 <tr class="search-items">
                                     <td>
-                                        1
+                                        <?= $no++; ?>
                                     </td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <img src="./assets/images/book/JavaScript The Good Parts.jpg" alt="Book" class="rounded" width="50" />
                                             <div class="ms-3">
                                                 <div>
-                                                    <h6 class="mb-0">JavaScript Programming</h6>
+                                                    <h6 class="mb-0">
+                                                        <?= $row['judul_buku']; ?>
+                                                    </h6>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
-                                        978-10-0001
+                                        <?= $row['isbn']; ?>
                                     </td>
                                     <td>
-                                        Teknologi
+                                        <?= $row['kategori']; ?>
                                     </td>
                                     <td class="text-center">
                                         <div class="action-btn">
@@ -91,6 +94,7 @@ $bukuData = fetchData('buku');
                                     </td>
                                 </tr>
                                 <!-- end row -->
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
