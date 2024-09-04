@@ -1,3 +1,8 @@
+<?php
+// Array kategori Buku
+$kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan', 'Geografi'];
+?>
+
 <!-- Body Wrapper Start -->
 <div class="body-wrapper ">
     <div class="container-fluid">
