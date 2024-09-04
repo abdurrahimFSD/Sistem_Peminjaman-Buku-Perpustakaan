@@ -39,6 +39,10 @@
                             <label for="judulBuku" class="form-label">Judul Buku</label>
                             <input type="text" name="judulBuku" id="judulBuku" class="form-control" placeholder="Data Structure & Algorithms" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="isbn" class="form-label">ISBN</label>
+                            <input type="text" name="isbn" id="isbn" class="form-control" placeholder="978-11-0001" required>
+                        </div>
                     </form>
                 </div>
                 <!-- ENd Card body main content -->
