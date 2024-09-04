@@ -30,6 +30,11 @@
             <!-- Start Main Content -->
             <div class="widget-content searchable-container list">
 
+                <!-- Start Card body main content -->
+                <div class="card card-body">
+                </div>
+                <!-- ENd Card body main content -->
+
             </div>
             <!-- End Main Content -->
     </div>
