@@ -8,4 +8,19 @@ if (file_exists('./config/connection.php')) {
 } else {
     die('Connection file not found');
 }
+
+// Function fetchData untuk mengambil semua data dari table
+function fetchData($tableName) {
+    global $connection;
+    
+    $query = "SELECT * FROM $tableName";
+    $result = mysqli_query($connection, $query);
+
+    $data = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data[] = $row;
+    }
+     
+    return $data;
+}
 ?>
