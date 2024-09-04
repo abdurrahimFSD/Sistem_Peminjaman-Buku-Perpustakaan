@@ -1,3 +1,11 @@
+<?php
+include('./controllers/function.php');
+
+$no = 1;
+// Memanggil function fetchData dengan argumen buku
+$bukuData = fetchData('buku');
+?>
+
 <!-- Body Wrapper Start -->
 <div class="body-wrapper ">
     <div class="container-fluid">
