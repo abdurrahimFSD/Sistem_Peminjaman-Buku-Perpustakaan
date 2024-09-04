@@ -57,5 +57,6 @@
 
     <!-- Datatable -->
     <script src="./assets/libs/datatable/datatables.min.js"></script>
+    <script src="./assets/js/datatable/datatable.init.js"></script>
 </body>
 </html>
