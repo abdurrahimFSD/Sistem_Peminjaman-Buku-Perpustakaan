@@ -71,7 +71,9 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                             <label for="foto" class="form-label">Foto</label>
                             <input type="file" name="foto" id="foto" class="form-control">
                         </div>
-
+                        <button type="submit" name="simpan" value="bukuCreate" class="d-inline-flex justify-content-center align-items-center btn btn-primary">
+                            <iconify-icon icon="fluent:save-24-regular" class="me-1 fs-5"></iconify-icon>Simpan
+                        </button>
                     </form>
                 </div>
                 <!-- ENd Card body main content -->
