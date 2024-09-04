@@ -35,7 +35,10 @@
                     <h4 class="card-title">Masukkan Data Buku</h4>
                     <hr class="mb-4"></hr>
                     <form class="form-horizontal" action="" method="post">
-                        
+                        <div class="mb-3">
+                            <label for="judulBuku" class="form-label">Judul Buku</label>
+                            <input type="text" name="judulBuku" id="judulBuku" class="form-control" placeholder="Data Structure & Algorithms" required>
+                        </div>
                     </form>
                 </div>
                 <!-- ENd Card body main content -->
