@@ -56,6 +56,17 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                             <label for="penulis" class="form-label">Penulis</label>
                             <input type="text" name="penulis" id="penulis" class="form-control" placeholder="Ahmad" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="kategori" class="form-label">Kategori</label>
+                            <select name="kategori" id="kategori" class="form-select" required>
+                                <option selected disabled>Pilih Kategori</option>
+                                <?php foreach ($kategori as $kategoriData) { ?>
+                                    <option value="<?= $kategoriData; ?>">
+                                        <?= $kategoriData; ?>
+                                    </option>
+                                <?php } ?>
+                            </select>
+                        </div>
                     </form>
                 </div>
                 <!-- ENd Card body main content -->
