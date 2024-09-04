@@ -69,7 +69,8 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                         </div>
                         <div class="mb-4">
                             <label for="foto" class="form-label">Foto</label>
-                            <input type="file" name="foto" id="foto" class="form-control">
+                            <input type="file" name="foto" id="foto" class="form-control" onchange="previewImage(event)">
+                            <img id="imgPreview" src="" alt="Pratinjau Foto" class="mt-3" style="max-width: 100px; display: none;">
                         </div>
                         <a href="?page=bukuData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
                             <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
@@ -86,3 +87,18 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
     </div>
 </div>
 <!-- Body Wrapper End -->
+
+<script>
+function previewImage(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const imgPreview = document.getElementById('imgPreview');
+            imgPreview.src = e.target.result;
+            imgPreview.style.display = 'block'; // Menampilkan elemen img setelah file diunggah
+        }
+        reader.readAsDataURL(file); // Membaca file sebagai URL data
+    }
+}
+</script>
