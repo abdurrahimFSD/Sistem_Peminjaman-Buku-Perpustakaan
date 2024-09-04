@@ -71,6 +71,9 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                             <label for="foto" class="form-label">Foto</label>
                             <input type="file" name="foto" id="foto" class="form-control">
                         </div>
+                        <a href="?page=bukuData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
+                            <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5 d-inline-flex align-items-center"></iconify-icon>Kembali
+                        </a>
                         <button type="submit" name="simpan" value="bukuCreate" class="d-inline-flex justify-content-center align-items-center btn btn-primary">
                             <iconify-icon icon="fluent:save-24-regular" class="me-1 fs-5"></iconify-icon>Simpan
                         </button>
