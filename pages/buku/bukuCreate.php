@@ -26,7 +26,12 @@
                 </div>
             </div>
             <!-- End Breadcrumb -->
-    
+
+            <!-- Start Main Content -->
+            <div class="widget-content searchable-container list">
+
+            </div>
+            <!-- End Main Content -->
     </div>
 </div>
 <!-- Body Wrapper End -->
