@@ -47,6 +47,10 @@
                             <label for="tahunTerbit" class="form-label">Tahun Terbit</label>
                             <input type="date" name="tahunTerbit" id="tahunTerbit" class="form-control" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="penulis" class="form-label">Penulis</label>
+                            <input type="text" name="penulis" id="penulis" class="form-control" placeholder="Ahmad" required>
+                        </div>
                     </form>
                 </div>
                 <!-- ENd Card body main content -->
