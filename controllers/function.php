@@ -13,14 +13,21 @@ if (file_exists('./config/connection.php')) {
 function fetchData($tableName) {
     global $connection;
     
+    // Membuat query SQL untuk memilih semua data dari table yg namanya diberikan melalui parameter $tableName
     $query = "SELECT * FROM $tableName";
+
+    // Menjalankan query SQL 
     $result = mysqli_query($connection, $query);
 
+    // Menyiapkan array kosong untuk menyimpan data hasil query
     $data = [];
+
+    // Mengambil setiap baris data hasil query dan menambahkannya ke dalam array $data
     while ($row = mysqli_fetch_assoc($result)) {
         $data[] = $row;
     }
      
+    // Mengembalikan array $data yg berisi semua baris data dari table
     return $data;
 }
 ?>
