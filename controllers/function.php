@@ -31,6 +31,11 @@ function fetchData($tableName) {
     return $data;
 }
 
+// Function uploadFile
+function uploadFile($file) {
+
+}
+
 // Function bukuCreate untuk menambahkan data buku baru ke database
 function bukuCreate($data) {
 }
