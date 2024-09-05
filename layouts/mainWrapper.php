@@ -12,6 +12,10 @@
 
     <!-- Datatable -->
     <link rel="stylesheet" href="./assets/libs/datatable/datatables.min.css">
+
+    <!-- Sweetalert -->
+    <link rel="stylesheet" href="./assets/libs/sweetalert/sweetalert2.min.css">
+    <script src="./assets/libs/sweetalert/sweetalert2.all.min.js"></script>
     
     <style>
         html {
