@@ -30,4 +30,8 @@ function fetchData($tableName) {
     // Mengembalikan array $data yg berisi semua baris data dari table
     return $data;
 }
+
+// Function bukuCreate untuk menambahkan data buku baru ke database
+function bukuCreate($data) {
+}
 ?>
