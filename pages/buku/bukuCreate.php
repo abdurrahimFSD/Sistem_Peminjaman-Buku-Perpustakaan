@@ -94,6 +94,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
 function previewImage(event) {
     const file = event.target.files[0];
     const fileError = document.getElementById('fileError'); // Mengambil elemen error
+    const hapusFotoButton = document.getElementById('hapusFoto'); // Tombol hapus foto
     fileError.style.display = 'none'; // Menyembunyikan pesan error saat file baru dipilih
 
     if (file) {
@@ -102,6 +103,7 @@ function previewImage(event) {
             const imgPreview = document.getElementById('imgPreview');
             imgPreview.src = e.target.result;
             imgPreview.style.display = 'block'; // Menampilkan elemen img setelah file diunggah
+            hapusFotoButton.style.display = 'inline-block'; // Menampilkan tombol hapus foto
         }
         reader.readAsDataURL(file); // Membaca file sebagai URL data
 
@@ -113,6 +115,7 @@ function previewImage(event) {
             fileError.textContent = 'File yang diupload harus berupa gambar (jpg, jpeg, png, svg)';
             fileError.style.display = 'block'; // Menampilkan pesan error
             document.getElementById('imgPreview').style.display = 'none'; // Menyeembunyikan preview
+            hapusFotoButton.style.display = 'none'; // Menyembunyikan tombol hapus foto
             return;
         }
 
@@ -121,8 +124,25 @@ function previewImage(event) {
             fileError.textContent = 'Ukuran file terlalu besar! Maksimal 2MB';
             fileError.style.display = 'block'; // Menampilkan pesan error
             document.getElementById('imgPreview').style.display = 'none'; // Menyembunyikan preview
+            hapusFotoButton.style.display = 'none'; // Menyembunyikan tombol hapus foto
             return;
         }
     }
 }
+
+function hapusFoto() {
+    const fotoInput = document.getElementById('foto');
+    const imgPreview = document.getElementById('imgPreview');
+    const hapusFotoButton = document.getElementById('hapusFoto');
+    const fileError = document.getElementById('fileError');
+
+    // Reset input file dan sembunyikan pratinjau serta tombol hapus
+    fotoInput.value = ''; // Mengosongkan input file
+    imgPreview.src = '';
+    imgPreview.style.display = 'none';
+    hapusFotoButton.style.display = 'none';
+    fileError.style.display = 'none';
+}
+
+document.getElementById('hapusFoto').addEventListener('click', hapusFoto);
 </script>
