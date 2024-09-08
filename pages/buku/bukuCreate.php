@@ -72,6 +72,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                             <input type="file" name="foto" id="foto" class="form-control" onchange="previewImage(event)">
                             <img id="imgPreview" src="" alt="Pratinjau Foto" class="mt-3" style="max-width: 100px; display: none;">
                             <div id="fileError" class="text-danger mt-2" style="display: none;"></div>
+                            <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="hapusFoto" style="display: none;">Hapus File</button>
                         </div>
                         <a href="?page=bukuData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
                             <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
