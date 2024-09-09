@@ -15,6 +15,8 @@ if (isset($_POST['simpan'])) {
             // Ambil isbn yg duplicate
             $isbnDuplicate = explode(':', $result)[1];
             header("Location: ../index.php?page=bukuCreate&status=duplicateIsbn&isbn=$isbnDuplicate");
+        } elseif ($result == 'fileTidakValid') {
+            header("Location: ../index.php?page=bukuCreate&status=fileTidakValid");
         }
     }
 }
