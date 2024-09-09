@@ -53,7 +53,7 @@ function uploadFile($file) {
 
     // Cek ukuran file jika terlalu besar (misal, lebih dari 2MB)
     if ($ukuranFile > 2000000) {
-        return false;
+        return 'fileBesar';
     }
 
     // Generate nama file baru yg unik
