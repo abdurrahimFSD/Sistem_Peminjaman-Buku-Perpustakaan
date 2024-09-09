@@ -48,7 +48,7 @@ function uploadFile($file) {
     $ektensiFile = explode('.', $namaFile);
     $ektensiFile = strtolower(end($ektensiFile));
     if (!in_array($ektensiFile, $ektensiFileValid)) {
-        return false;
+        return 'fileTidakValid';
     }
 
     // Cek ukuran file jika terlalu besar (misal, lebih dari 2MB)
@@ -68,6 +68,6 @@ function uploadFile($file) {
 }
 
 // Function bukuCreate untuk menambahkan data buku baru ke database
-function bukuCreate($data) {
+function bukuCreate($data, $file) {
 }
 ?>
