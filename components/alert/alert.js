@@ -34,4 +34,14 @@ if (status === 'successBukuCreate') {
             history.back();
         }
     });
+} else if (status === 'fileBesar') {
+    Swal.fire({
+        title: 'Gagal',
+        text: 'Ukuran file terlalu besar! Maksimal 2MB',
+        icon: 'warning'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            history.back();
+        }
+    });
 }
