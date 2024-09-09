@@ -69,5 +69,43 @@ function uploadFile($file) {
 
 // Function bukuCreate untuk menambahkan data buku baru ke database
 function bukuCreate($data, $file) {
+    global $connection;
+
+    // Ambil data buku dari array $data ($_POST)
+    $judulBuku = $data['judulBuku'];
+    $isbn = $data['isbn'];
+    $tahunTerbit = $data['tahunTerbit'];
+    $penulis = $data['penulis'];
+    $kategori = $data['kategori'];
+
+    // Mengecek apakah kode isbn sudah ada
+    $queryCekIsbn = "SELECT * FROM buku WHERE isbn = '$isbn'";
+    $resultCekIsbn = mysqli_query($connection, $queryCekIsbn);
+    if (mysqli_num_rows($resultCekIsbn) > 0) {
+        // Jika kode isbn sudah ada, ambil kode isbn
+        $existingIsbn = mysqli_fetch_assoc($resultCekIsbn);
+        return 'duplicateIsbn:' .$existingIsbn['isbn'];
+    } else {
+        // Proses file upload dari $file ($_FILES)
+        $foto = uploadFile($file);
+        if (!$foto) {
+            $foto = 'book-default.jpg';
+        } elseif ($foto == 'fileTidakValid') {
+            return 'fileTidakValid';
+        } elseif ($foto == 'fileBesar') {
+            return 'fileBesar';
+        }
+
+        // Jika tidak ada masalah, maka lanjut query untuk menambahkan data buku
+        $queryBukuCreate = "INSERT INTO buku (judul_buku, isbn, tahun_terbit, penulis, kategori, foto) VALUES ('$judulBuku', '$isbn', '$tahunTerbit', '$penulis', '$kategori', '$foto')";
+        $resultBukuCreate = mysqli_query($connection, $queryBukuCreate);
+    
+        // Kembalikan true/success jika berhasil
+        if ($resultBukuCreate) {
+            return 'success';
+        } else {
+            return false;
+        }
+    }
 }
 ?>
