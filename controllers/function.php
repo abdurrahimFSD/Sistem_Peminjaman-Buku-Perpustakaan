@@ -62,7 +62,7 @@ function uploadFile($file) {
     $namaFileBaru .= $ektensiFile;
 
     // Pindahkan ke folder uploads/images/buku
-    move_uploaded_file($tmpName, './uploads/images/buku/' . $namaFileBaru);
+    move_uploaded_file($tmpName, '../uploads/images/buku/' . $namaFileBaru);
 
     return $namaFileBaru;
 }
