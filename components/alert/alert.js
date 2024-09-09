@@ -14,4 +14,14 @@ if (status === 'successBukuCreate') {
             window.location.href = './index.php?page=bukuData';
         }
     });
-} 
+} else if (status === 'duplicateIsbn' && kodeIsbn) {
+    Swal.fire({
+        title: 'Gagal',
+        text: `ISBN ${kodeIsbn} sudah ada, tidak boleh sama`,
+        icon: 'warning'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            history.back();
+        }
+    });
+}
