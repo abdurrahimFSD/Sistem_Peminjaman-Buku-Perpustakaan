@@ -17,6 +17,8 @@ if (isset($_POST['simpan'])) {
             header("Location: ../index.php?page=bukuCreate&status=duplicateIsbn&isbn=$isbnDuplicate");
         } elseif ($result == 'fileTidakValid') {
             header("Location: ../index.php?page=bukuCreate&status=fileTidakValid");
+        } elseif ($result == 'fileBesar') {
+            header("Location: ../index.php?page=bukuCreate&status=fileBesar");
         }
     }
 }
