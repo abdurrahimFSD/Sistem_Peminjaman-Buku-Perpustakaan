@@ -63,7 +63,17 @@ $bukuData = fetchData('buku');
                                     </td>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <img src="./assets/images/book/JavaScript The Good Parts.jpg" alt="Book" class="rounded" width="50" />
+                                            <?php 
+                                            // Cek apakah foto buku adalah foto default atau bukan
+                                            if ($row['foto'] === 'book-default.jpg') {
+                                                // Jika foto default, tampilkan dari folder default
+                                                $fotoPath = './assets/images/book/' . $row['foto'];
+                                            } else {
+                                                // Jika bukan foto default, tampilkan dari folder buku
+                                                $fotoPath = './uploads/images/buku/' . $row['foto'];
+                                            }
+                                            ?>
+                                            <img src="<?= $fotoPath ?>" alt="Book" class="rounded" width="50" />
                                             <div class="ms-3">
                                                 <div>
                                                     <h6 class="mb-0">
