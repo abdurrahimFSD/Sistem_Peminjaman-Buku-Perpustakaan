@@ -45,7 +45,7 @@
                         <input type="date" name="tahunTerbit" id="tahunTerbit" class="form-control" onfocus="this.showPicker()" required>
                     </div>
                     <div class="mb-3">
-                        
+                        <label for="penulis" class="form-label">Penulis</label>
                     </div>
                 </form>
             </div>
