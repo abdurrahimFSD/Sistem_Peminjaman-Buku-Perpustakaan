@@ -33,7 +33,9 @@
                 <h3>Detail Buku: </h3>
                 <hr class="mb-4">
                 <table class="table table-hover">
-                    
+                    <tbody>
+                        
+                    </tbody>
                 </table>
             </div>
         </div>
