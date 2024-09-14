@@ -33,6 +33,7 @@
                 <hr class="mb-4">
                 <form action="./controllers/process.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
+                        <label for="judulBuku" class="form-label">Judul Buku</label>
                     </div>
                 </form>
             </div>
