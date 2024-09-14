@@ -37,7 +37,7 @@
                         <input type="text" name="judulBuku" id="judulBuku" class="form-control" placeholder="Data Structure & Algorithms" required>
                     </div>
                     <div class="mb-3">
-                        
+                        <label for="isbn" class="form-label">ISBN</label>
                     </div>
                 </form>
             </div>
