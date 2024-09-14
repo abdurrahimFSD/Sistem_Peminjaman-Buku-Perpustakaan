@@ -3,6 +3,10 @@ include('./config/connection.php');
 
 // Ambil id_buku dari query string
 $idBuku = isset($_GET['id_buku']) ? intval($_GET['id_buku']) : 0;
+
+// Mendapatkan data buku dari database berdasarkan id_buku yg dikirim
+$queryGetDetail = "SELECT * FROM buku WHERE id_buku = '$idBuku'";
+$resultGetDetail = mysqli_query($connection, $queryGetDetail);
 ?>
 
 <!-- Body Wrapper Start -->
