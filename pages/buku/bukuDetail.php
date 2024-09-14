@@ -76,10 +76,10 @@
                         </tr>
                         <tr>
                             <td class="col-6 col-md-3">
-                                
+                                <p class="mb-0 text-dark fw-bolder">Kategori</p>
                             </td>
                             <td class="col-6 col-md-9">
-                                
+
                             </td>
                         </tr>
                     </tbody>
