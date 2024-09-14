@@ -42,6 +42,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="tahunTerbit" class="form-label">Tahun Terbit</label>
+                        <input type="date" name="tahunTerbit" id="tahunTerbit" class="form-control" onfocus="this.showPicker()" required>
                     </div>
                 </form>
             </div>
