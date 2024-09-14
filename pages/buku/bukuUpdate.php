@@ -32,7 +32,8 @@
                 <div class="card-title">Masukkan Data Buku</div>
                 <hr class="mb-4">
                 <form action="./controllers/process.php" method="post" enctype="multipart/form-data">
-
+                    <div class="mb-3">
+                    </div>
                 </form>
             </div>
             <!-- End card body -->
