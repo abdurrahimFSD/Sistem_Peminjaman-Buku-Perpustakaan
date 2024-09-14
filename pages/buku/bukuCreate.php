@@ -38,7 +38,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                 <!-- Start Card body main content -->
                 <div class="card card-body">
                     <h4 class="card-title">Masukkan Data Buku</h4>
-                    <hr class="mb-4"></hr>
+                    <hr class="mb-4">
                     <form class="form-horizontal" action="./controllers/process.php" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="judulBuku" class="form-label">Judul Buku</label>
