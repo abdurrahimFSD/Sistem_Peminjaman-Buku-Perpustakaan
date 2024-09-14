@@ -121,6 +121,11 @@ if ($resultGetDetail) {
                         </tr>
                     </tbody>
                 </table>
+                <div class="mt-3">
+                    <a href="?page=bukuData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
+                        <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5 d-inline-flex align-items-center"></iconify-icon>Kembali
+                    </a>
+                </div>
             </div>
         </div>
         <!-- End Card Body -->
