@@ -74,6 +74,9 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                     <a href="?page=bukuData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
                         <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
                     </a>
+                    <button type="submit" name="simpan" value="bukuUpdate" class="d-inline-flex justify-content-center align-items-center btn btn-primary">
+                        <iconify-icon icon="fluent:save-24-regular" class="me-1 fs-5"></iconify-icon>Simpan
+                    </button>
                 </form>
             </div>
             <!-- End card body -->
