@@ -104,7 +104,19 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark fw-bolder">Foto</p>
                             </td>
                             <td class="col-6 col-md-9">
-                                
+                                <?php
+                                // Cek apakah foto default atau bukan
+                                if ($bukuData['foto'] === 'book-default.jpg') {
+                                    // Jika foto default, tampilkan foto default
+                                    $fotoPath = './assets/images/book/' . $bukuData['foto'];
+                                } else {
+                                    // Jika bukan foto default, tampilkan fotonya
+                                    $fotoPath = './uploads/images/buku/' . $bukuData['foto'];
+                                }
+                                ?>
+                                <a href="<?= $fotoPath ?>">
+                                    <img src="<?= $fotoPath; ?>" alt="Buku" class="rounded" width="100">
+                                </a>
                             </td>
                         </tr>
                     </tbody>
