@@ -49,7 +49,7 @@
                         <input type="text" name="penulis" id="penulis" class="form-control" placeholder="Ahmad" required>
                     </div>
                     <div class="mb-3">
-                        
+                        <label for="kategori" class="form-label">Kategori</label>
                     </div>
                 </form>
             </div>
