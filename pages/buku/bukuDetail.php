@@ -71,7 +71,7 @@
                                 <p class="mb-0 text-dark fw-bolder">Penulis</p>
                             </td>
                             <td class="col-6 col-md-9">
-
+                                <p class="mb-0 text-dark"></p>
                             </td>
                         </tr>
                     </tbody>
