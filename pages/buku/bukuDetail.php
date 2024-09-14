@@ -32,6 +32,9 @@
             <div class="row">
                 <h3>Detail Buku: </h3>
                 <hr class="mb-4">
+                <table class="table table-hover">
+                    
+                </table>
             </div>
         </div>
         <!-- End Card Body -->
