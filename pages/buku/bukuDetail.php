@@ -7,6 +7,12 @@ $idBuku = isset($_GET['id_buku']) ? intval($_GET['id_buku']) : 0;
 // Mendapatkan data buku dari database berdasarkan id_buku yg dikirim
 $queryGetDetail = "SELECT * FROM buku WHERE id_buku = '$idBuku'";
 $resultGetDetail = mysqli_query($connection, $queryGetDetail);
+
+if ($resultGetDetail) {
+    $bukuData = mysqli_fetch_assoc($resultGetDetail);
+} else {
+    die("Error: " . mysqli_error($connection));
+}
 ?>
 
 <!-- Body Wrapper Start -->
