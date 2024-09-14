@@ -34,7 +34,9 @@
                 <hr class="mb-4">
                 <table class="table table-hover">
                     <tbody>
-                        
+                        <tr>
+                            
+                        </tr>
                     </tbody>
                 </table>
             </div>
