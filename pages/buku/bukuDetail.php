@@ -47,7 +47,7 @@ if ($resultGetDetail) {
         <!-- Start Card Body -->
         <div class="card card-body">
             <div class="row">
-                <h3>Detail Buku: </h3>
+                <h3>Detail Buku: <?= htmlspecialchars($bukuData['judul_buku']); ?> </h3>
                 <hr class="mb-4">
                 <table class="table table-hover">
                     <tbody>
