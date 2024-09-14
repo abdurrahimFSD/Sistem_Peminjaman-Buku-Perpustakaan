@@ -48,6 +48,9 @@
                         <label for="penulis" class="form-label">Penulis</label>
                         <input type="text" name="penulis" id="penulis" class="form-control" placeholder="Ahmad" required>
                     </div>
+                    <div class="mb-3">
+                        
+                    </div>
                 </form>
             </div>
             <!-- End card body -->
