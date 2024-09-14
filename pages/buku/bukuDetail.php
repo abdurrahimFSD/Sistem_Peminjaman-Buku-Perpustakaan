@@ -1,5 +1,8 @@
 <?php
 include('./config/connection.php');
+
+// Ambil id_buku dari query string
+$idBuku = isset($_GET['id_buku']) ? intval($_GET['id_buku']) : 0;
 ?>
 
 <!-- Body Wrapper Start -->
