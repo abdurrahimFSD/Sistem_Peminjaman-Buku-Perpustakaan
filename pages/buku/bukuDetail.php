@@ -30,7 +30,7 @@
         <!-- Start Card Body -->
         <div class="card card-body">
             <div class="row">
-                
+                <h3>Detail Buku: </h3>
             </div>
         </div>
         <!-- End Card Body -->
