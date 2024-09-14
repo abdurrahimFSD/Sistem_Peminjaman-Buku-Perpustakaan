@@ -56,7 +56,7 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark fw-bolder">ID Buku</p>
                             </td>
                             <td class="col-6 col md-9">
-                                <p class="mb-0 text-dark"></p>
+                                <p class="mb-0 text-dark"><?= htmlspecialchars($bukuData['id_buku']); ?></p>
                             </td>
                         </tr>
                         <tr>
