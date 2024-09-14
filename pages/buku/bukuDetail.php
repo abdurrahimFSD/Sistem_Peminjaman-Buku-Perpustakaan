@@ -72,7 +72,7 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark fw-bolder">Isbn</p>
                             </td>
                             <td class="col-6 col-md-9">
-                                <p class="mb-0 text-dark"></p>
+                                <p class="mb-0 text-dark"><?= htmlspecialchars($bukuData['isbn']); ?></p>
                             </td>
                         </tr>
                         <tr>
