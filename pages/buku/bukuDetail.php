@@ -35,7 +35,12 @@
                 <table class="table table-hover">
                     <tbody>
                         <tr>
-                            
+                            <td class="col-6 col-md-3">
+
+                            </td>
+                            <td class="col-6 col md-9">
+                                
+                            </td>
                         </tr>
                     </tbody>
                 </table>
