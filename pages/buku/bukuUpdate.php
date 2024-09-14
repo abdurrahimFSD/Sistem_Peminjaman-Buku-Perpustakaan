@@ -65,7 +65,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                         </select>
                     </div>
                     <div class="mb-4">
-                        
+                        <label for="foto" class="form-label">Foto</label>
                     </div>
                 </form>
             </div>
