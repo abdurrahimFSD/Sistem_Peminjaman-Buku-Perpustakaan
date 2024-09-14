@@ -40,6 +40,9 @@
                         <label for="isbn" class="form-label">ISBN</label>
                         <input type="text" name="isbn" id="isbn" class="form-control" placeholder="978-11-0001" required>
                     </div>
+                    <div class="mb-3">
+                        
+                    </div>
                 </form>
             </div>
             <!-- End card body -->
