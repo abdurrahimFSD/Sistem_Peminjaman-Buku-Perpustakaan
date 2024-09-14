@@ -66,6 +66,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                     </div>
                     <div class="mb-4">
                         <label for="foto" class="form-label">Foto</label>
+                        <input type="file" name="foto" id="foto" class="form-control" onchange="previewImage(event)">
                     </div>
                 </form>
             </div>
