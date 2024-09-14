@@ -67,6 +67,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                     <div class="mb-4">
                         <label for="foto" class="form-label">Foto</label>
                         <input type="file" name="foto" id="foto" class="form-control" onchange="previewImage(event)">
+                        <img id="imgPreview" src="" alt="Pratinjau Foto" class="mt-3" style="max-width: 100px; display: none;">
                     </div>
                 </form>
             </div>
