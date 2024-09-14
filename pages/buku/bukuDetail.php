@@ -88,7 +88,7 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark fw-bolder">Penulis</p>
                             </td>
                             <td class="col-6 col-md-9">
-                                <p class="mb-0 text-dark"></p>
+                                <p class="mb-0 text-dark"><?= htmlspecialchars($bukuData['penulis']); ?></p>
                             </td>
                         </tr>
                         <tr>
