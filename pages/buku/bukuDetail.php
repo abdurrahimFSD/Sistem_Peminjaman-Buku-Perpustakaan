@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!-- Body Wrapper Start -->
 <div class="body-wrapper">
     <div class="container-fluid">
@@ -84,10 +88,10 @@
                         </tr>
                         <tr>
                             <td class="col-6 col-md-3">
-                                <p class="mb-0 text-dark fw-bolder">Kategori</p>
+                                <p class="mb-0 text-dark fw-bolder">Foto</p>
                             </td>
                             <td class="col-6 col-md-9">
-
+                                
                             </td>
                         </tr>
                     </tbody>
