@@ -29,7 +29,8 @@
 
             <!-- Start card body -->
             <div class="card card-body">
-                
+                <div class="card-title">Masukkan Data Buku</div>
+                <hr class="mb-4">
             </div>
             <!-- End card body -->
     
