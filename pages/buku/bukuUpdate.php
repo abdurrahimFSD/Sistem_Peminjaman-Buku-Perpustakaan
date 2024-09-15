@@ -50,7 +50,7 @@ if (isset($_GET['id_buku'])) {
                 <form action="./controllers/process.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="judulBuku" class="form-label">Judul Buku</label>
-                        <input type="text" name="judulBuku" id="judulBuku" class="form-control" placeholder="Data Structure & Algorithms" required>
+                        <input type="text" name="judulBuku" id="judulBuku" class="form-control" placeholder="Data Structure & Algorithms" value="<?= $bukuData['judul_buku']; ?>" required>
                     </div>
                     <div class="mb-3">
                         <label for="isbn" class="form-label">ISBN</label>
