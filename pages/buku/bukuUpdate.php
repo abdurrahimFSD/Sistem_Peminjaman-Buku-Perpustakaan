@@ -78,7 +78,18 @@ if (isset($_GET['id_buku'])) {
                     <div class="mb-4">
                         <label for="foto" class="form-label">Foto</label>
                         <input type="file" name="foto" id="foto" class="form-control" onchange="previewImage(event)">
-                        <img id="imgPreview" src="" alt="Pratinjau Foto" class="mt-3" style="max-width: 100px; display: none;">
+
+                        <?php
+                        if (!empty($bukuData['foto']) && $bukuData['foto'] !== 'book-default.jpg') {
+                            $fotoPath = './uploads/images/buku/' . htmlspecialchars($bukuData['foto']);
+                        } else {
+                            // Tampilkan foto default jika data foto adalah 'book-default.jpg'
+                            $fotoPath = './assets/images/book/book-default.jpg';
+                        }
+                        ?>
+                        <img id="imgPreview" src="<?= $fotoPath; ?>" alt="Pratinjau Foto" class="mt-3 d-block" style="max-width: 100px;">
+                        <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="hapusFoto" <?= ($bukuData['foto'] === 'book-default.jpg') ? 'style="display: none;"' : ''; ?> >Hapus File</button>
+
                         <div id="fileError" class="text-danger mt-2" style="display: none;"></div>
                         <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="hapusFoto" style="display: none;">Hapus File</button>
                     </div>
