@@ -108,4 +108,9 @@ function bukuCreate($data, $file) {
         }
     }
 }
+
+// Function bukuUpdate untuk memperbarui data buku
+function bukuUpdate($data, $file) {
+    
+}
 ?>
