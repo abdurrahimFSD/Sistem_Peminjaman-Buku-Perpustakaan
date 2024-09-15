@@ -61,5 +61,8 @@
 
     <!-- Alert -->
     <script src="./components/alert/alert.js"></script>
+
+    <!-- Foto buku -->
+    <script src="./assets/js/buku/fotoBuku.js"></script>
 </body>
 </html>
