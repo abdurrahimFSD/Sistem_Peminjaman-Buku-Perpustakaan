@@ -112,5 +112,7 @@ function bukuCreate($data, $file) {
 // Function bukuUpdate untuk memperbarui data buku
 function bukuUpdate($data, $file) {
     global $connection;
+
+    $idBuku = $data['idBuku'];
 }
 ?>
