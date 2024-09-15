@@ -113,6 +113,7 @@ function bukuCreate($data, $file) {
 function bukuUpdate($data, $file) {
     global $connection;
 
+    // Mengambil data buku dari parameter $data yang dikirim melalui form
     $idBuku = $data['idBuku'];
     $judulBuku = $data['judulBuku'];
     $isbn = $data['isbn'];
