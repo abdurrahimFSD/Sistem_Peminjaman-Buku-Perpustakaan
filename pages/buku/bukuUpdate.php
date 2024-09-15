@@ -58,7 +58,7 @@ if (isset($_GET['id_buku'])) {
                     </div>
                     <div class="mb-3">
                         <label for="tahunTerbit" class="form-label">Tahun Terbit</label>
-                        <input type="text" name="tahunTerbit" id="tahunTerbit" class="form-control" onfocus="this.showPicker()" value="<?= $bukuData['tahun_terbit']; ?>" required>
+                        <input type="text" name="tahunTerbit" id="tahunTerbit" class="form-control" onfocus="this.showPicker()" value="<?= $bukuData['tahun_terbit']; ?>" placeholder="2020" required>
                     </div>
                     <div class="mb-3">
                         <label for="penulis" class="form-label">Penulis</label>
