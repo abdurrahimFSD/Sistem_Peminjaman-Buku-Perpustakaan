@@ -118,6 +118,6 @@ function bukuUpdate($data, $file) {
     $isbn = $data['isbn'];
     $tahunTerbit = $data['tahunTerbit'];
     $penulis = $data['penulis'];
-    
+    $kategori = $data['kategori'];
 }
 ?>
