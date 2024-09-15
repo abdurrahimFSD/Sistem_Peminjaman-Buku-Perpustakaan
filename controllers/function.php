@@ -116,5 +116,6 @@ function bukuUpdate($data, $file) {
     $idBuku = $data['idBuku'];
     $judulBuku = $data['judulBuku'];
     $isbn = $data['isbn'];
+    $tahunTerbit = $data['tahunTerbit'];
 }
 ?>
