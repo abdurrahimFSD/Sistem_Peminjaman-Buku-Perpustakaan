@@ -50,3 +50,19 @@ function hapusFoto() {
     hapusFotoButton.style.display = 'none';
     fileError.style.display = 'none';
 }
+
+function hapusFoto() {
+    const fotoInput = document.getElementById('foto');
+    const imgPreview = document.getElementById('imgPreview');
+    const hapusFotoButton = document.getElementById('hapusFoto');
+    const fileError = document.getElementById('fileError');
+
+    // Reset input file dan sembunyikan pratinjau serta tombol hapus
+    fotoInput.value = ''; // Mengosongkan input file
+    imgPreview.src = '';
+    imgPreview.style.display = 'none';
+    hapusFotoButton.style.display = 'none';
+    fileError.style.display = 'none';
+}
+
+document.getElementById('hapusFoto').addEventListener('click', hapusFoto);
