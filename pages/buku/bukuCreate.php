@@ -50,7 +50,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                         </div>
                         <div class="mb-3">
                             <label for="tahunTerbit" class="form-label">Tahun Terbit</label>
-                            <input type="date" name="tahunTerbit" id="tahunTerbit" class="form-control" onfocus="this.showPicker()" required>
+                            <input type="text" name="tahunTerbit" id="tahunTerbit" class="form-control" onfocus="this.showPicker()" required>
                         </div>
                         <div class="mb-3">
                             <label for="penulis" class="form-label">Penulis</label>
