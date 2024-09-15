@@ -3,6 +3,15 @@ include('./config/connection.php');
 
 // Array Kategori Buku
 $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan', 'Geografi'];
+
+// Mendapatkan id_buku
+if (isset($_GET['id_buku'])) {
+    $idBuku = $_GET['id_buku'];
+
+    $query = "SELECT * FROM buku WHERE id_buku = '$idBuku'";
+    $result = mysqli_query($connection, $query);
+    $bukuData = mysqli_fetch_assoc($result);
+}
 ?>
 
 <!-- Body Wrapper Start -->
