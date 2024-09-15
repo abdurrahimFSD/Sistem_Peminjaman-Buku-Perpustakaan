@@ -1,4 +1,6 @@
 <?php
+include('./config/connection.php');
+
 // Array kategori Buku
 $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan', 'Geografi'];
 ?>
