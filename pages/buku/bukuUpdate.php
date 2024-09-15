@@ -62,14 +62,14 @@ if (isset($_GET['id_buku'])) {
                     </div>
                     <div class="mb-3">
                         <label for="penulis" class="form-label">Penulis</label>
-                        <input type="text" name="penulis" id="penulis" class="form-control" placeholder="Ahmad" required>
+                        <input type="text" name="penulis" id="penulis" class="form-control" placeholder="Ahmad" value="<?= $bukuData['penulis']; ?>" required>
                     </div>
                     <div class="mb-3">
                         <label for="kategori" class="form-label">Kategori</label>
                         <select name="kategori" id="kategori" class="form-select" required>
                             <option selected disabled>Pilih Kategori</option>
                             <?php foreach ($kategori as $kategoriData) { ?>
-                                <option value="<?= $kategoriData; ?>">
+                                <option value="<?= $kategoriData; ?>" <?= ($bukuData['kategori'] == $kategoriData) ? 'selected' : ''; ?> >
                                     <?= $kategoriData; ?>
                                 </option>
                             <?php } ?>
