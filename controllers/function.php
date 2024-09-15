@@ -114,5 +114,6 @@ function bukuUpdate($data, $file) {
     global $connection;
 
     $idBuku = $data['idBuku'];
+    $judulBuku = $data['judulBuku'];
 }
 ?>
