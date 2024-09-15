@@ -48,6 +48,7 @@ if (isset($_GET['id_buku'])) {
                 <div class="card-title">Masukkan Data Buku</div>
                 <hr class="mb-4">
                 <form action="./controllers/process.php" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="idBuku" value="<?= $bukuData['id_buku']; ?>">
                     <div class="mb-3">
                         <label for="judulBuku" class="form-label">Judul Buku</label>
                         <input type="text" name="judulBuku" id="judulBuku" class="form-control" placeholder="Data Structure & Algorithms" value="<?= $bukuData['judul_buku']; ?>" required>
