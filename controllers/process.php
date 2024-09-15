@@ -20,6 +20,8 @@ if (isset($_POST['simpan'])) {
         } elseif ($result == 'fileBesar') {
             header("Location: ../index.php?page=bukuCreate&status=fileBesar");
         }
-    }
+    } elseif ($_POST['simpan'] == 'bukuUpdate') {   // Jika tombol simpan adalah bukuUpdate
+
+    } 
 }
 ?>
