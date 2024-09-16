@@ -121,4 +121,9 @@ function bukuUpdate($data, $file) {
     $penulis = $data['penulis'];
     $kategori = $data['kategori'];
 }
+
+// Function anggotaCreate untuk menambahkan data anggota baru ke database
+function anggotaCreate($data) {
+    
+}
 ?>
