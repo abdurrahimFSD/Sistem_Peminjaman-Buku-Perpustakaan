@@ -2,6 +2,8 @@
 include('./controllers/function.php');
 
 $no = 1;
+// Memanggil function fetchData dengan argumen anggota
+$anggotaData = fetchData('anggota');
 ?>
 
 <!-- Body Wrapper Start -->
