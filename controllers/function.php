@@ -140,6 +140,9 @@ function anggotaCreate($data) {
     if ($stmt->execute()) {
         // Query berhasil dijalankan
         return 'success';
+    } else {
+        // Terjadi kesalahan saat menjalankan query
+        return 'error';
     }
 }
 ?>
