@@ -33,7 +33,7 @@
             <hr class="mb-4">
             <form action="./controllers/process.php" method="post">
                 <div class="mb-3">
-                    
+                    <label for="namaAnggota" class="form-label">Nama Anggota</label>
                 </div>
             </form>
         </div>
