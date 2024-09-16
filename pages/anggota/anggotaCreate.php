@@ -37,7 +37,7 @@
                     <input type="text" name="namaAnggota" id="namaAnggota" class="form-control" placeholder="Erling Haaland" require>
                 </div>
                 <div class="mb-3">
-                    
+                    <label for="alamat" class="form-label">Alamat</label>
                 </div>
             </form>
         </div>
