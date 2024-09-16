@@ -29,7 +29,11 @@
     
         <!-- Start card body content -->
         <div class="card card-body">
-            
+            <div class="d-flex justify-content-end mb-9">
+                <a href="?page=anggotaCreate" class="btn btn-primary d-flex align-items-center">
+                    <iconify-icon icon="fluent:book-add-28-regular" class="me-1"></iconify-icon>Tambah Data
+                </a>
+            </div>
         </div>
         <!-- End Card Body Content -->
         
