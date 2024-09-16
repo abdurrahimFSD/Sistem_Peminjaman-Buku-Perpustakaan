@@ -127,5 +127,6 @@ function anggotaCreate($data) {
     global $connection;
 
     $namaAnggota = $data['namaAnggota'];
+    $alamat = $data['alamat'];
 }
 ?>
