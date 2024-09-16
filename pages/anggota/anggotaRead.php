@@ -40,6 +40,7 @@
                     <thead>
                         <th>No</th>
                         <th>Nama Anggota</th>
+                        <th>Alamat</th>
                     </thead>
                 </table>
             </div>
