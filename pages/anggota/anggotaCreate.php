@@ -42,6 +42,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="noTelepon" class="form-label">No Telepon</label>
+                    <input type="text" name="noTelepon" id="noTelepon" class="form-control" placeholder="081347200001" required>
                 </div>
             </form>
         </div>
