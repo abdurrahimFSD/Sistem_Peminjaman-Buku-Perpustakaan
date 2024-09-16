@@ -45,7 +45,7 @@
                     <input type="text" name="noTelepon" id="noTelepon" class="form-control" placeholder="081347200001" required>
                 </div>
                 <div class="mb-4">
-                    
+                    <label for="email" class="form-label">Email</label>
                 </div>
             </form>
         </div>
