@@ -45,6 +45,9 @@
                         <th>Email</th>
                         <th class="text-center">Aksi</th>
                     </thead>
+                    <tbody>
+                        
+                    </tbody>
                 </table>
             </div>
         </div>
