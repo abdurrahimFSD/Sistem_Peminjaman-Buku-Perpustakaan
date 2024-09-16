@@ -52,6 +52,9 @@
                             <td>Norway</td>
                             <td>081347200001</td>
                             <td>haaland@gmail.com</td>
+                            <td>
+                                
+                            </td>
                         </tr>
                     </tbody>
                 </table>
