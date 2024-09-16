@@ -42,6 +42,7 @@
                         <th>Nama Anggota</th>
                         <th>Alamat</th>
                         <th>No Telepon</th>
+                        <th>Email</th>
                     </thead>
                 </table>
             </div>
