@@ -43,6 +43,7 @@
                         <th>Alamat</th>
                         <th>No Telepon</th>
                         <th>Email</th>
+                        <th class="text-center">Aksi</th>
                     </thead>
                 </table>
             </div>
