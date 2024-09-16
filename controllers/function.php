@@ -144,5 +144,8 @@ function anggotaCreate($data) {
         // Terjadi kesalahan saat menjalankan query
         return 'error';
     }
+
+    // Menutup statement
+    $stmt->close();
 }
 ?>
