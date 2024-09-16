@@ -39,6 +39,7 @@
                 <table id="dataTables" class="table align-middle text-nowrap">
                     <thead>
                         <th>No</th>
+                        <th>Nama Anggota</th>
                     </thead>
                 </table>
             </div>
