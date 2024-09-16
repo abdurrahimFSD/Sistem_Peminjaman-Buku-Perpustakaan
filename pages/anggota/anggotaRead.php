@@ -53,7 +53,9 @@
                             <td>081347200001</td>
                             <td>haaland@gmail.com</td>
                             <td>
-                                <a href="" class="btn btn-outline-warning btn-sm d-inline-flex me-1" data-bs-toggle="tooltip" data-bs-title="Edit" aria-label="Edit"></a>
+                                <a href="" class="btn btn-outline-warning btn-sm d-inline-flex me-1" data-bs-toggle="tooltip" data-bs-title="Edit" aria-label="Edit">
+                                    <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
+                                </a>
                             </td>
                         </tr>
                     </tbody>
