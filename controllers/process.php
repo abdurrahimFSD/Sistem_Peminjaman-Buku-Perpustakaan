@@ -32,6 +32,8 @@ if (isset($_POST['simpan'])) {
         } elseif ($result == 'error') {
             echo 'errorBukuUpdate';
         }
-    } 
+    } elseif ($_POST['simpan'] == 'anggotaCreate') {
+        
+    }
 }
 ?>
