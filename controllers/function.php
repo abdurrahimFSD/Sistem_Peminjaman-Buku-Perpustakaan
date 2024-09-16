@@ -126,6 +126,7 @@ function bukuUpdate($data, $file) {
 function anggotaCreate($data) {
     global $connection;
 
+    // Mengambil data dari array $data
     $namaAnggota = $data['namaAnggota'];
     $alamat = $data['alamat'];
     $noTelepon = $data['noTelepon'];
