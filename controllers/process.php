@@ -33,7 +33,8 @@ if (isset($_POST['simpan'])) {
             echo 'errorBukuUpdate';
         }
     } elseif ($_POST['simpan'] == 'anggotaCreate') {
-        
+        // Memanggil function anggotaCreate
+        $result = anggotaCreate($_POST);
     }
 }
 ?>
