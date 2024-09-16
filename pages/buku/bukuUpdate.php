@@ -88,7 +88,7 @@ if (isset($_GET['id_buku'])) {
                             $fotoPath = './assets/images/book/book-default.jpg';
                         }
                         ?>
-                        <img id="imgPreview" src="<?= $fotoPath; ?>" alt="Pratinjau Foto" class="mt-3 d-block" style="max-width: 100px;">
+                        <img id="imgPreview" src="<?= $fotoPath; ?>" alt="Pratinjau Foto" class="mt-3" style="max-width: 100px;">
                         <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="hapusFoto" <?= ($bukuData['foto'] === 'book-default.jpg') ? 'style="display: none;"' : ''; ?> >Hapus File</button>
 
                         <div id="fileError" class="text-danger mt-2" style="display: none;"></div>
