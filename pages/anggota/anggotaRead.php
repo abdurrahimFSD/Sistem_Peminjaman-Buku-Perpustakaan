@@ -36,8 +36,8 @@
             </div>
 
             <div class="table-responsive">
-                <table>
-                    
+                <table id="dataTables">
+
                 </table>
             </div>
         </div>
