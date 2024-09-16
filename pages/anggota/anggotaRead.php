@@ -1,4 +1,5 @@
 <?php
+include('./controllers/function.php');
 ?>
 
 <!-- Body Wrapper Start -->
