@@ -40,6 +40,9 @@
                     <label for="alamat" class="form-label">Alamat</label>
                     <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Norway" required>
                 </div>
+                <div class="mb-3">
+                    
+                </div>
             </form>
         </div>
         <!-- End Card Body -->
