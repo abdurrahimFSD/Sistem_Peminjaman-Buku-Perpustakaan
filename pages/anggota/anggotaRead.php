@@ -49,6 +49,7 @@
                         <tr>
                             <td>1</td>
                             <td>Erling Haaland</td>
+                            <td>Norway</td>
                         </tr>
                     </tbody>
                 </table>
