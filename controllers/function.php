@@ -131,5 +131,9 @@ function anggotaCreate($data) {
     $alamat = $data['alamat'];
     $noTelepon = $data['noTelepon'];
     $email = $data['email'];
+
+    // Menyiapkan query SQL untuk memasukkan data anggota ke dalam table anggota
+    $stmt = $connection->prepare("INSERT INTO anggota (nama_anggota, alamat, no_telepon, email) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $namaAnggota, $alamat, $noTelepon, $email);
 }
 ?>
