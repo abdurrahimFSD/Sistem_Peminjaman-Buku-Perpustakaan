@@ -124,6 +124,6 @@ function bukuUpdate($data, $file) {
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
 function anggotaCreate($data) {
-    
+    global $connection;
 }
 ?>
