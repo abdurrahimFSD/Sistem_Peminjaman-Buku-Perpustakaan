@@ -53,7 +53,7 @@
                             <td>081347200001</td>
                             <td>haaland@gmail.com</td>
                             <td>
-                                <a href=""></a>
+                                <a href="" class="btn btn-outline-warning btn-sm d-inline-flex me-1"></a>
                             </td>
                         </tr>
                     </tbody>
