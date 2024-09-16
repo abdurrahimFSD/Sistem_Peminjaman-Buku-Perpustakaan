@@ -41,6 +41,7 @@
                         <th>No</th>
                         <th>Nama Anggota</th>
                         <th>Alamat</th>
+                        <th>No Telepon</th>
                     </thead>
                 </table>
             </div>
