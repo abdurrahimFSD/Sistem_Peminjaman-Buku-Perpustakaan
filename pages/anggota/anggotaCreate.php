@@ -26,6 +26,12 @@
             </div>
         </div>
         <!-- End Breadcrumb -->
+
+        <!-- Start Card Body -->
+        <div class="card card-body">
+            
+        </div>
+        <!-- End Card Body -->
     
     </div>
 </div>
