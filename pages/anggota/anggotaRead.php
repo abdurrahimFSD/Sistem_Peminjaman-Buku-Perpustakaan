@@ -57,7 +57,7 @@ $anggotaData = fetchData('anggota');
                         <?php foreach ($anggotaData as $row) { ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td>Erling Haaland</td>
+                            <td><?= htmlspecialchars($row['nama_anggota']); ?></td>
                             <td>Norway</td>
                             <td>081347200001</td>
                             <td>haaland@gmail.com</td>
