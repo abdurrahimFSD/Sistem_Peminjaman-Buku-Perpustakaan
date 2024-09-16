@@ -38,7 +38,7 @@
             <div class="table-responsive">
                 <table id="dataTables" class="table align-middle text-nowrap">
                     <thead>
-                        <th>No</th>
+                        <th width="5%">No</th>
                         <th>Nama Anggota</th>
                         <th>Alamat</th>
                         <th>No Telepon</th>
