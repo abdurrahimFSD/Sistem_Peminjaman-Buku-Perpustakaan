@@ -54,6 +54,7 @@ $anggotaData = fetchData('anggota');
                         <th class="text-center">Aksi</th>
                     </thead>
                     <tbody>
+                        <?php foreach ($anggotaData as $row) { ?>
                         <tr>
                             <td>1</td>
                             <td>Erling Haaland</td>
@@ -69,6 +70,7 @@ $anggotaData = fetchData('anggota');
                                 </a>
                             </td>
                         </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
