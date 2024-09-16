@@ -27,6 +27,8 @@ if (isset($_POST['simpan'])) {
         // Jika result mengembalikan success
         if ($result == 'success') {
             echo 'successBukuUpdate';
+        } elseif (strpos($result, 'duplicateIsbn|') === 0) {
+            echo $result;
         }
     } 
 }
