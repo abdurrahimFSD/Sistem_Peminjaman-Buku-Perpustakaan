@@ -51,6 +51,7 @@
                             <td>Erling Haaland</td>
                             <td>Norway</td>
                             <td>081347200001</td>
+                            <td>haaland@gmail.com</td>
                         </tr>
                     </tbody>
                 </table>
