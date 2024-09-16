@@ -1,5 +1,7 @@
 <?php
 include('./controllers/function.php');
+
+$no = 1;
 ?>
 
 <!-- Body Wrapper Start -->
