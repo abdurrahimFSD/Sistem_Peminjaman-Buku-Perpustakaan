@@ -127,7 +127,7 @@ function anggotaCreate($data) {
     global $connection;
 
     // Mengambil data dari array $data
-    $namaAnggota = $data['namaAnggota'];
+    $namaAnggota = $data['namaAnggota'];    // Nama Anggota yg akan disimpan
     $alamat = $data['alamat'];
     $noTelepon = $data['noTelepon'];
     $email = $data['email'];
