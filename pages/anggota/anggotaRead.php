@@ -48,6 +48,7 @@
                     <tbody>
                         <tr>
                             <td>1</td>
+                            <td>Erling Haaland</td>
                         </tr>
                     </tbody>
                 </table>
