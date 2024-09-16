@@ -50,6 +50,7 @@
                             <td>1</td>
                             <td>Erling Haaland</td>
                             <td>Norway</td>
+                            <td>081347200001</td>
                         </tr>
                     </tbody>
                 </table>
