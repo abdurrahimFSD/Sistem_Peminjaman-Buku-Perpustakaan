@@ -67,7 +67,8 @@ if (document.getElementById('simpanAnggotaUpdate')) {
         }).then((result) => {
             // Jika user mengkonfirmasi 'Simpan', kirim form melalui AJAX
             if (result.isConfirmed) {
-                
+                const form = document.getElementById('anggotaUpdateForm');
+                const formData = new FormData(form);
             }
         })
     })
