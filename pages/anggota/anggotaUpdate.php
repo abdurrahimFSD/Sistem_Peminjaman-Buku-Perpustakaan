@@ -52,7 +52,7 @@ if (isset($_GET['id_anggota'])) {
                 </div>
                 <div class="mb-3">
                     <label for="alamat" class="form-label">Alamat</label>
-                    <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Norway" required>
+                    <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Norway" value="<?= $anggotaData['alamat']; ?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="noTelepon" class="form-label">No Telepon</label>
