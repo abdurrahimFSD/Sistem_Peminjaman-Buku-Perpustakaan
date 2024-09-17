@@ -77,7 +77,9 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                 .then(response => response.text())
                 .then(response => {
                     if (response === 'successAnggotaUpdate') {
-                        
+                        Swal.fire('Tersimpan', '', 'success').then(() => {
+                            window.location.href = './index.php?page=anggotaData';
+                        });
                     }
                 })
             }
