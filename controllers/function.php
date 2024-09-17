@@ -152,5 +152,8 @@ function anggotaCreate($data) {
 // Function anggotaUpdate untuk memperbarui data anggota
 function anggotaUpdate($data) {
     global $connection;
+
+    // Mengambil data dari array $data
+    $idAnggota = $data['idAnggota']
 }
 ?>
