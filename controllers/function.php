@@ -151,6 +151,6 @@ function anggotaCreate($data) {
 
 // Function anggotaUpdate untuk memperbarui data anggota
 function anggotaUpdate($data) {
-    
+    global $connection;
 }
 ?>
