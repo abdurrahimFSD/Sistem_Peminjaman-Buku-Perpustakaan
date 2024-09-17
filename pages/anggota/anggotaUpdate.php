@@ -45,7 +45,7 @@ if (isset($_GET['id_anggota'])) {
             <h4 class="card-title">Masukkan Data Anggota</h4>
             <hr class="mb-4">
             <form action="./controllers/process.php" method="post">
-                <input type="hidden" name="idAnggota">
+                <input type="hidden" name="idAnggota" value="<?= $anggotaData['id_anggota']; ?>">
                 <div class="mb-3">
                     <label for="namaAnggota" class="form-label">Nama Anggota</label>
                     <input type="text" name="namaAnggota" id="namaAnggota" class="form-control" placeholder="Erling Haaland" required>
