@@ -32,7 +32,7 @@
             <h4 class="card-title">Masukkan Data Anggota</h4>
             <hr class="mb-4">
             <form action="./controllers/process.php" method="post">
-
+                <div class="mb-3"></div>
             </form>
         </div>
         <!-- End Card Body -->
