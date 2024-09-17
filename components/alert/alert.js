@@ -65,7 +65,10 @@ if (document.getElementById('simpanAnggotaUpdate')) {
             confirmButtonText: 'Simpan',
             cancelButtonText: 'Batal'
         }).then((result) => {
-            
+            // Jika user mengkonfirmasi 'Simpan', kirim form melalui AJAX
+            if (result.isConfirmed) {
+                
+            }
         })
     })
 }
