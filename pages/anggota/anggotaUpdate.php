@@ -56,7 +56,7 @@ if (isset($_GET['id_anggota'])) {
                 </div>
                 <div class="mb-3">
                     <label for="noTelepon" class="form-label">No Telepon</label>
-                    <input type="text" name="noTelepon" id="noTelepon" class="form-control" placeholder="081347200001" required>
+                    <input type="text" name="noTelepon" id="noTelepon" class="form-control" placeholder="081347200001" value="<?= $anggotaData['no_telepon']; ?>" required>
                 </div>
                 <div class="mb-4">
                     <label for="email" class="form-label">Email</label>
