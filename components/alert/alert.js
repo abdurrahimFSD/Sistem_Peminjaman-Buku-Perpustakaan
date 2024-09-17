@@ -55,3 +55,8 @@ if (status === 'successBukuCreate') {
         }
     })
 }
+
+// Kode alert untuk operasi update atau edit
+if (document.getElementById('simpanAnggotaUpdate')) {
+    
+}
