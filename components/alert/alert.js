@@ -60,7 +60,10 @@ if (status === 'successBukuCreate') {
 if (document.getElementById('simpanAnggotaUpdate')) {
     document.getElementById('simpanAnggotaUpdate').addEventListener('click', function() {
         Swal.fire({
-            
+            title: 'Apakah anda ingin menyimpan perubahan ini',
+            showCancelButton: true,
+            confirmButtonText: 'Simpan',
+            cancelButtonText: 'Batal'
         })
     })
 }
