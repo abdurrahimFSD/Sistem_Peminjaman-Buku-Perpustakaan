@@ -36,6 +36,7 @@
                     <label for="namaAnggota" class="form-label">Nama Anggota</label>
                     <input type="text" name="namaAnggota" id="namaAnggota" class="form-control" placeholder="Erling Haaland" required>
                 </div>
+                <div class="mb-3"></div>
             </form>
         </div>
         <!-- End Card Body -->
