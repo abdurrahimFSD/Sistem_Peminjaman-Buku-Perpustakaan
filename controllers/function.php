@@ -157,5 +157,6 @@ function anggotaUpdate($data) {
     $idAnggota = $data['idAnggota'];
     $namaAnggota = $data['namaAnggota'];
     $alamat = $data['alamat'];
+    $noTelepon = $data['noTelepon'];
 }
 ?>
