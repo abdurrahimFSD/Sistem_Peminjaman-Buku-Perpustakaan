@@ -74,6 +74,7 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                     method: 'POST',
                     body: formData
                 })
+                .then(response => response.text())
             }
         })
     })
