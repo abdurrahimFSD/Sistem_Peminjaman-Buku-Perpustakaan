@@ -81,7 +81,7 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                             window.location.href = './index.php?page=anggotaData';
                         });
                     } else if (response === 'errorAnggotaUpdate') {
-                        
+                        Swal.fire('Gagal', '', 'error');
                     }
                 })
             }
