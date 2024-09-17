@@ -45,6 +45,11 @@ if (isset($_POST['simpan'])) {
     } elseif ($_POST['simpan'] == 'anggotaUpdate') {
         // Memanggil function anggotaUpdate
         $result = anggotaUpdate($_POST);
+
+        // Jika result mengembalikan success
+        if ($result == 'success') {
+            echo 'successAnggotaUpdate';
+        }
     }
 }
 ?>
