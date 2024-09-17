@@ -59,6 +59,8 @@ if (status === 'successBukuCreate') {
 // Kode alert untuk operasi update atau edit
 if (document.getElementById('simpanAnggotaUpdate')) {
     document.getElementById('simpanAnggotaUpdate').addEventListener('click', function() {
-        
+        Swal.fire({
+            
+        })
     })
 }
