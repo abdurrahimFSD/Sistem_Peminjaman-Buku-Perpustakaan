@@ -80,6 +80,8 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                         Swal.fire('Tersimpan', '', 'success').then(() => {
                             window.location.href = './index.php?page=anggotaData';
                         });
+                    } else if (response === 'errorAnggotaUpdate') {
+                        
                     }
                 })
             }
