@@ -49,6 +49,8 @@ if (isset($_POST['simpan'])) {
         // Jika result mengembalikan success
         if ($result == 'success') {
             echo 'successAnggotaUpdate';
+        } else {
+            echo 'errorAnggotaUpdate';
         }
     }
 }
