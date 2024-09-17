@@ -85,7 +85,7 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                     }
                 })
                 .catch(error => {
-                    
+                    Swal.fire('Gagal', 'Terjadi Kesalahan', 'error');
                 })
             }
         })
