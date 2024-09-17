@@ -60,7 +60,7 @@ if (isset($_GET['id_anggota'])) {
                 </div>
                 <div class="mb-4">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="erlinghaaland@gmail.com" required>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="erlinghaaland@gmail.com" value="<?= $anggotaData['email']; ?>" required>
                 </div>
                 <a href="?page=anggotaData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
                     <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
