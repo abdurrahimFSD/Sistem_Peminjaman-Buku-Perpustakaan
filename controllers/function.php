@@ -154,6 +154,7 @@ function anggotaUpdate($data) {
     global $connection;
 
     // Mengambil data dari array $data
-    $idAnggota = $data['idAnggota']
+    $idAnggota = $data['idAnggota'];
+    $namaAnggota = $data['namaAnggota'];
 }
 ?>
