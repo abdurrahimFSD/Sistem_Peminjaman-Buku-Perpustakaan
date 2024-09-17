@@ -159,5 +159,9 @@ function anggotaUpdate($data) {
     $alamat = $data['alamat'];
     $noTelepon = $data['noTelepon'];
     $email = $data['email'];
+
+    // Menyiapkan query SQL untuk memperbarui data anggota
+    $stmt = $connection->prepare("UPDATE anggota SET nama_anggota = ?, alamat = ?, no_telepon = ?, email = ? WHERE id_anggota = ?");
+    $stmt->bind_param("ssssi", $namaAnggota, $alamat, $noTelepon, $email, $idAnggota);  // (s= string, i= integer)
 }
 ?>
