@@ -75,6 +75,9 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                     body: formData
                 })
                 .then(response => response.text())
+                .then(response => {
+                    
+                })
             }
         })
     })
