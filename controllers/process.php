@@ -43,7 +43,8 @@ if (isset($_POST['simpan'])) {
             header("Location: ../index.php?page=anggotaCreate&status=errorAnggotaCreate");
         }
     } elseif ($_POST['simpan'] == 'anggotaUpdate') {
-        
+        // Memanggil function anggotaUpdate
+        $result = anggotaUpdate($_POST);
     }
 }
 ?>
