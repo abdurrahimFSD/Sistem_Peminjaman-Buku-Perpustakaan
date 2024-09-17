@@ -148,4 +148,9 @@ function anggotaCreate($data) {
     // Menutup statement
     $stmt->close();
 }
+
+// Function anggotaUpdate untuk memperbarui data anggota
+function anggotaUpdate($data) {
+    
+}
 ?>
