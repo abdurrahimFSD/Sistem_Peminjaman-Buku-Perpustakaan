@@ -84,6 +84,9 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                         Swal.fire('Gagal', '', 'error');
                     }
                 })
+                .catch(error => {
+                    
+                })
             }
         })
     })
