@@ -183,5 +183,13 @@ function anggotaDelete($idAnggota) {
     // Menyiapkah query SQL untuk menghapus data anggota
     $stmt = $connection->prepare("DELETE FROM anggota WHERE id_anggota = ?");
     $stmt->bind_param("i", $idAnggota);
+
+    // Menjalankan query 
+    if ($stmt->execute()) {
+        // Query berhasil dijalankan
+        return true;
+    } else {
+        return false;
+    }
 }
 ?>
