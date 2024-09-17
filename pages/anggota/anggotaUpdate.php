@@ -41,7 +41,7 @@
                     <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Norway" required>
                 </div>
                 <div class="mb-3">
-                    
+                    <label for="noTelepon" class="form-label">No Telepon</label>
                 </div>
             </form>
         </div>
