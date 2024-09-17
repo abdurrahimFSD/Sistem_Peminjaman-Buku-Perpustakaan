@@ -48,6 +48,9 @@
                     <label for="email" class="form-label">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="erlinghaaland@gmail.com" required>
                 </div>
+                <a href="?page=anggotaData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
+                    <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
+                </a>
             </form>
         </div>
         <!-- End Card Body -->
