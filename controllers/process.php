@@ -35,6 +35,11 @@ if (isset($_POST['simpan'])) {
     } elseif ($_POST['simpan'] == 'anggotaCreate') {
         // Memanggil function anggotaCreate
         $result = anggotaCreate($_POST);
+
+        // Jika result mengembalikan success
+        if ($result == 'success') {
+            header("Location: ../index.php?page=anggotaCreate&status=successAnggotaCreate");
+        }
     }
 }
 ?>
