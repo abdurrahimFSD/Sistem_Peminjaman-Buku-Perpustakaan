@@ -175,4 +175,9 @@ function anggotaUpdate($data) {
     // Menutup statement
     $stmt->close();
 }
+
+// Function anggotaDelete
+function anggotaDelete($idAnggota) {
+    
+}
 ?>
