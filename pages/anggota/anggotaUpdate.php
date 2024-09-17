@@ -48,7 +48,7 @@ if (isset($_GET['id_anggota'])) {
                 <input type="hidden" name="idAnggota" value="<?= $anggotaData['id_anggota']; ?>">
                 <div class="mb-3">
                     <label for="namaAnggota" class="form-label">Nama Anggota</label>
-                    <input type="text" name="namaAnggota" id="namaAnggota" class="form-control" placeholder="Erling Haaland" required>
+                    <input type="text" name="namaAnggota" id="namaAnggota" class="form-control" placeholder="Erling Haaland" value="<?= $anggotaData['nama_anggota']; ?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="alamat" class="form-label">Alamat</label>
