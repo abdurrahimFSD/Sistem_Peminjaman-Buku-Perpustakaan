@@ -64,6 +64,8 @@ if (document.getElementById('simpanAnggotaUpdate')) {
             showCancelButton: true,
             confirmButtonText: 'Simpan',
             cancelButtonText: 'Batal'
+        }).then((result) => {
+            
         })
     })
 }
