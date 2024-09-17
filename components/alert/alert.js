@@ -76,7 +76,9 @@ if (document.getElementById('simpanAnggotaUpdate')) {
                 })
                 .then(response => response.text())
                 .then(response => {
-                    
+                    if (response === 'successAnggotaUpdate') {
+                        
+                    }
                 })
             }
         })
