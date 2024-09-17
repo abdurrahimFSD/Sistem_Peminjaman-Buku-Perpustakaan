@@ -42,6 +42,8 @@ if (isset($_POST['simpan'])) {
         } else {
             header("Location: ../index.php?page=anggotaCreate&status=errorAnggotaCreate");
         }
+    } elseif ($_POST['simpan'] == 'anggotaUpdate') {
+        
     }
 }
 ?>
