@@ -156,5 +156,6 @@ function anggotaUpdate($data) {
     // Mengambil data dari array $data
     $idAnggota = $data['idAnggota'];
     $namaAnggota = $data['namaAnggota'];
+    $alamat = $data['alamat'];
 }
 ?>
