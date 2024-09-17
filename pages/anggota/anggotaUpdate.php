@@ -1,5 +1,14 @@
 <?php
 include('./config/connection.php');
+
+// Mendapatkan id_anggota
+if (isset($_GET['id_anggota'])) {
+    $idAnggota = $_GET['id_anggota'];
+
+    $query = "SELECT * FROM anggota WHERE id_anggota = '$idAnggota'";
+    $result = mysqli_query($connection, $query);
+    $anggotaData = mysqli_fetch_assoc($result);
+}
 ?>
 
 <!-- Body Wrapper Start -->
