@@ -168,6 +168,8 @@ function anggotaUpdate($data) {
     if ($stmt->execute()) {
         // Query berhasil dijalankan, kembalikan success
         return 'success';
+    } else {
+        return 'error';
     }
 }
 ?>
