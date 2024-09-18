@@ -1,4 +1,6 @@
 <?php
+include ('./config/connection.php');
+
 ?>
 
 <!-- Body Wrapper Start -->
