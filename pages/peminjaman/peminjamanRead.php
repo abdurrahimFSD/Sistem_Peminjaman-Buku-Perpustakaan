@@ -11,6 +11,7 @@ $queryPeminjaman = "SELECT
                     JOIN buku ON peminjaman.buku_id = buku.id_buku
                     JOIN anggota ON peminjaman.anggota_id = anggota.id_anggota;";
 $peminjamanData = mysqli_query($connection, $queryPeminjaman);
+$no = 1;
 ?>
 
 <!-- Body Wrapper Start -->
