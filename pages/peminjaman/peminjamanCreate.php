@@ -31,6 +31,9 @@
         <div class="card card-body">
             <h4 class="card-title">Masukkan Data Peminjaman</h4>
             <hr class="mb-4">
+            <form action="./controllers/process.php" method="post">
+                
+            </form>
         </div>
         <!-- End Card Body -->
         
