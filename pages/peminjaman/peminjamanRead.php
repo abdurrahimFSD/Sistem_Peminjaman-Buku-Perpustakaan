@@ -40,6 +40,7 @@
                     <thead>
                         <th width="5%">No</th>
                         <th>Tanggal Pinjam</th>
+                        <th>Tanggal Kembali</th>
                     </thead>
                 </table>
             </div>
