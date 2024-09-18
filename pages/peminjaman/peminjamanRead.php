@@ -39,6 +39,7 @@
                 <table id="dataTables" class="table align-middle text-nowrap">
                     <thead>
                         <th width="5%">No</th>
+                        <th>Tanggal Pinjam</th>
                     </thead>
                 </table>
             </div>
