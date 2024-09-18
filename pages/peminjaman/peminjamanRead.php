@@ -64,7 +64,7 @@ $no = 1;
                         <?php foreach ($peminjamanData as $row) { ?>
                         <tr>
                             <td><?= $no; ?></td>
-                            <td>Belajar JavaScript</td>
+                            <td><?= htmlspecialchars($row['judul_buku']); ?></td>
                             <td>Erling Haaland</td>
                             <td>Dipinjam</td>
                             <td class="text-center">
