@@ -49,6 +49,8 @@
                         <td>Belajar JavaScript</td>
                         <td>Erling Haaland</td>
                         <td>Dipinjam</td>
+                        <td>
+                        </td>
                     </tbody>
                 </table>
             </div>
