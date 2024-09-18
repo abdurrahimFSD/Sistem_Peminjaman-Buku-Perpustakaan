@@ -46,6 +46,7 @@
                     </thead>
                     <tbody>
                         <td>1</td>
+                        <td>Belajar JavaScript</td>
                     </tbody>
                 </table>
             </div>
