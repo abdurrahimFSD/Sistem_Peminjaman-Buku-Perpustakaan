@@ -57,6 +57,7 @@ if (isset($_POST['simpan'])) {
 
 // Mengecek apakah parameter 'id_anggota' ada di URL untuk menghapus data anggota
 if (isset($_GET['id_anggota'])) {
-    
+    // Memanggil function anggotaDelete
+    $result = anggotaDelete($_GET['id_anggota']);
 }
 ?>
