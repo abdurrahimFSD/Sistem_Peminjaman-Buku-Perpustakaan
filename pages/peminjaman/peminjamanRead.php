@@ -49,7 +49,7 @@
                         <td>Belajar JavaScript</td>
                         <td>Erling Haaland</td>
                         <td>Dipinjam</td>
-                        <td>
+                        <td class="text-center">
                             <a href="" class="btn btn-outline-info btn-sm d-inline-flex" data-bs-toggle="tooltip" data-bs-title="Detail" aria-label="Detail">
                                 <iconify-icon icon="tabler:info-square" class="fs-5"></iconify-icon>
                             </a>
