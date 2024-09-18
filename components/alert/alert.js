@@ -112,7 +112,7 @@ if (document.getElementById('deleteButtonAnggota')) {
                 .then(response => response.text())
                 .then(response => {
                     if (response === 'successDelete') {
-                        
+                        Swal.fire('Dihapus', 'Data anggota berhasil dihapus', 'success');
                     }
                 })
             }
