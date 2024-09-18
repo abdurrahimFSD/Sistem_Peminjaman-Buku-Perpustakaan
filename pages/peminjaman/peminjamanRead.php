@@ -41,7 +41,7 @@
                         <th width="5%">No</th>
                         <th>Judul Buku</th>
                         <th>Nama Anggota</th>
-
+                        <th>Status</th>
                     </thead>
                 </table>
             </div>
