@@ -108,7 +108,7 @@ if (document.getElementById('deleteButtonAnggota')) {
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
-                
+                fetch(`./controllers/process.php?id_anggota=${id}`)
             }
         })
     }
