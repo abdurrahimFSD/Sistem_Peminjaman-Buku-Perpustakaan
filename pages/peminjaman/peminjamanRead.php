@@ -37,7 +37,9 @@
 
             <div class="table-responsive">
                 <table id="dataTables" class="table align-middle text-nowrap">
-
+                    <thead>
+                        
+                    </thead>
                 </table>
             </div>
         </div>
