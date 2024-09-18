@@ -111,7 +111,9 @@ if (document.getElementById('deleteButtonAnggota')) {
                 fetch(`./controllers/process.php?id_anggota=${id}`)
                 .then(response => response.text())
                 .then(response => {
-                    
+                    if (response === 'successDelete') {
+                        
+                    }
                 })
             }
         })
