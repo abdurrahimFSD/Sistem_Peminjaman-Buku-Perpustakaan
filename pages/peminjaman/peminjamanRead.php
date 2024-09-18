@@ -50,21 +50,23 @@ include ('./config/connection.php');
                         <th class="text-center">Aksi</th>
                     </thead>
                     <tbody>
-                        <td>1</td>
-                        <td>Belajar JavaScript</td>
-                        <td>Erling Haaland</td>
-                        <td>Dipinjam</td>
-                        <td class="text-center">
-                            <a href="" class="btn btn-outline-info btn-sm d-inline-flex" data-bs-toggle="tooltip" data-bs-title="Detail" aria-label="Detail">
-                                <iconify-icon icon="tabler:info-square" class="fs-5"></iconify-icon>
-                            </a>
-                            <a href="" class="btn btn-outline-warning btn-sm d-inline-flex mx-1" data-bs-toggle="tooltip" data-bs-title="Edit" aria-label="Edit">
-                                <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
-                            </a>
-                            <a href="" class="btn btn-outline-danger btn-sm d-inline-flex delete" data-bs-toggle="tooltip" data-bs-title="Hapus" aria-label="Hapus">
-                                <iconify-icon icon="tabler:trash" class="fs-5"></iconify-icon>
-                            </a>
-                        </td>
+                        <tr>
+                            <td>1</td>
+                            <td>Belajar JavaScript</td>
+                            <td>Erling Haaland</td>
+                            <td>Dipinjam</td>
+                            <td class="text-center">
+                                <a href="" class="btn btn-outline-info btn-sm d-inline-flex" data-bs-toggle="tooltip" data-bs-title="Detail" aria-label="Detail">
+                                    <iconify-icon icon="tabler:info-square" class="fs-5"></iconify-icon>
+                                </a>
+                                <a href="" class="btn btn-outline-warning btn-sm d-inline-flex mx-1" data-bs-toggle="tooltip" data-bs-title="Edit" aria-label="Edit">
+                                    <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
+                                </a>
+                                <a href="" class="btn btn-outline-danger btn-sm d-inline-flex delete" data-bs-toggle="tooltip" data-bs-title="Hapus" aria-label="Hapus">
+                                    <iconify-icon icon="tabler:trash" class="fs-5"></iconify-icon>
+                                </a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
