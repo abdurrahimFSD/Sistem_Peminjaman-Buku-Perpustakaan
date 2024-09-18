@@ -98,7 +98,7 @@ if (document.getElementById('simpanAnggotaUpdate')) {
 if (document.getElementById('deleteButtonAnggota')) {
     function confirmDelete(id) {
         Swal.fire({
-            title: 'Hapus',
+            title: 'Hapus ya',
             text: 'Apakah anda yakin menghapus data ini',
             icon: 'warning',
             showCancelButton: true,
@@ -112,7 +112,9 @@ if (document.getElementById('deleteButtonAnggota')) {
                 .then(response => response.text())
                 .then(response => {
                     if (response === 'successDelete') {
-                        Swal.fire('Dihapus', 'Data anggota berhasil dihapus', 'success');
+                        Swal.fire('Dihapus', 'Data anggota berhasil dihapus', 'success').then(() => {
+                            window.location.reload();   // Refresh halaman untuk memperbarui tampilan
+                        })
                     }
                 })
             }
