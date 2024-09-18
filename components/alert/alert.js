@@ -98,7 +98,14 @@ if (document.getElementById('simpanAnggotaUpdate')) {
 if (document.getElementById('deleteButtonAnggota')) {
     function confirmDelete(id) {
         Swal.fire({
-            
+            title: 'Hapus',
+            text: 'Apakah anda yakin menghapus data ini',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Ya, hapus",
+            cancelButtonText: 'Batal'
         })
     }
 }
