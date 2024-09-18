@@ -97,6 +97,8 @@ if (document.getElementById('simpanAnggotaUpdate')) {
 // Kode alert untuk operasi delete atau hapus
 if (document.getElementById('deleteButtonAnggota')) {
     function confirmDelete(id) {
-
+        Swal.fire({
+            
+        })
     }
 }
