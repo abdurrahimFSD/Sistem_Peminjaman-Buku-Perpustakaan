@@ -34,6 +34,10 @@
                     <iconify-icon icon="fluent:book-add-28-regular" class="me-1"></iconify-icon>Tambah Data
                 </a>
             </div>
+
+            <div class="table-responsive">
+                
+            </div>
         </div>
         <!-- End Card Body Content -->
 
