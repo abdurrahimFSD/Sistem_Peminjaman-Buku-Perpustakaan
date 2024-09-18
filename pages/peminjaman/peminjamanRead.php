@@ -36,7 +36,9 @@
             </div>
 
             <div class="table-responsive">
-                
+                <table>
+                    
+                </table>
             </div>
         </div>
         <!-- End Card Body Content -->
