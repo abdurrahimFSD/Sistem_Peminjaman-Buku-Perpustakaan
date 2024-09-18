@@ -40,7 +40,7 @@
                     <thead>
                         <th width="5%">No</th>
                         <th>Judul Buku</th>
-                        <th>Tanggal Kembali</th>
+                        <th>Nama Anggota</th>
 
                     </thead>
                 </table>
