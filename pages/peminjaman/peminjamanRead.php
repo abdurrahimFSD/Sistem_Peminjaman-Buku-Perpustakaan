@@ -61,7 +61,7 @@ $no = 1;
                         <th class="text-center">Aksi</th>
                     </thead>
                     <tbody>
-                        <?php ?>
+                        <?php foreach ($peminjamanData as $row) { ?>
                         <tr>
                             <td>1</td>
                             <td>Belajar JavaScript</td>
@@ -79,7 +79,7 @@ $no = 1;
                                 </a>
                             </td>
                         </tr>
-                        <?php ?>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
