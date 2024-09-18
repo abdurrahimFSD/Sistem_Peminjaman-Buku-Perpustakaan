@@ -119,6 +119,9 @@ if (document.getElementById('deleteButtonAnggota')) {
                         Swal.fire('Gagal', 'Data anggota gagal dihapus', 'error');
                     }
                 })
+                .catch(error => {
+                    Swal.fire('Gagal', 'Terjadi kesalahan', 'error');
+                }); 
             }
         })
     }
