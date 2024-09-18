@@ -3,7 +3,7 @@ include ('./config/connection.php');
 
 // Query peminjaman
 $queryPeminjaman = "SELECT 
-                    peminjaman.id_pinjam.,
+                    peminjaman.id_pinjam,
                     peminjaman.status,
                     buku.judul_buku,
                     anggota.nama_anggota
@@ -63,7 +63,7 @@ $no = 1;
                     <tbody>
                         <?php foreach ($peminjamanData as $row) { ?>
                         <tr>
-                            <td>1</td>
+                            <td><?= $no; ?></td>
                             <td>Belajar JavaScript</td>
                             <td>Erling Haaland</td>
                             <td>Dipinjam</td>
