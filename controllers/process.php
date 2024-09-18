@@ -59,5 +59,12 @@ if (isset($_POST['simpan'])) {
 if (isset($_GET['id_anggota'])) {
     // Memanggil function anggotaDelete
     $result = anggotaDelete($_GET['id_anggota']);
+
+    // Jika result mengembalikan true
+    if ($result) {
+        echo "successDelete";
+    } else {
+        echo "errorDelete";
+    }
 }
 ?>
