@@ -65,7 +65,7 @@ $no = 1;
                         <tr>
                             <td><?= $no; ?></td>
                             <td><?= htmlspecialchars($row['judul_buku']); ?></td>
-                            <td>Erling Haaland</td>
+                            <td><?= htmlspecialchars($row['nama_anggota']); ?></td>
                             <td>Dipinjam</td>
                             <td class="text-center">
                                 <a href="" class="btn btn-outline-info btn-sm d-inline-flex" data-bs-toggle="tooltip" data-bs-title="Detail" aria-label="Detail">
