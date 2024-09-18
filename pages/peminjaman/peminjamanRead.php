@@ -42,6 +42,7 @@
                         <th>Judul Buku</th>
                         <th>Nama Anggota</th>
                         <th>Status</th>
+                        <th class="text-center">Aksi</th>
                     </thead>
                 </table>
             </div>
