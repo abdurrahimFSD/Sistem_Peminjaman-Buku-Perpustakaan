@@ -191,5 +191,8 @@ function anggotaDelete($idAnggota) {
     } else {
         return false;
     }
+
+    // Menutup statement
+    $stmt->close();
 }
 ?>
