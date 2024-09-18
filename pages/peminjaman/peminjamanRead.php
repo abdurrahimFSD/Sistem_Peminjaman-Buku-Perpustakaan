@@ -45,7 +45,7 @@
                         <th class="text-center">Aksi</th>
                     </thead>
                     <tbody>
-                        
+                        <td>1</td>
                     </tbody>
                 </table>
             </div>
