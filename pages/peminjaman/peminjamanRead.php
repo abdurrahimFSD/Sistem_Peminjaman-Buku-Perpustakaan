@@ -47,6 +47,7 @@
                     <tbody>
                         <td>1</td>
                         <td>Belajar JavaScript</td>
+                        <td>Erling Haaland</td>
                     </tbody>
                 </table>
             </div>
