@@ -39,6 +39,8 @@ switch($_GET['page']) {
     case 'peminjamanUpdate':
         include('./pages/peminjaman/peminjamanUpdate.php');
         break;
+    case 'peminjamanDetail':
+        include('./pages/peminjaman/peminjamanDetail.php');
 
     default:
         include('./home.php');
