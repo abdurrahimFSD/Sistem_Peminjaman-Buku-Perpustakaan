@@ -61,6 +61,7 @@ $no = 1;
                         <th class="text-center">Aksi</th>
                     </thead>
                     <tbody>
+                        <?php ?>
                         <tr>
                             <td>1</td>
                             <td>Belajar JavaScript</td>
@@ -78,6 +79,7 @@ $no = 1;
                                 </a>
                             </td>
                         </tr>
+                        <?php ?>
                     </tbody>
                 </table>
             </div>
