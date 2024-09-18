@@ -1,6 +1,16 @@
 <?php
 include ('./config/connection.php');
 
+// Query peminjaman
+$queryPeminjaman = "SELECT 
+                    peminjaman.id_pinjam.,
+                    peminjaman.status,
+                    buku.judul_buku,
+                    anggota.nama_anggota
+                    FROM peminjaman
+                    JOIN buku ON peminjaman.buku_id = buku.id_buku
+                    JOIN anggota ON peminjaman.anggota_id = anggota.id_anggota;";
+$peminjamanData = mysqli_query($connection, $queryPeminjaman);
 ?>
 
 <!-- Body Wrapper Start -->
