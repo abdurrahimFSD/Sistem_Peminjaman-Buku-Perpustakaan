@@ -109,6 +109,7 @@ if (document.getElementById('deleteButtonAnggota')) {
         }).then((result) => {
             if (result.isConfirmed) {
                 fetch(`./controllers/process.php?id_anggota=${id}`)
+                .then(response => response.text())
             }
         })
     }
