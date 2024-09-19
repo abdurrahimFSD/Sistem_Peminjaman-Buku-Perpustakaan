@@ -195,4 +195,9 @@ function anggotaDelete($idAnggota) {
     // Menutup statement
     $stmt->close();
 }
+
+// Function peminjamanCreate
+function peminjamanCreate($data) {
+    
+}
 ?>
