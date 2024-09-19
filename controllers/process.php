@@ -55,6 +55,11 @@ if (isset($_POST['simpan'])) {
     } elseif ($_POST['simpan'] == 'peminjamanCreate') {
         // Memanggil function anggotaUpdate
         $result = peminjamanCreate($_POST);
+
+        // Jika result mengembalikan success
+        if ($result == 'success') {
+            echo 'successPeminjamanCreate';
+        }
     }
 }
 
