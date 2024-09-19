@@ -208,5 +208,9 @@ function peminjamanCreate($data) {
     $namaPustakawan = $data['namaPustakawan'];
     $jumlahBukuDipinjam = $data['jumlahBukuDipinjam'];
     $status = $data['status'];
+
+    // Menyiapkan query SQL untuk memasukkan data peminjaman ke dalam table peminjaman
+    $stmt = $connection->prepare("INSERT INTO peminjaman (tanggal_pinjam, tanggal_kembali, buku_id, anggota_id, nama_pustakawan, jumlah_buku_dipinjam, status) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssiisis", $tanggalPinjam, $tanggalKembali, $judulBuku, $namaAnggota, $namaPustakawan, $jumlahBukuDipinjam, $status);
 }
 ?>
