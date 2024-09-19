@@ -68,6 +68,14 @@ $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
                 </div>
                 <div class="mb-3">
                     <label for="namaAnggota" class="form-label">Nama Anggota</label>
+                    <select name="namaAnggota" id="namaAnggota" class="form-select" required>
+                        <option value="" selected disabled>Pilih Nama Anggota</option>
+                        <?php while ($anggotaData = mysqli_fetch_assoc($resultAnggota)) { ?>
+                            <option value="<?= $anggotaData['id_anggota']; ?>">
+                                <?= $anggotaData['nama_anggota']; ?>
+                            </option>
+                        <?php } ?>
+                    </select>
                 </div>
             </form>
         </div>
