@@ -78,7 +78,7 @@ $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
                     </select>
                 </div>
                 <div class="mb-3">
-                    
+                    <label for="namaPustakawan" class="form-label">Nama Pustakawan</label>
                 </div>
             </form>
         </div>
