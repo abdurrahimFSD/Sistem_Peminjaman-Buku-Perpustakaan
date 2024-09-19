@@ -58,7 +58,7 @@ if (status === 'successBukuCreate') {
 
 if (document.getElementById('peminjamanCreateForm')) {
     document.getElementById('peminjamanCreateForm').addEventListener('submit', function(event) {
-        
+        event.preventDefault();
     }) 
 }
 
