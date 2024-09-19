@@ -63,7 +63,7 @@ $no = 1;
                     <tbody>
                         <?php foreach ($peminjamanData as $row) { ?>
                         <tr>
-                            <td><?= $no; ?></td>
+                            <td><?= $no++; ?></td>
                             <td><?= htmlspecialchars($row['judul_buku']); ?></td>
                             <td><?= htmlspecialchars($row['nama_anggota']); ?></td>
                             <td><?= htmlspecialchars($row['status']); ?></td>
