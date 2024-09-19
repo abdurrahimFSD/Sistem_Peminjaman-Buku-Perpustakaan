@@ -53,7 +53,8 @@ if (isset($_POST['simpan'])) {
             echo 'errorAnggotaUpdate';
         }
     } elseif ($_POST['simpan'] == 'peminjamanCreate') {
-        
+        // Memanggil function anggotaUpdate
+        $result = peminjamanCreate($_POST);
     }
 }
 
