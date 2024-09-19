@@ -81,6 +81,9 @@ $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
                     <label for="namaPustakawan" class="form-label">Nama Pustakawan</label>
                     <input type="text" name="namaPustakawan" id="namaPustakawan" class="form-control" placeholder="Ronaldo" required>
                 </div>
+                <div class="mb-3">
+                    <label for="jumlahBukuDipinjam" class="form-label">Jumlah Buku Dipinjam</label>
+                </div>
             </form>
         </div>
         <!-- End Card Body -->
