@@ -75,6 +75,7 @@ if (document.getElementById('peminjamanCreateForm')) {
                     method: 'POST',
                     body: formData
                 })
+                .then(response => response.text())
             }
         })
     }) 
