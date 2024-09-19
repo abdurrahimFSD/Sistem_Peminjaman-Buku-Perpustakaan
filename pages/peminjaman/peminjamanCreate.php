@@ -87,6 +87,14 @@ $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
                 </div>
                 <div class="mb-4">
                     <label for="status" class="form-label">Status</label>
+                    <select name="status" id="status" class="form-select" required>
+                        <option value="" selected disabled>Pilih Status</option>
+                        <?php foreach ($status as $statusData) { ?>
+                            <option value="<?= $statusData; ?>">
+                                <?= $statusData; ?>
+                            </option>
+                        <?php } ?>
+                    </select>
                 </div>
             </form>
         </div>
