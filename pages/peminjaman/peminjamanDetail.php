@@ -29,7 +29,10 @@
 
         <!-- Start Card Body -->
         <div class="card card-body">
-            
+            <div class="row">
+                <h3>Detail Peminjaman: </h3>
+                <hr class="mb-4">
+            </div>
         </div>
         <!-- End Card Body -->
 
