@@ -220,5 +220,8 @@ function peminjamanCreate($data) {
     } else {
         return 'error';
     }
+
+    // Menutup statement
+    $stmt->close();
 }
 ?>
