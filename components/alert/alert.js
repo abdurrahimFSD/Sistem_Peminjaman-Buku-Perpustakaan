@@ -61,42 +61,43 @@ if (document.getElementById('peminjamanCreateForm')) {
         // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
         event.preventDefault();
 
-        Swal.fire({
-            title: 'Berhasil',
-            text: 'Data peminjaman berhasil ditambahkan',
-            icon: 'success'
-        }).then((result) => {
-            // Jika user klik 'OK', kirim form melalui AJAX
-            if (result.isConfirmed) {
-                const form = document.getElementById('peminjamanCreateForm');
-                const formData = new FormData(form);
+        const form = document.getElementById('peminjamanCreateForm');
+        const formData = new FormData(form);
 
-                fetch('./controllers/process.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.text())
-                .then(response => {
-                    if (response === 'successPeminjamanCreate') {
-                        window.location.href = './index.php?page=peminjamanData';
-                    } else if (response === 'errorPeminjamanCreate') {
-                        Swal.fire({
-                            title: 'Error',
-                            text: 'Gagal menambahkan data peminjaman',
-                            icon: 'error'
-                        });
-                    }
-                })
-                .catch(error => {
-                    Swal.fire({
-                        title: 'Error',
-                        text: 'Terjadi kesalahan saat memproses permintaan',
-                        icon: 'error'
-                    });
+        // Mengirim form melalui AJAX
+        fetch('./controllers/process.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(response => {
+            if (response === 'successPeminjamanCreate') {
+                // Jika sukses, tampilkan alert success
+                Swal.fire({
+                    title: 'Berhasil',
+                    text: 'Data peminjaman berhasil ditambahkan',
+                    icon: 'success'
+                }).then(() => {
+                    window.location.href = './index.php?page=peminjamanData';
+                });
+            } else if (response === 'errorPeminjamanCreate') {
+                // Jika gagal, tampilkan alert error
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Gagal menambahkan data peminjaman',
+                    icon: 'error'
                 });
             }
         })
-    }) 
+        .catch(error => {
+            // Penanganan error jika terjadi kesalahan di server atau jaringan
+            Swal.fire({
+                title: 'Error',
+                text: 'Terjadi kesalahan saat memproses permintaan',
+                icon: 'error'
+            });
+        });
+    });
 }
 
 // Kode alert untuk operasi update atau edit
