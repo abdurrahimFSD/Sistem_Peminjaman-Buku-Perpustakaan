@@ -198,6 +198,6 @@ function anggotaDelete($idAnggota) {
 
 // Function peminjamanCreate
 function peminjamanCreate($data) {
-    
+    global $connection;
 }
 ?>
