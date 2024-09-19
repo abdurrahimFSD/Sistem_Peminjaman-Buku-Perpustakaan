@@ -77,7 +77,9 @@ if (document.getElementById('peminjamanCreateForm')) {
                 })
                 .then(response => response.text())
                 .then(response => {
-                    
+                    if (response === 'successPeminjamanCreate') {
+                        window.location.href = './index.php?page=peminjamanData';
+                    }
                 })
             }
         })
