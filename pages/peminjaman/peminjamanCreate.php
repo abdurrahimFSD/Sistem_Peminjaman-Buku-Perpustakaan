@@ -66,6 +66,9 @@ $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
                         <?php } ?>
                     </select>
                 </div>
+                <div class="mb-3">
+                    
+                </div>
             </form>
         </div>
         <!-- End Card Body -->
