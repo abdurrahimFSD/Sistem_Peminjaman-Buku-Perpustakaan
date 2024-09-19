@@ -66,7 +66,10 @@ if (document.getElementById('peminjamanCreateForm')) {
             text: 'Data peminjaman berhasil ditambahkan',
             icon: 'success'
         }).then((result) => {
-            
+            // Jika user klik 'OK', kirim form melalui AJAX
+            if (result.isConfirmed) {
+                
+            }
         })
     }) 
 }
