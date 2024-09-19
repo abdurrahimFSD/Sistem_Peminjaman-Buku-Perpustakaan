@@ -79,6 +79,12 @@ if (document.getElementById('peminjamanCreateForm')) {
                 .then(response => {
                     if (response === 'successPeminjamanCreate') {
                         window.location.href = './index.php?page=peminjamanData';
+                    } else if (response === 'errorPeminjamanCreate') {
+                        Swal.fire({
+                            title: 'Error',
+                            text: 'Gagal menambahkan data peminjaman',
+                            icon: 'error'
+                        });
                     }
                 })
             }
