@@ -60,6 +60,12 @@ if (document.getElementById('peminjamanCreateForm')) {
     document.getElementById('peminjamanCreateForm').addEventListener('submit', function(event) {
         // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
         event.preventDefault();
+
+        Swal.fire({
+            title: 'Berhasil',
+            text: 'Data peminjaman berhasil ditambahkan',
+            icon: 'success'
+        })
     }) 
 }
 
