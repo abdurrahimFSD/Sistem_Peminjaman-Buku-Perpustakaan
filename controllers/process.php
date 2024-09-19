@@ -52,6 +52,8 @@ if (isset($_POST['simpan'])) {
         } else {
             echo 'errorAnggotaUpdate';
         }
+    } elseif ($_POST['simpan'] == 'peminjamanCreate') {
+        
     }
 }
 
