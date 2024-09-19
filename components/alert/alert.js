@@ -70,6 +70,11 @@ if (document.getElementById('peminjamanCreateForm')) {
             if (result.isConfirmed) {
                 const form = document.getElementById('peminjamanCreateForm');
                 const formData = new FormData(form);
+
+                fetch('./controllers/process.php', {
+                    method: 'POST',
+                    body: formData
+                })
             }
         })
     }) 
