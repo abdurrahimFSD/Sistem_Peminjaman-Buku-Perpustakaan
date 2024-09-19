@@ -87,6 +87,13 @@ if (document.getElementById('peminjamanCreateForm')) {
                         });
                     }
                 })
+                .catch(error => {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Terjadi kesalahan saat memproses permintaan',
+                        icon: 'error'
+                    });
+                });
             }
         })
     }) 
