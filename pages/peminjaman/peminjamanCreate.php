@@ -32,7 +32,8 @@
             <h4 class="card-title">Masukkan Data Peminjaman</h4>
             <hr class="mb-4">
             <form id="peminjamanCreateForm" action="./controllers/process.php" method="post">
-
+                <div class="mb-3">
+                </div>
             </form>
         </div>
         <!-- End Card Body -->
