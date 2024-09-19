@@ -199,5 +199,14 @@ function anggotaDelete($idAnggota) {
 // Function peminjamanCreate
 function peminjamanCreate($data) {
     global $connection;
+
+    // Mengambil data dari array $data
+    $tanggalPinjam = $data['tanggalPinjam'];
+    $tanggalKembali = $data['tanggalKembali'];
+    $judulBuku = $data['judulBuku'];
+    $namaAnggota = $data['namaAnggota'];
+    $namaPustakawan = $data['namaPustakawan'];
+    $jumlahBukuDipinjam = $data['jumlahBukuDipinjam'];
+    $status = $data['status'];
 }
 ?>
