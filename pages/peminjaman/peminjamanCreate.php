@@ -33,6 +33,7 @@
             <hr class="mb-4">
             <form id="peminjamanCreateForm" action="./controllers/process.php" method="post">
                 <div class="mb-3">
+                    <label for="tanggalPinjam" class="form-label">Tanggal Pinjam</label>
                 </div>
             </form>
         </div>
