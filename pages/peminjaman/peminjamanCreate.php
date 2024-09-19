@@ -83,6 +83,7 @@ $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
                 </div>
                 <div class="mb-3">
                     <label for="jumlahBukuDipinjam" class="form-label">Jumlah Buku Dipinjam</label>
+                    <input type="number" name="jumlahBukuDipinjam" id="jumlahBukuDipinjam" class="form-control" placeholder="3" required>
                 </div>
             </form>
         </div>
