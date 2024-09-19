@@ -59,6 +59,8 @@ if (isset($_POST['simpan'])) {
         // Jika result mengembalikan success
         if ($result == 'success') {
             echo 'successPeminjamanCreate';
+        } else {
+            echo 'errorPeminjamanCreate';
         }
     }
 }
