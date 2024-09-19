@@ -32,6 +32,11 @@
             <div class="row">
                 <h3>Detail Peminjaman: </h3>
                 <hr class="mb-4">
+                <table class="table table-hover">
+                    <tbody>
+                        
+                    </tbody>
+                </table>
             </div>
         </div>
         <!-- End Card Body -->
