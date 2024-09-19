@@ -65,6 +65,8 @@ if (document.getElementById('peminjamanCreateForm')) {
             title: 'Berhasil',
             text: 'Data peminjaman berhasil ditambahkan',
             icon: 'success'
+        }).then((result) => {
+            
         })
     }) 
 }
