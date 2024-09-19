@@ -68,7 +68,7 @@ if (document.getElementById('peminjamanCreateForm')) {
         }).then((result) => {
             // Jika user klik 'OK', kirim form melalui AJAX
             if (result.isConfirmed) {
-                
+                const form = document.getElementById('peminjamanCreateForm');
             }
         })
     }) 
