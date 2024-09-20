@@ -52,7 +52,7 @@
                     <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
                 </a>
                 <input type="hidden" name="simpan" value="anggotaCreate">
-                <button type="submit" name="simpan" value="anggotaCreate" class="d-inline-flex justify-content-center align-items-center btn btn-primary">
+                <button type="submit" class="d-inline-flex justify-content-center align-items-center btn btn-primary">
                     <iconify-icon icon="fluent:save-24-regular" class="me-1 fs-5"></iconify-icon>Simpan
                 </button>
             </form>
