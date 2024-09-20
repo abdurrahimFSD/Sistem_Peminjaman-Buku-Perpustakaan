@@ -63,6 +63,9 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['id_pinjam']); ?></p>
                             </td>
                         </tr>
+                        <tr>
+                            
+                        </tr>
                     </tbody>
                 </table>
             </div>
