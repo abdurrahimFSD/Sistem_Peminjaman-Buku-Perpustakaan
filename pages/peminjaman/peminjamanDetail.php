@@ -59,13 +59,16 @@ if ($resultGetDetail) {
                             <td class="col-6 col-md-3">
                                 <p class="mb-0 text-dark fw-bolder">ID Pinjam</p>
                             </td>
-                            <td class="col-6 col md-9">
+                            <td class="col-6 col-md-9">
                                 <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['id_pinjam']); ?></p>
                             </td>
                         </tr>
                         <tr>
                             <td class="col-6 col-md-3">
                                 <p class="mb-0 text-dark fw-bolder">Tanggal Pinjam</p>
+                            </td>
+                            <td class="col-6 col-md-9">
+                                
                             </td>
                         </tr>
                     </tbody>
