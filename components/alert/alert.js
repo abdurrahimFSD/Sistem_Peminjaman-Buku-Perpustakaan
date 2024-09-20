@@ -104,6 +104,7 @@ if (document.getElementById('peminjamanCreateForm')) {
         event.preventDefault();
 
         const form = document.getElementById('anggotaCreateForm');
+        const formData = new FormData(form);
     })
 
 }
