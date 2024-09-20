@@ -105,6 +105,12 @@ if (document.getElementById('peminjamanCreateForm')) {
 
         const form = document.getElementById('anggotaCreateForm');
         const formData = new FormData(form);
+
+        // Mengirim form melalui AJAX
+        fetch('./controllers/process.php', {
+            method: 'POST',
+            body: formData
+        })
     })
 
 }
