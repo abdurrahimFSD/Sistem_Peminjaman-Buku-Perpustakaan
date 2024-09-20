@@ -98,6 +98,8 @@ if (document.getElementById('peminjamanCreateForm')) {
             });
         });
     });
+} else if (document.getElementById('anggotaCreateForm')) {
+    
 }
 
 // Kode alert untuk operasi update atau edit
