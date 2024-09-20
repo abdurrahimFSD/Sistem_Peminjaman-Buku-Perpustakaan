@@ -38,7 +38,7 @@ if (isset($_POST['simpan'])) {
 
         // Jika result mengembalikan success
         if ($result == 'success') {
-            header("Location: ../index.php?page=anggotaCreate&status=successAnggotaCreate");
+            echo 'successAnggotaCreate';
         } else {
             header("Location: ../index.php?page=anggotaCreate&status=errorAnggotaCreate");
         }
