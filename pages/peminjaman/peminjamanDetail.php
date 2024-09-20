@@ -81,7 +81,7 @@ if ($resultGetDetail) {
                         </tr>
                         <tr>
                             <td class="col-6 col-md-3">
-                                
+                                <p class="mb-0 text-dark fw-bolder">Judul Buku</p>
                             </td>
                         </tr>
                     </tbody>
