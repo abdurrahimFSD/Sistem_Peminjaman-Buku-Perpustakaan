@@ -88,7 +88,9 @@ if ($resultGetDetail) {
                             </td>
                         </tr>
                         <tr>
-                            
+                            <td class="col-6 col-md-3">
+                                
+                            </td>
                         </tr>
                     </tbody>
                 </table>
