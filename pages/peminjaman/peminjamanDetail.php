@@ -79,6 +79,9 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['tanggal_kembali']); ?></p>
                             </td>
                         </tr>
+                        <tr>
+                            
+                        </tr>
                     </tbody>
                 </table>
             </div>
