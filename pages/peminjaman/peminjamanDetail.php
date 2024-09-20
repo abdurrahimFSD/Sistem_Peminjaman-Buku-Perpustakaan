@@ -76,7 +76,7 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark fw-bolder">Tanggal Kembali</p>
                             </td>
                             <td class="col-6 col-md-9">
-                                
+                                <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['tanggal_kembali']); ?></p>
                             </td>
                         </tr>
                     </tbody>
