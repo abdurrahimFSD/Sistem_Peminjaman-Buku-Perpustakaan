@@ -61,7 +61,7 @@ $anggotaData = fetchData('anggota');
                             <td><?= htmlspecialchars($row['alamat']); ?></td>
                             <td><?= htmlspecialchars($row['no_telepon']); ?></td>
                             <td><?= htmlspecialchars($row['email']); ?></td>
-                            <td>
+                            <td class="text-center">
                                 <a href="?page=anggotaUpdate&id_anggota=<?= $row['id_anggota']; ?>" class="btn btn-outline-warning btn-sm d-inline-flex me-1" data-bs-toggle="tooltip" data-bs-title="Edit" aria-label="Edit">
                                     <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
                                 </a>
