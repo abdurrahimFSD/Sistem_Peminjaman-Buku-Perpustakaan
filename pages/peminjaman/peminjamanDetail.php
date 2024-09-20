@@ -103,6 +103,9 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['nama_pustakawan']); ?></p>
                             </td>
                         </tr>
+                        <tr>
+                            
+                        </tr>
                     </tbody>
                 </table>
             </div>
