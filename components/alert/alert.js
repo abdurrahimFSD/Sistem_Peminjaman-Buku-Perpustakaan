@@ -102,6 +102,8 @@ if (document.getElementById('peminjamanCreateForm')) {
     document.getElementById('anggotaCreateForm').addEventListener('submit', function(event) {
         // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
         event.preventDefault();
+
+        const form = document.getElementById('anggotaCreateForm');
     })
 
 }
