@@ -51,7 +51,7 @@ if ($resultGetDetail) {
         <!-- Start Card Body -->
         <div class="card card-body">
             <div class="row">
-                <h3>Detail Peminjaman: </h3>
+                <h3>Detail Peminjaman: <?= htmlspecialchars($peminjamanData['nama_anggota']); ?> </h3>
                 <hr class="mb-4">
                 <table class="table table-hover">
                     <tbody>
