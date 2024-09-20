@@ -122,7 +122,9 @@ if ($resultGetDetail) {
                     </tbody>
                 </table>
                 <div class="mt-3">
-                    
+                    <a href="?page=peminjamanData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
+                        Kembali
+                    </a>
                 </div>
             </div>
         </div>
