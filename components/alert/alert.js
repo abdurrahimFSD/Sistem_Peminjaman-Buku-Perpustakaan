@@ -100,6 +100,7 @@ if (document.getElementById('peminjamanCreateForm')) {
     });
 } else if (document.getElementById('anggotaCreateForm')) {
     document.getElementById('anggotaCreateForm').addEventListener('submit', function(event) {
+        // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
         event.preventDefault();
     })
 
