@@ -87,6 +87,9 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['judul_buku']); ?></p>
                             </td>
                         </tr>
+                        <tr>
+                            
+                        </tr>
                     </tbody>
                 </table>
             </div>
