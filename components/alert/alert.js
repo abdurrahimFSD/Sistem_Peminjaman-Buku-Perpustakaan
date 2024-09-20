@@ -113,7 +113,9 @@ if (document.getElementById('peminjamanCreateForm')) {
         })
         .then(response => response.text())
         .then(response => {
+            if (response === 'successAnggotaCreate') {
 
+            }
         })
     })
 
