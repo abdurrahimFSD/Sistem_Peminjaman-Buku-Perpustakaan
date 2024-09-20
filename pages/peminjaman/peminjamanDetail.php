@@ -3,6 +3,14 @@ include('./config/connection.php');
 
 // Ambil id_pinjam dari query string
 $idPinjam = isset($_GET['id_pinjam']) ? intval($_GET['id_pinjam']) : 0;
+
+// Mendapatkan data peminjaman dari database berdasarkan id_pinjam yg dikirim
+$queryGetDetail = "SELECT peminjaman.*, buku.judul_buku, anggota.nama_anggota
+                    FROM peminjaman
+                    JOIN buku ON peminjaman.buku_id = buku.id_buku
+                    JOIN anggota ON peminjaman.anggota_id = anggota.id_anggota
+                    WHERE peminjaman.id_pinjam = $idPinjam";
+$resultGetDetail = mysqli_query($connection, $queryGetDetail);
 ?>
 
 <!-- Body Wrapper Start -->
