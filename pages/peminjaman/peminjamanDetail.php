@@ -84,7 +84,7 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark fw-bolder">Judul Buku</p>
                             </td>
                             <td class="col-6 col-md-9">
-                                
+                                <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['judul_buku']); ?></p>
                             </td>
                         </tr>
                     </tbody>
