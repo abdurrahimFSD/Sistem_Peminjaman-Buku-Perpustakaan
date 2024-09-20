@@ -123,7 +123,7 @@ if ($resultGetDetail) {
                 </table>
                 <div class="mt-3">
                     <a href="?page=peminjamanData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
-                        Kembali
+                        <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
                     </a>
                 </div>
             </div>
