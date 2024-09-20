@@ -40,7 +40,7 @@ if (isset($_POST['simpan'])) {
         if ($result == 'success') {
             echo 'successAnggotaCreate';
         } else {
-            header("Location: ../index.php?page=anggotaCreate&status=errorAnggotaCreate");
+            echo 'erroAnggotaCreate';
         }
     } elseif ($_POST['simpan'] == 'anggotaUpdate') {
         // Memanggil function anggotaUpdate
