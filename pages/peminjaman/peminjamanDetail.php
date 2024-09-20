@@ -116,7 +116,7 @@ if ($resultGetDetail) {
                                 <p class="mb-0 text-dark fw-bolder">Status</p>
                             </td>
                             <td class="col-6 col-md-9">
-                                
+                                <p class="mb-0 text-dark"><?= htmlspecialchars($peminjamanData['status']); ?></p>
                             </td>
                         </tr>
                     </tbody>
