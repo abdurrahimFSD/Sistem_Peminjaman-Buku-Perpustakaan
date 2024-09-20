@@ -121,6 +121,9 @@ if ($resultGetDetail) {
                         </tr>
                     </tbody>
                 </table>
+                <div class="mt-3">
+                    
+                </div>
             </div>
         </div>
         <!-- End Card Body -->
