@@ -11,6 +11,12 @@ $queryGetDetail = "SELECT peminjaman.*, buku.judul_buku, anggota.nama_anggota
                     JOIN anggota ON peminjaman.anggota_id = anggota.id_anggota
                     WHERE peminjaman.id_pinjam = $idPinjam";
 $resultGetDetail = mysqli_query($connection, $queryGetDetail);
+
+if ($resultGetDetail) {
+    $peminjamanData = mysqli_fetch_assoc($resultGetDetail);
+} else {
+    die("Error: " . mysqli_error($connection));
+}
 ?>
 
 <!-- Body Wrapper Start -->
