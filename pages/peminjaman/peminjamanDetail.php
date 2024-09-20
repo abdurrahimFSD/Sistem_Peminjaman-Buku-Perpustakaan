@@ -1,5 +1,8 @@
 <?php
 include('./config/connection.php');
+
+// Ambil id_pinjam dari query string
+$idPinjam = isset($_GET['id_pinjam']) ? intval($_GET['id_pinjam']) : 0;
 ?>
 
 <!-- Body Wrapper Start -->
@@ -38,7 +41,7 @@ include('./config/connection.php');
                 <hr class="mb-4">
                 <table class="table table-hover">
                     <tbody>
-                        
+
                     </tbody>
                 </table>
             </div>
