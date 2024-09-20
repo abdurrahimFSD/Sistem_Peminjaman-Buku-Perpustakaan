@@ -99,6 +99,9 @@ if ($resultGetDetail) {
                             <td class="col-6 col-md-3">
                                 <p class="mb-0 text-dark fw-bolder">Nama Pustakawan</p>
                             </td>
+                            <td class="col-6 col-md-9">
+                                
+                            </td>
                         </tr>
                     </tbody>
                 </table>
