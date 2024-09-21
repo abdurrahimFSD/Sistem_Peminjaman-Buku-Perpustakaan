@@ -90,6 +90,9 @@ if (isset($_GET['id_pinjam'])) {
                     <label for="namaPustakawan" class="form-label">Nama Pustakawan</label>
                     <input type="text" name="namaPustakawan" id="namaPustakawan" class="form-control" placeholder="Ronaldo" required>
                 </div>
+                <div class="mb-3">
+                    
+                </div>
             </form>
         </div>
     </div>
