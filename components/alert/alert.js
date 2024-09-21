@@ -44,16 +44,6 @@ if (status === 'successBukuCreate') {
             history.back();
         }
     });
-} else if (status === 'successAnggotaCreate') {
-    Swal.fire({
-        title: 'Berhasil',
-        text: 'Data anggota berhasil ditambahkan',
-        icon: 'success'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = './index.php?page=anggotaData';
-        }
-    })
 }
 
 if (document.getElementById('peminjamanCreateForm')) {
