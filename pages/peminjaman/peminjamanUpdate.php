@@ -61,7 +61,7 @@ if (isset($_GET['id_pinjam'])) {
                     <input type="date" name="tanggalPinjam" id="tanggalPinjam" class="form-control" onfocus="this.showPicker()" required>
                 </div>
                 <div class="mb-3">
-                    
+                    <label for="tanggalKembali" class="form-label">Tanggal Kembali</label>
                 </div>
             </form>
         </div>
