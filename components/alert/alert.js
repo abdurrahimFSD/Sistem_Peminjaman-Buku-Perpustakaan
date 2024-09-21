@@ -192,7 +192,7 @@ if (document.getElementById('deleteButtonAnggota')) {
                         Swal.fire('Dihapus', 'Data anggota berhasil dihapus', 'success').then(() => {
                             window.location.reload();   // Refresh halaman untuk memperbarui tampilan
                         })
-                    } else if (response === 'errorDelete') {
+                    } else if (response === 'errorAnggotaDelete') {
                         Swal.fire('Gagal', 'Data anggota gagal dihapus', 'error');
                     }
                 })
