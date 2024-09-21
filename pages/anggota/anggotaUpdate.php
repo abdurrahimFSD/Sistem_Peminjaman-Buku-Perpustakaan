@@ -44,7 +44,7 @@ if (isset($_GET['id_anggota'])) {
         <div class="card card-body">
             <h4 class="card-title">Masukkan Data Anggota</h4>
             <hr class="mb-4">
-            <form id="anggotaUpdateForm" action="./controllers/process.php">
+            <form id="anggotaUpdateForm">
                 <input type="hidden" name="idAnggota" value="<?= $anggotaData['id_anggota']; ?>">
                 <div class="mb-3">
                     <label for="namaAnggota" class="form-label">Nama Anggota</label>
