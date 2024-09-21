@@ -58,6 +58,7 @@ if (isset($_GET['id_pinjam'])) {
             <form id="peminjamanUpdateForm">
                 <div class="mb-3">
                     <label for="tanggalPinjam" class="form-label">Tanggal Pinjam</label>
+                    <input type="date" name="tanggalPinjam" id="tanggalPinjam" class="form-control" onfocus="this.showPicker()" required>
                 </div>
             </form>
         </div>
