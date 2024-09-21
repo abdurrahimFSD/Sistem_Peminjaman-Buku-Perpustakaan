@@ -95,7 +95,7 @@ if (isset($_GET['id_pinjam'])) {
                     <input type="number" name="jumlahBukuDipinjam" id="jumlahBukuDipinjam" class="form-control" placeholder="2" required>
                 </div>
                 <div class="mb-4">
-                    
+                    <label for="status" class="form-label">Status</label>
                 </div>
             </form>
         </div>
