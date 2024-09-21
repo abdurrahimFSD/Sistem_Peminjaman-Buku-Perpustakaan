@@ -18,6 +18,7 @@ if (isset($_GET['id_pinjam'])) {
 
     $query = "SELECT * FROM peminjaman WHERE id_pinjam = $idPinjam";
     $result = mysqli_query($connection, $query);
+    $peminjamanData = mysqli_fetch_assoc($result);
 }
 ?>
 
