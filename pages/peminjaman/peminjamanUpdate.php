@@ -57,7 +57,7 @@ if (isset($_GET['id_pinjam'])) {
             <hr class="mb-4">
             <form id="peminjamanUpdateForm">
                 <div class="mb-3">
-
+                    <label for="tanggalPinjam" class="form-label">Tanggal Pinjam</label>
                 </div>
             </form>
         </div>
