@@ -133,6 +133,9 @@ if (document.getElementById('peminjamanCreateForm')) {
 // Kode alert untuk operasi update atau edit
 if (document.getElementById('anggotaUpdateForm')) {
     document.getElementById('anggotaUpdateForm').addEventListener('submit', function(event) {
+        // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
+        event.preventDefault();
+        
         Swal.fire({
             title: 'Apakah anda ingin menyimpan perubahan ini',
             showCancelButton: true,
