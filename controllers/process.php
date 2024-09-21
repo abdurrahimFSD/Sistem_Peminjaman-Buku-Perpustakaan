@@ -72,7 +72,7 @@ if (isset($_GET['id_anggota'])) {
 
     // Jika result mengembalikan true
     if ($result) {
-        echo "successDelete";
+        echo "successAnggotaDelete";
     } else {
         echo "errorDelete";
     }
