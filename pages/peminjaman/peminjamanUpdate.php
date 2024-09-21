@@ -31,7 +31,7 @@
         <div class="card card-body">
             <h4 class="card-title">Masukkan Data Peminjaman</h4>
             <hr class="mb-4">
-            <form>
+            <form id="peminjamanUpdateForm">
 
             </form>
         </div>
