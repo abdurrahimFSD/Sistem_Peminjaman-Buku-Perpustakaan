@@ -11,6 +11,11 @@ $resultAnggota = mysqli_query($connection, $queryAnggota);
 
 // Array status
 $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
+
+// Mendapatkan id_pinjam
+if (isset($_GET['id_pinjam'])) {
+    
+}
 ?>
 
 <!-- Body Wrapper Start -->
