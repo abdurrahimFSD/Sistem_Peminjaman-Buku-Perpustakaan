@@ -129,8 +129,15 @@ if (document.getElementById('peminjamanCreateForm')) {
                 });
             }
         })
+        .catch(error => {
+            // Penanganan error jika terjadi kesalahan di server atau jaringan
+            Swal.fire({
+                title: 'Error',
+                text: 'Terjadi kesalahan saat memproses permintaan',
+                icon: 'error'
+            });
+        });
     })
-
 }
 
 // Kode alert untuk operasi update atau edit
