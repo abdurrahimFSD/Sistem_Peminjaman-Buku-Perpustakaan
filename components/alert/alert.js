@@ -122,7 +122,11 @@ if (document.getElementById('peminjamanCreateForm')) {
                     window.location.href = './index.php?page=anggotaData';
                 });
             } else if (response === 'errorAnggotaCreate') {
-                
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Gagal menambahkan data anggota',
+                    icon: 'error'
+                });
             }
         })
     })
