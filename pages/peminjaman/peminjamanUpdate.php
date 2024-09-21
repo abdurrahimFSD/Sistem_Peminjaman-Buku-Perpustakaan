@@ -1,5 +1,8 @@
 <?php
 include('./config/connection.php');
+
+// Ambil data dari table buku
+$queryBuku = "SELECT id_buku, judul_buku FROM buku";
 ?>
 
 <!-- Body Wrapper Start -->
