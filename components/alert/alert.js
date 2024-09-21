@@ -121,6 +121,8 @@ if (document.getElementById('peminjamanCreateForm')) {
                 }).then(() => {
                     window.location.href = './index.php?page=anggotaData';
                 });
+            } else if (response === 'errorAnggotaCreate') {
+                
             }
         })
     })
