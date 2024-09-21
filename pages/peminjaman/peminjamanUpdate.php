@@ -64,6 +64,9 @@ if (isset($_GET['id_pinjam'])) {
                     <label for="tanggalKembali" class="form-label">Tanggal Kembali</label>
                     <input type="date" name="tanggalKembali" id="tanggalKembali" class="form-control" onfocus="this.showPicker()" required>
                 </div>
+                <div class="mb-3">
+                    <label for="judulBuku" class="form-label">Judul Buku</label>
+                </div>
             </form>
         </div>
     </div>
