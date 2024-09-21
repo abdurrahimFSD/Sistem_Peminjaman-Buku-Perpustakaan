@@ -32,7 +32,9 @@
             <h4 class="card-title">Masukkan Data Peminjaman</h4>
             <hr class="mb-4">
             <form id="peminjamanUpdateForm">
-
+                <div class="mb-3">
+                    
+                </div>
             </form>
         </div>
     </div>
