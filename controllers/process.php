@@ -74,7 +74,7 @@ if (isset($_GET['id_anggota'])) {
     if ($result) {
         echo "successAnggotaDelete";
     } else {
-        echo "errorDelete";
+        echo "errorAnggotaDelete";
     }
 }
 ?>
