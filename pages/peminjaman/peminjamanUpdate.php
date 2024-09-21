@@ -69,7 +69,7 @@ if (isset($_GET['id_pinjam'])) {
                     <select name="judulBuku" id="judulBuku" class="form-select" required>
                         <option value="" selected disabled>Pilih Judul Buku</option>
                         <?php while ($bukuData = mysqli_fetch_assoc($resultBuku)) { ?>
-                            <option value="<?= $bukuData['id_buku']; ?>">
+                            <option value="<?= $bukuData['id_buku']; ?>" <?= ($bukuData['id_buku'] == $peminjamanData['buku_id']) ? 'selected' : ''; ?> >
                                 <?= $bukuData['judul_buku']; ?>
                             </option>
                         <?php } ?>
