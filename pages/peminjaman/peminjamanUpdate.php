@@ -76,7 +76,7 @@ if (isset($_GET['id_pinjam'])) {
                     </select>
                 </div>
                 <div class="mb-3">
-                    
+                    <label for="namaAnggota" class="form-label">Nama Anggota</label>
                 </div>
             </form>
         </div>
