@@ -66,6 +66,14 @@ if (isset($_GET['id_pinjam'])) {
                 </div>
                 <div class="mb-3">
                     <label for="judulBuku" class="form-label">Judul Buku</label>
+                    <select name="judulBuku" id="judulBuku" class="form-select" required>
+                        <option value="" selected disabled>Pilih Judul Buku</option>
+                        <?php while ($bukuData = mysqli_fetch_assoc($resultBuku)) { ?>
+                            <option value="<?= $bukuData['id_buku']; ?>">
+                                <?= $bukuData['judul_buku']; ?>
+                            </option>
+                        <?php } ?>
+                    </select>
                 </div>
             </form>
         </div>
