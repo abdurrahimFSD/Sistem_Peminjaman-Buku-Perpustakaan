@@ -14,7 +14,7 @@ $status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
 
 // Mendapatkan id_pinjam
 if (isset($_GET['id_pinjam'])) {
-    
+    $idPinjam = $_GET['id_pinjam'];
 }
 ?>
 
