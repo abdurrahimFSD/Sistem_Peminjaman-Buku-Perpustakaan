@@ -188,7 +188,7 @@ if (document.getElementById('deleteButtonAnggota')) {
                 fetch(`./controllers/process.php?id_anggota=${id}`)
                 .then(response => response.text())
                 .then(response => {
-                    if (response === 'successDelete') {
+                    if (response === 'successAnggotaDelete') {
                         Swal.fire('Dihapus', 'Data anggota berhasil dihapus', 'success').then(() => {
                             window.location.reload();   // Refresh halaman untuk memperbarui tampilan
                         })
