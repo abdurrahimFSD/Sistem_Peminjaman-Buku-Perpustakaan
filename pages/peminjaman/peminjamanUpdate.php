@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!-- Body Wrapper Start -->
 <div class="body-wrapper ">
     <div class="container-fluid">
@@ -33,7 +36,7 @@
             <hr class="mb-4">
             <form id="peminjamanUpdateForm">
                 <div class="mb-3">
-                    
+
                 </div>
             </form>
         </div>
