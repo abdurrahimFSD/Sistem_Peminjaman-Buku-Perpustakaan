@@ -8,6 +8,9 @@ $resultBuku = mysqli_query($connection, $queryBuku);
 // Ambil data dari table anggota
 $queryAnggota = "SELECT id_anggota, nama_anggota FROM anggota";
 $resultAnggota = mysqli_query($connection, $queryAnggota);
+
+// Array status
+$status = ['Dipinjam', 'Dikembalikan', 'Terlambat'];
 ?>
 
 <!-- Body Wrapper Start -->
