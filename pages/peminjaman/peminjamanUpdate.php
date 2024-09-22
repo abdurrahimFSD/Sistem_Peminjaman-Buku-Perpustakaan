@@ -99,7 +99,7 @@ if (isset($_GET['id_pinjam'])) {
                     <select name="status" id="status" class="form-select" required>
                         <option value="" selected disabled>Pilih Status</option>
                         <?php foreach ($status as $statusData) { ?>
-                            <option value="<?= $statusData; ?>">
+                            <option value="<?= $statusData; ?>" <?= ($statusData == $peminjamanData['status']) ? 'selected' : ''; ?> >
                                 <?= $statusData; ?>
                             </option>
                         <?php } ?>
