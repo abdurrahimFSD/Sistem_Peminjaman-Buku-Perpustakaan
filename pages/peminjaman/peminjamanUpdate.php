@@ -80,7 +80,7 @@ if (isset($_GET['id_pinjam'])) {
                     <select name="namaAnggota" id="namaAnggota" class="form-select" required>
                         <option value="" selected disabled>Pilih Nama Anggota</option>
                         <?php while ($anggotaData = mysqli_fetch_assoc($resultAnggota)) { ?>
-                            <option value="<?= $anggotaData['id_anggota']; ?>">
+                            <option value="<?= $anggotaData['id_anggota']; ?>" <?= ($anggotaData['id_anggota'] == $peminjamanData['anggota_id']) ? 'selected' : ''; ?> >
                                 <?= $anggotaData['nama_anggota']; ?>
                             </option>
                         <?php } ?>
