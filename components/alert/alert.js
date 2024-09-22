@@ -182,6 +182,7 @@ if (document.getElementById('anggotaUpdateForm')) {
         }).then((result) => {
             if (result.isConfirmed) {
                 const form = document.getElementById('peminjamanUpdateForm');
+                const formData = new FormData(form);
             }
         })
     })
