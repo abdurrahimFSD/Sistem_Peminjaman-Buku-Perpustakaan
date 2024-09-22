@@ -233,5 +233,6 @@ function peminjamanUpdate($data) {
     $idPinjam = $data['idPinjam'];
     $tanggalPinjam = $data['tanggalPinjam'];
     $tanggalKembali = $data['tanggalKembali'];
+    $judulBuku = $data['judulBuku'];
 }
 ?>
