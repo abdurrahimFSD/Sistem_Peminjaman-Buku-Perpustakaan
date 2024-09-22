@@ -195,7 +195,7 @@ if (document.getElementById('anggotaUpdateForm')) {
                             window.location.href = './index.php?page=peminjamanData';
                         });
                     } else if (response === 'errorPeminjamanCreate') {
-                        
+                        Swal.fire('Gagal', '', 'error');
                     }
                 })
             }
