@@ -224,4 +224,9 @@ function peminjamanCreate($data) {
     // Menutup statement
     $stmt->close();
 }
+
+// Function peminjamanUpdate
+function peminjamanUpdate($data) {
+    
+}
 ?>
