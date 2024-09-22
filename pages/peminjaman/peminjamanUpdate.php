@@ -105,6 +105,9 @@ if (isset($_GET['id_pinjam'])) {
                         <?php } ?>
                     </select>
                 </div>
+                <a href="?page=peminjamanData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
+                    <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
+                </a>
             </form>
         </div>
     </div>
