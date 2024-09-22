@@ -56,6 +56,7 @@ if (isset($_GET['id_pinjam'])) {
             <h4 class="card-title">Masukkan Data Peminjaman</h4>
             <hr class="mb-4">
             <form id="peminjamanUpdateForm">
+                <input type="hidden" name="idPeminjaman" value="<?= $peminjamanData['id_pinjam']; ?>">
                 <div class="mb-3">
                     <label for="tanggalPinjam" class="form-label">Tanggal Pinjam</label>
                     <input type="date" name="tanggalPinjam" id="tanggalPinjam" class="form-control" onfocus="this.showPicker()" value="<?= $peminjamanData['tanggal_pinjam']; ?>" required>
