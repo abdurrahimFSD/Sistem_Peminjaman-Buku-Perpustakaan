@@ -66,7 +66,7 @@ if (isset($_POST['simpan'])) {
         $result = peminjamanUpdate($_POST);
 
         if ($result == 'success') {
-
+            echo 'successPeminjamanUpdate';
         }
     }
 }
