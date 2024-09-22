@@ -190,7 +190,9 @@ if (document.getElementById('anggotaUpdateForm')) {
                 })
                 .then(response => response.text())
                 .then(response => {
-                    
+                    if (response === 'successPeminjamanCreate') {
+
+                    }
                 })
             }
         })
