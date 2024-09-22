@@ -237,5 +237,6 @@ function peminjamanUpdate($data) {
     $namaAnggota = $data['namaAnggota'];
     $namaPustakawan = $data['namaPustakawan'];
     $jumlahBukuDipinjam = $data['jumlahBukuDipinjam'];
+    $status = $data['status'];
 }
 ?>
