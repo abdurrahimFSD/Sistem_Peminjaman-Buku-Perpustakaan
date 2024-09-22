@@ -227,6 +227,6 @@ function peminjamanCreate($data) {
 
 // Function peminjamanUpdate
 function peminjamanUpdate($data) {
-    
+    global $connection;
 }
 ?>
