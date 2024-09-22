@@ -240,7 +240,7 @@ function peminjamanUpdate($data) {
     $status = $data['status'];
 
     // Menyiapkan query SQL untuk memperbarui data peminjaman
-    $stmt = $connection->prepare("UPDATE peminjaman SET tanggal_pinjam = ?, tanggal_kembali = ?, buku_id = ?, anggota_id = ? nama_pustakawan = ?, jumlah_buku_dipinjam = ?, status = ? WHERE id_pinjam = ?");
+    $stmt = $connection->prepare("UPDATE peminjaman SET tanggal_pinjam = ?, tanggal_kembali = ?, buku_id = ?, anggota_id = ?, nama_pustakawan = ?, jumlah_buku_dipinjam = ?, status = ? WHERE id_pinjam = ?");
     $stmt->bind_param("sssssisi", $tanggalPinjam, $tanggalKembali, $judulBuku, $namaAnggota, $namaPustakawan, $jumlahBukuDipinjam, $status, $idPinjam);
 
     // Menjalankan query
