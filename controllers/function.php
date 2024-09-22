@@ -231,5 +231,6 @@ function peminjamanUpdate($data) {
 
     // Mengambil data dari array $data
     $idPinjam = $data['idPinjam'];
+    $tanggalPinjam = $data['tanggalPinjam'];
 }
 ?>
