@@ -194,6 +194,8 @@ if (document.getElementById('anggotaUpdateForm')) {
                         Swal.fire('Tersimpan', '', 'success').then(() => {
                             window.location.href = './index.php?page=peminjamanData';
                         });
+                    } else if (response === 'errorPeminjamanCreate') {
+                        
                     }
                 })
             }
