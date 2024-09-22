@@ -170,9 +170,10 @@ if (document.getElementById('anggotaUpdateForm')) {
         })
     })
 } else if (document.getElementById('peminjamanUpdateForm')) {
-    document.getElementById('peminjamanUpdateForm').addEventListener('submit', function(event)) {
-        
-    }
+    document.getElementById('peminjamanUpdateForm').addEventListener('submit', function(event) {
+        // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
+        event.preventDefault();
+    })
 }
 
 // Kode alert untuk operasi delete atau hapus
