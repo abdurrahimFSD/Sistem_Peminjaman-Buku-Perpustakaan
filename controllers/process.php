@@ -62,6 +62,8 @@ if (isset($_POST['simpan'])) {
         } else {
             echo 'errorPeminjamanCreate';
         }
+    } elseif ($_POST['simpan'] == 'peminjamanUpdate') {
+        
     }
 }
 
