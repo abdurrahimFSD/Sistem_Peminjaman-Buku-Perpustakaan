@@ -64,6 +64,10 @@ if (isset($_POST['simpan'])) {
         }
     } elseif ($_POST['simpan'] == 'peminjamanUpdate') {
         $result = peminjamanUpdate($_POST);
+
+        if ($result == 'success') {
+
+        }
     }
 }
 
