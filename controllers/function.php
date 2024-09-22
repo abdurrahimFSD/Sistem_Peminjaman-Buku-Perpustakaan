@@ -228,5 +228,8 @@ function peminjamanCreate($data) {
 // Function peminjamanUpdate
 function peminjamanUpdate($data) {
     global $connection;
+
+    // Mengambil data dari array $data
+    $idPinjam = $data['idPinjam'];
 }
 ?>
