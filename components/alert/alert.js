@@ -188,6 +188,7 @@ if (document.getElementById('anggotaUpdateForm')) {
                     method: 'POST',
                     body: formData
                 })
+                .then(response => response.text())
             }
         })
     })
