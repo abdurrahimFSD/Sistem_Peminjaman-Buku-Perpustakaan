@@ -173,6 +173,10 @@ if (document.getElementById('anggotaUpdateForm')) {
     document.getElementById('peminjamanUpdateForm').addEventListener('submit', function(event) {
         // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
         event.preventDefault();
+
+        Swal.fire({
+            
+        })
     })
 }
 
