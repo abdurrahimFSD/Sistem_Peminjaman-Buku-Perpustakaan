@@ -177,6 +177,7 @@ if (document.getElementById('anggotaUpdateForm')) {
         Swal.fire({
             title: 'Apakah anda ingin menyimpan perubahan ini',
             showCancelButton: true,
+            confirmButtonText: 'Simpan',
         })
     })
 }
