@@ -181,7 +181,7 @@ if (document.getElementById('anggotaUpdateForm')) {
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
-                
+                const form = document.getElementById('peminjamanUpdateForm');
             }
         })
     })
