@@ -67,6 +67,8 @@ if (isset($_POST['simpan'])) {
 
         if ($result == 'success') {
             echo 'successPeminjamanUpdate';
+        } else {
+            echo 'errorPeminjamanUpdate';
         }
     }
 }
