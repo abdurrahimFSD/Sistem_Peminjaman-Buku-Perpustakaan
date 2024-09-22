@@ -178,6 +178,7 @@ if (document.getElementById('anggotaUpdateForm')) {
             title: 'Apakah anda ingin menyimpan perubahan ini',
             showCancelButton: true,
             confirmButtonText: 'Simpan',
+            cancelButtonText: 'Batal'
         })
     })
 }
