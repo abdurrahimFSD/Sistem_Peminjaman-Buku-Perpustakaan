@@ -88,7 +88,7 @@ if (isset($_GET['id_pinjam'])) {
                 </div>
                 <div class="mb-3">
                     <label for="namaPustakawan" class="form-label">Nama Pustakawan</label>
-                    <input type="text" name="namaPustakawan" id="namaPustakawan" class="form-control" placeholder="Ronaldo" required>
+                    <input type="text" name="namaPustakawan" id="namaPustakawan" class="form-control" placeholder="Ronaldo" value="<?= $peminjamanData['nama_pustakawan']; ?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="jumlahBukuDipinjam" class="form-label">Jumlah Buku Dipinjam</label>
