@@ -190,7 +190,7 @@ if (document.getElementById('anggotaUpdateForm')) {
                 })
                 .then(response => response.text())
                 .then(response => {
-                    if (response === 'successPeminjamanCreate') {
+                    if (response === 'successPeminjamanUpdate') {
                         Swal.fire('Tersimpan', '', 'success').then(() => {
                             window.location.href = './index.php?page=peminjamanData';
                         });
