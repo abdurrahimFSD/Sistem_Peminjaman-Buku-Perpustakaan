@@ -189,6 +189,9 @@ if (document.getElementById('anggotaUpdateForm')) {
                     body: formData
                 })
                 .then(response => response.text())
+                .then(response => {
+                    
+                })
             }
         })
     })
