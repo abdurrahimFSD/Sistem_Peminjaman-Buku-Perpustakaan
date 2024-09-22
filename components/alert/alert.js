@@ -198,6 +198,9 @@ if (document.getElementById('anggotaUpdateForm')) {
                         Swal.fire('Gagal', '', 'error');
                     }
                 })
+                .catch(error => {
+                    
+                })
             }
         })
     })
