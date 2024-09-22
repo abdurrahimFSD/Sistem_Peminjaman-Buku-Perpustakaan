@@ -170,7 +170,7 @@ if (document.getElementById('anggotaUpdateForm')) {
         })
     })
 } else if (document.getElementById('peminjamanUpdateForm')) {
-    
+    document.getElementById('peminjamanUpdateForm')
 }
 
 // Kode alert untuk operasi delete atau hapus
