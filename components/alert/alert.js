@@ -260,7 +260,7 @@ if (document.getElementById('deleteButtonAnggota')) {
                             window.location.reload();
                         })
                     } else if (response === 'errorPeminjamanDelete') {
-                        
+                        Swal.fire('Gagal', 'Data peminjaman gagal dihapus', 'error');
                     }
                 })
             }
