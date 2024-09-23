@@ -253,6 +253,7 @@ if (document.getElementById('deleteButtonAnggota')) {
         }).then((result) => {
             if (result.isConfirmed) {
                 fetch(`./controllers/process.php?id_pinjam=${id}`)
+                .then(response => response.text())
             }
         })
     }
