@@ -259,6 +259,8 @@ if (document.getElementById('deleteButtonAnggota')) {
                         Swal.fire('Dihapus', 'Data peminjaman berhasil dihapus', 'success').then(() => {
                             window.location.reload();
                         })
+                    } else if (response === 'errorPeminjamanDelete') {
+                        
                     }
                 })
             }
