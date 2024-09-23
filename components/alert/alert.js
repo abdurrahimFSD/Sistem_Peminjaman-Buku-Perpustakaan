@@ -255,7 +255,9 @@ if (document.getElementById('deleteButtonAnggota')) {
                 fetch(`./controllers/process.php?id_pinjam=${id}`)
                 .then(response => response.text())
                 .then(response => {
-                    
+                    if (response === 'successPeminjamanDelete') {
+                        
+                    }
                 })
             }
         })
