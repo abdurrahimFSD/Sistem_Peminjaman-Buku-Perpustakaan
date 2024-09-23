@@ -241,6 +241,8 @@ if (document.getElementById('deleteButtonAnggota')) {
     }
 } else if (document.getElementById('deleteButtonPeminjaman')) {
     function confirmDelete(id) {
-        
+        Swal.fire({
+            
+        })
     }
 }
