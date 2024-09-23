@@ -246,6 +246,7 @@ if (document.getElementById('deleteButtonAnggota')) {
             text: 'Apakah anda yakin menghapus data ini',
             icon: 'warning',
             showCancelButton: true,
+            confirmButtonColor: "#3085d6",
         })
     }
 }
