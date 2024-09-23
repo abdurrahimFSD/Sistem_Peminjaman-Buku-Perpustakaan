@@ -244,6 +244,7 @@ if (document.getElementById('deleteButtonAnggota')) {
         Swal.fire({
             title: 'Hapus',
             text: 'Apakah anda yakin menghapus data ini',
+            icon: 'warning',
         })
     }
 }
