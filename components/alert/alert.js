@@ -243,6 +243,7 @@ if (document.getElementById('deleteButtonAnggota')) {
     function confirmDelete(id) {
         Swal.fire({
             title: 'Hapus',
+            text: 'Apakah anda yakin menghapus data ini',
         })
     }
 }
