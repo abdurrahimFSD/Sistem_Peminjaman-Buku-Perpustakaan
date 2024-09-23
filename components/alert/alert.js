@@ -264,8 +264,8 @@ if (document.getElementById('deleteButtonAnggota')) {
                     }
                 })
                 .catch(error => {
-                    
-                })
+                    Swal.fire('Gagal', 'Terjadi kesalahan', 'error');
+                });
             }
         })
     }
