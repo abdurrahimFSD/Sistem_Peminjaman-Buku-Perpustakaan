@@ -251,7 +251,9 @@ if (document.getElementById('deleteButtonAnggota')) {
             confirmButtonText: "Ya, hapus",
             cancelButtonText: 'Batal'
         }).then((result) => {
-            
+            if (result.isConfirmed) {
+                
+            }
         })
     }
 }
