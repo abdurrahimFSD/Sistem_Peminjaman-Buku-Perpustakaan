@@ -247,6 +247,7 @@ if (document.getElementById('deleteButtonAnggota')) {
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
         })
     }
 }
