@@ -256,7 +256,7 @@ if (document.getElementById('deleteButtonAnggota')) {
                 .then(response => response.text())
                 .then(response => {
                     if (response === 'successPeminjamanDelete') {
-                        
+                        Swal.fire('Dihapus', 'Data peminjaman berhasil dihapus', 'success')
                     }
                 })
             }
