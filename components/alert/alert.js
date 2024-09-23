@@ -250,6 +250,8 @@ if (document.getElementById('deleteButtonAnggota')) {
             cancelButtonColor: "#d33",
             confirmButtonText: "Ya, hapus",
             cancelButtonText: 'Batal'
+        }).then((result) => {
+            
         })
     }
 }
