@@ -245,6 +245,7 @@ if (document.getElementById('deleteButtonAnggota')) {
             title: 'Hapus',
             text: 'Apakah anda yakin menghapus data ini',
             icon: 'warning',
+            showCancelButton: true,
         })
     }
 }
