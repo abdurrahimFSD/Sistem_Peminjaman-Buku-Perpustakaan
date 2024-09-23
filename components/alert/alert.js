@@ -263,6 +263,9 @@ if (document.getElementById('deleteButtonAnggota')) {
                         Swal.fire('Gagal', 'Data peminjaman gagal dihapus', 'error');
                     }
                 })
+                .catch(error => {
+                    
+                })
             }
         })
     }
