@@ -249,6 +249,7 @@ if (document.getElementById('deleteButtonAnggota')) {
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Ya, hapus",
+            cancelButtonText: 'Batal'
         })
     }
 }
