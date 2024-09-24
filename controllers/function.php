@@ -270,5 +270,8 @@ function peminjamanaDelete($idPinjam) {
     } else {
         return false;
     }
+
+    // Menutup statement
+    $stmt->close();
 }
 ?>
