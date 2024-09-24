@@ -89,6 +89,8 @@ if (isset($_GET['id_anggota'])) {
 
     if ($result) {
         echo "successPeminjamanDelete";
+    } else {
+        echo "errorPeminjamanDelete";
     }
 }
 ?>
