@@ -254,4 +254,9 @@ function peminjamanUpdate($data) {
     // Menutup statement
     $stmt->close();
 }
+
+// Function peminjamanDelete
+function peminjamanaDelete($idPinjam) {
+    
+}
 ?>
