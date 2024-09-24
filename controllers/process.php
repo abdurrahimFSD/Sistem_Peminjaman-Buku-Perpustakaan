@@ -84,5 +84,7 @@ if (isset($_GET['id_anggota'])) {
     } else {
         echo "errorAnggotaDelete";
     }
+} elseif (isset($_GET['id_pinjam'])) {
+    
 }
 ?>
