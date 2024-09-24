@@ -257,6 +257,6 @@ function peminjamanUpdate($data) {
 
 // Function peminjamanDelete
 function peminjamanaDelete($idPinjam) {
-    
+    global $connection;
 }
 ?>
