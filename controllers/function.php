@@ -258,5 +258,9 @@ function peminjamanUpdate($data) {
 // Function peminjamanDelete
 function peminjamanaDelete($idPinjam) {
     global $connection;
+
+    // Menyiapkah query SQL untuk menghapus data peminjaman
+    $stmt = $connection->prepare("DELETE FROM peminjaman WHERE id_pinjam = ?");
+    $stmt->bind_param("i", $idPinjam);
 }
 ?>
