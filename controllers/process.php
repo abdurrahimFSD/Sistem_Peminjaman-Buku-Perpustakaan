@@ -86,5 +86,9 @@ if (isset($_GET['id_anggota'])) {
     }
 } elseif (isset($_GET['id_pinjam'])) {
     $result = peminjamanaDelete($_GET['id_pinjam']);
+
+    if ($result) {
+        echo "successPeminjamanDelete";
+    }
 }
 ?>
