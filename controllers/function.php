@@ -267,6 +267,8 @@ function peminjamanaDelete($idPinjam) {
     if ($stmt->execute()) {
         // Query berhasil dijalankan
         return true;
+    } else {
+        return false;
     }
 }
 ?>
