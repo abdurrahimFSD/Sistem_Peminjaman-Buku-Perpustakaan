@@ -17,9 +17,7 @@ if (isset($_POST['simpan'])) {
             header("Location: ../index.php?page=bukuCreate&status=duplicateIsbn&isbn=$isbnDuplicate");
         } elseif ($result == 'fileTidakValid') {
             header("Location: ../index.php?page=bukuCreate&status=fileTidakValid");
-        } elseif ($result == 'fileBesar') {
-            header("Location: ../index.php?page=bukuCreate&status=fileBesar");
-        }
+        } 
     } elseif ($_POST['simpan'] == 'bukuUpdate') {   // Jika tombol simpan adalah bukuUpdate
         // Memanggil function bukuUpdate
         $result = bukuUpdate($_POST, $_FILES);
