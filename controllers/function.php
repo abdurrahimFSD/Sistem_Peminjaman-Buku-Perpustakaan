@@ -41,6 +41,9 @@ function bukuCreate($data, $file) {
     $tahunTerbit = $data['tahunTerbit'];
     $penulis = $data['penulis'];
     $kategori = $data['kategori'];
+
+    // Mengecek apakah kode isbn sudah ada
+    $queryCekIsbn = "SELECT * FROM buku WHERE isbn = '$isbn'";
 }
 
 // Function bukuUpdate untuk memperbarui data buku
