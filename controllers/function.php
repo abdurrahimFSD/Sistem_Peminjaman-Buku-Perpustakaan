@@ -33,7 +33,7 @@ function fetchData($tableName) {
 
 // Function bukuCreate
 function bukuCreate($data, $file) {
-    
+    global $connection;
 }
 
 // Function bukuUpdate untuk memperbarui data buku
