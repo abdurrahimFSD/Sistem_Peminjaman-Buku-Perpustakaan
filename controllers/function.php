@@ -31,6 +31,11 @@ function fetchData($tableName) {
     return $data;
 }
 
+// Function bukuCreate
+function bukuCreate($data, $file) {
+    
+}
+
 // Function bukuUpdate untuk memperbarui data buku
 function bukuUpdate($data, $file) {
     global $connection;
