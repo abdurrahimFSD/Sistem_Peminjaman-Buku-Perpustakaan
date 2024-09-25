@@ -39,7 +39,7 @@ $kategori = ['Teknologi', 'Ilmu Pengetahuan', 'Pendidikan', 'Agama', 'Kesehatan'
                 <div class="card card-body">
                     <h4 class="card-title">Masukkan Data Buku</h4>
                     <hr class="mb-4">
-                    <form class="form-horizontal" enctype="multipart/form-data">
+                    <form enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="judulBuku" class="form-label">Judul Buku</label>
                             <input type="text" name="judulBuku" id="judulBuku" class="form-control" placeholder="Data Structure & Algorithms" required>
