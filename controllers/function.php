@@ -48,6 +48,7 @@ function bukuCreate($data, $file) {
     if (mysqli_num_rows($resultCekIsbn) > 0) {
         // Jika kode isbn sudah ada, ambil kode isbn
         $existingIsbn = mysqli_fetch_assoc($resultCekIsbn);
+        return 'duplicateIsbn:' .$existingIsbn['isbn'];
     }
 }
 
