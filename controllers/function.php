@@ -40,6 +40,7 @@ function bukuCreate($data, $file) {
     $isbn = $data['isbn'];
     $tahunTerbit = $data['tahunTerbit'];
     $penulis = $data['penulis'];
+    $kategori = $data['kategori'];
 }
 
 // Function bukuUpdate untuk memperbarui data buku
