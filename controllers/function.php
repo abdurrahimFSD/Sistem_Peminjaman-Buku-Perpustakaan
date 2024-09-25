@@ -37,6 +37,7 @@ function bukuCreate($data, $file) {
 
     // Mengambil data dari array $data
     $judulBuku = $data['judulBuku'];
+    $isbn = $data['isbn'];
 }
 
 // Function bukuUpdate untuk memperbarui data buku
