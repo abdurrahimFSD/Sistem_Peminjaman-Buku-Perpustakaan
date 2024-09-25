@@ -34,6 +34,9 @@ function fetchData($tableName) {
 // Function bukuCreate
 function bukuCreate($data, $file) {
     global $connection;
+
+    // Mengambil data dari array $data
+    $judulBuku = $data['judulBuku'];
 }
 
 // Function bukuUpdate untuk memperbarui data buku
