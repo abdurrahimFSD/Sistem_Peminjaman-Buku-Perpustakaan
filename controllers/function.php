@@ -45,6 +45,9 @@ function bukuCreate($data, $file) {
     // Mengecek apakah kode isbn sudah ada
     $queryCekIsbn = "SELECT * FROM buku WHERE isbn = '$isbn'";
     $resultCekIsbn = mysqli_query($connection, $queryCekIsbn);
+    if (mysqli_num_rows($resultCekIsbn) > 0) {
+        
+    }
 }
 
 // Function bukuUpdate untuk memperbarui data buku
