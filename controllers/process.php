@@ -8,6 +8,9 @@ if (isset($_POST['simpan'])) {
         // Memanggil function bukuCreate
         $result = bukuCreate($_POST, $_FILES);
 
+        if ($result == 'duplicateIsbn') {
+            echo 'duplicateIsbn';
+        }
     } elseif ($_POST['simpan'] == 'bukuUpdate') {   // Jika tombol simpan adalah bukuUpdate
         // Memanggil function bukuUpdate
         $result = bukuUpdate($_POST, $_FILES);
