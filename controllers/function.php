@@ -46,9 +46,7 @@ function bukuCreate($data, $file) {
     $queryCekIsbn = "SELECT * FROM buku WHERE isbn = '$isbn'";
     $resultCekIsbn = mysqli_query($connection, $queryCekIsbn);
     if (mysqli_num_rows($resultCekIsbn) > 0) {
-        // Jika kode isbn sudah ada, ambil kode isbn
-        $existingIsbn = mysqli_fetch_assoc($resultCekIsbn);
-        return 'duplicateIsbn:' .$existingIsbn['isbn'];
+        return 'duplicateIsbn';
     }
 }
 
