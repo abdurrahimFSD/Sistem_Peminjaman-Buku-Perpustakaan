@@ -131,6 +131,8 @@ if (document.getElementById('peminjamanCreateForm')) {
 } else if (document.getElementById('bukuCreateForm')) {
     document.getElementById('bukuCreateForm').addEventListener('submit', function(event) {
         event.preventDefault();
+
+        const form = document.getElementById('bukuCreateForm');
     })
 }
 
