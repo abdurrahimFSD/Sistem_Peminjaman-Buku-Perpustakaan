@@ -134,6 +134,10 @@ if (document.getElementById('peminjamanCreateForm')) {
 
         const form = document.getElementById('bukuCreateForm');
         const formData = new FormData(form);
+
+        fetch('./controllers/process.php', {
+            
+        })
     })
 }
 
