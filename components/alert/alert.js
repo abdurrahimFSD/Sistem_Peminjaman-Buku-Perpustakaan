@@ -141,10 +141,11 @@ if (document.getElementById('peminjamanCreateForm')) {
         })
         .then(response => response.text())
         .then(response => {
-            if (response === 'duplicateIsbn') {
+            if (response.startsWith('duplicateIsbn:')) {
+                const existingIsbn = response.split(':')[1]; // Mengambil ISBN yang sudah ada
                 Swal.fire({
                     title: 'Gagal',
-                    text: 'Kode Isbn tidak boleh sama',
+                    text: `Kode Isbn ${existingIsbn} sudah ada, tidak boleh sama`,
                     icon: 'warning'
                 });
             }
