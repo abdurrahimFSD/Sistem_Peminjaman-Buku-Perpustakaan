@@ -136,7 +136,7 @@ if (document.getElementById('peminjamanCreateForm')) {
         const formData = new FormData(form);
 
         fetch('./controllers/process.php', {
-            
+            method: 'POST',
         })
     })
 }
