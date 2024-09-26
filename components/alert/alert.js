@@ -133,6 +133,7 @@ if (document.getElementById('peminjamanCreateForm')) {
         event.preventDefault();
 
         const form = document.getElementById('bukuCreateForm');
+        const formData = new FormData(form);
     })
 }
 
