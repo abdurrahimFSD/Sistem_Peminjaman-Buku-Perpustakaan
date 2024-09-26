@@ -145,7 +145,8 @@ if (document.getElementById('peminjamanCreateForm')) {
                 Swal.fire({
                     title: 'Gagal',
                     text: 'Kode Isbn tidak boleh sama',
-                })
+                    icon: 'warning'
+                });
             }
         })
     })
