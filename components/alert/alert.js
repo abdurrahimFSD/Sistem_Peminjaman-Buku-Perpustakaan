@@ -144,6 +144,7 @@ if (document.getElementById('peminjamanCreateForm')) {
             if (response === 'duplicateIsbn') {
                 Swal.fire({
                     title: 'Gagal',
+                    text: 'Kode Isbn tidak boleh sama',
                 })
             }
         })
