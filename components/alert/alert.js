@@ -206,6 +206,8 @@ if (document.getElementById('anggotaUpdateForm')) {
             }
         })
     })
+} else if (document.getElementById('bukuCreateForm')) {
+    
 }
 
 // Kode alert untuk operasi delete atau hapus
