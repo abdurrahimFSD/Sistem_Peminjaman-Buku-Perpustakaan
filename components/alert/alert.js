@@ -128,6 +128,14 @@ if (document.getElementById('peminjamanCreateForm')) {
             });
         });
     })
+} else if (document.getElementById('bukuCreateForm')) {
+    document.getElementById('bukuCreateForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        Swal.fire({
+            
+        })
+    })
 }
 
 // Kode alert untuk operasi update atau edit
@@ -204,14 +212,6 @@ if (document.getElementById('anggotaUpdateForm')) {
             } else if (result.isDismissed) {
                 Swal.fire('Perubahan dibatalkan', '', 'info');
             }
-        })
-    })
-} else if (document.getElementById('bukuCreateForm')) {
-    document.getElementById('bukuCreateForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        Swal.fire({
-            
         })
     })
 }
