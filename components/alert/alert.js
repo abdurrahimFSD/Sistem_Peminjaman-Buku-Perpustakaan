@@ -143,7 +143,7 @@ if (document.getElementById('peminjamanCreateForm')) {
         .then(response => {
             if (response === 'duplicateIsbn') {
                 Swal.fire({
-                    
+                    title: 'Gagal',
                 })
             }
         })
