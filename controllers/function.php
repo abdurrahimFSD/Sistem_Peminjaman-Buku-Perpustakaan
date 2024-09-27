@@ -51,6 +51,7 @@ function bukuCreate($data, $file) {
     } else {
         $split = explode('.', $file['foto']['name']);
         $extension = strtolower(end($split));
+        $foto = $isbn.'.'.$extension;
     }
 }
 
