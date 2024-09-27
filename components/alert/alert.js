@@ -24,16 +24,6 @@ if (status === 'successBukuCreate') {
             history.back();
         }
     });
-} else if (status === 'fileTidakValid') {
-    Swal.fire({
-        title: 'Gagal',
-        text: 'File yang diupload harus berupa gambar (jpg, jpeg, png, svg)',
-        icon: 'warning'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            history.back();
-        }
-    });
 } 
 
 if (document.getElementById('peminjamanCreateForm')) {
