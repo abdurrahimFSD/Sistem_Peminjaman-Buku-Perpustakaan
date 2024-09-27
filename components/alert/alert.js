@@ -4,17 +4,7 @@ const status = urlParams.get('status');
 const kodeIsbn = urlParams.get('isbn');
 
 // Kode alert untuk operasi create atau tambah
-if (status === 'successBukuCreate') {
-    Swal.fire({
-        title: 'Berhasil',
-        text: 'Data buku berhasil ditambahkan',
-        icon: 'success'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = './index.php?page=bukuData';
-        }
-    });
-} 
+
 
 if (document.getElementById('peminjamanCreateForm')) {
     document.getElementById('peminjamanCreateForm').addEventListener('submit', function(event) {
