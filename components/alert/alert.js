@@ -3,8 +3,6 @@ const urlParams = new URLSearchParams(window.location.search);
 const status = urlParams.get('status');
 const kodeIsbn = urlParams.get('isbn');
 
-// Kode alert untuk operasi create atau tambah
-
 
 if (document.getElementById('peminjamanCreateForm')) {
     document.getElementById('peminjamanCreateForm').addEventListener('submit', function(event) {
