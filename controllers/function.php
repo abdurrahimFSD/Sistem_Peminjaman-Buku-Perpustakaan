@@ -55,6 +55,8 @@ function bukuCreate($data, $file) {
 
         $fotoDirectory = "../uploads/images/buku/";
         $tmpFile = $file['foto']['tmp_name'];
+
+        move_uploaded_file($tmpFile, $fotoDirectory.$foto);
     }
 }
 
