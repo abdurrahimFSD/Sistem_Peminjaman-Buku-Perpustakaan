@@ -64,7 +64,9 @@ function bukuCreate($data, $file) {
 
         if ($stmt->execute()) {
             return 'success';
-        } 
+        } else {
+            return 'error';
+        }
     }
 }
 
