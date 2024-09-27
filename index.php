@@ -19,6 +19,7 @@ switch($_GET['page']) {
         break;
     case 'bukuDetail':
         include('./pages/buku/bukuDetail.php');
+        break;
 
     case 'anggotaData':
         include('./pages/anggota/anggotaRead.php');
