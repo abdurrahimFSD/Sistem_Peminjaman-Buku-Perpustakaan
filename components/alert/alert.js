@@ -34,17 +34,7 @@ if (status === 'successBukuCreate') {
             history.back();
         }
     });
-} else if (status === 'fileBesar') {
-    Swal.fire({
-        title: 'Gagal',
-        text: 'Ukuran file terlalu besar! Maksimal 2MB',
-        icon: 'warning'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            history.back();
-        }
-    });
-}
+} 
 
 if (document.getElementById('peminjamanCreateForm')) {
     document.getElementById('peminjamanCreateForm').addEventListener('submit', function(event) {
@@ -292,4 +282,9 @@ if (document.getElementById('deleteButtonAnggota')) {
             }
         })
     }
+}
+
+
+if (strpos($result, 'duplicateIsbn') === false) {
+    echo 'duplicateIsbn:' . $result; // Mengembalikan ISBN yang sudah ada
 }
