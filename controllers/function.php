@@ -49,7 +49,7 @@ function bukuCreate($data, $file) {
         $existingIsbn = mysqli_fetch_assoc($resultCekIsbn);
         return $existingIsbn['isbn']; // Mengembalikan ISBN yang sudah ada
     } else {
-        
+        $split = explode('.', $file['foto']['name']);
     }
 }
 
