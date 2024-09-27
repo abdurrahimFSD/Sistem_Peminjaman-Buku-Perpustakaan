@@ -48,6 +48,8 @@ function bukuCreate($data, $file) {
     if (mysqli_num_rows($resultCekIsbn) > 0) {
         $existingIsbn = mysqli_fetch_assoc($resultCekIsbn);
         return $existingIsbn['isbn']; // Mengembalikan ISBN yang sudah ada
+    } else {
+        
     }
 }
 
