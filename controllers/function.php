@@ -54,6 +54,7 @@ function bukuCreate($data, $file) {
         $foto = $isbn.'.'.$extension;
 
         $fotoDirectory = "../uploads/images/buku/";
+        $tmpFile = $file['foto']['tmp_name'];
     }
 }
 
