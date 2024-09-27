@@ -67,6 +67,8 @@ function bukuCreate($data, $file) {
         } else {
             return 'error';
         }
+
+        $stmt->close();
     }
 }
 
