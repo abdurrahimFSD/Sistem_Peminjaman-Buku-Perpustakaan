@@ -61,6 +61,10 @@ function bukuCreate($data, $file) {
         // Query SQL untuk menambahkan data buku baru
         $stmt = $connection->prepare("INSERT INTO buku (judul_buku, isbn, tahun_terbit, penulis, kategori, foto) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $judulBuku, $isbn, $tahunTerbit, $penulis, $kategori, $foto);
+
+        if ($stmt->execute()) {
+            return 'success';
+        } 
     }
 }
 
