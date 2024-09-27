@@ -1,7 +1,3 @@
-// Mengecek apakah URL mengandung parameter status dan isbn
-const urlParams = new URLSearchParams(window.location.search);
-
-
 if (document.getElementById('peminjamanCreateForm')) {
     document.getElementById('peminjamanCreateForm').addEventListener('submit', function(event) {
         // Mencegah form submit secara default (refresh halaman) atau Mencegah form dari submit secara langsung
