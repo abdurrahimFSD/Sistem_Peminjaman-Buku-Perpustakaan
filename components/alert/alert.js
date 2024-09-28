@@ -101,7 +101,9 @@ if (document.getElementById('peminjamanCreateForm')) {
                     icon: 'warning'
                 });
             } else if (response === 'successBukuCreate') {
-                
+                Swal.fire({
+                    
+                })
             }
         })
     })
