@@ -57,6 +57,11 @@ function bukuCreate($data, $file) {
             if (strpos($fileType, 'image') === false) {
                 return 'fileTidakValid'; // Mengembalikan error jika file bukan gambar
             }
+
+            // Cek ukuran file
+            if ($file['foto']['size'] > 2 * 1024 * 1024) { // 2MB
+                return 'fileBesar'; // Mengembalikan pesan ukuran file terlalu besar
+            }
             
             $split = explode('.', $file['foto']['name']);
             $extension = strtolower(end($split));
