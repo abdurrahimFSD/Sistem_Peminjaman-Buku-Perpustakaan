@@ -106,8 +106,8 @@ if (document.getElementById('peminjamanCreateForm')) {
                     text: 'Data buku berhasil ditambahkan',
                     icon: 'success'
                 }).then(() => {
-                    
-                })
+                    window.location.href = './index.php?page=bukuData';
+                });
             }
         })
     })
