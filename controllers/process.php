@@ -11,6 +11,8 @@ if (isset($_POST['simpan'])) {
         // Jika result mengembalikan success
         if ($result == 'success') {
             echo 'successBukuCreate';
+        } elseif (is_string($result)) { // Cek apakah hasilnya adalah string (ISBN yang ada)
+            echo 'duplicateIsbn:' . $result; // Mengembalikan ISBN yang sudah ada
         }
 
     } elseif ($_POST['simpan'] == 'bukuUpdate') {   // Jika tombol simpan adalah bukuUpdate
