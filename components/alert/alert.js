@@ -104,6 +104,7 @@ if (document.getElementById('peminjamanCreateForm')) {
                 Swal.fire({
                     title: 'Berhasil',
                     text: 'Data buku berhasil ditambahkan',
+                    icon: 'success'
                 })
             }
         })
