@@ -103,6 +103,7 @@ if (document.getElementById('peminjamanCreateForm')) {
             } else if (response === 'successBukuCreate') {
                 Swal.fire({
                     title: 'Berhasil',
+                    text: 'Data buku berhasil ditambahkan',
                 })
             }
         })
