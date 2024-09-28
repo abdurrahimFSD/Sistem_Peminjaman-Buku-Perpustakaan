@@ -50,7 +50,7 @@ function bukuCreate($data, $file) {
         return $existingIsbn['isbn']; // Mengembalikan ISBN yang sudah ada
     } else {
         if ($file['foto']['error'] == UPLOAD_ERR_NO_FILE) {
-            
+            $foto = 'book-default.jpg';
         }
         $split = explode('.', $file['foto']['name']);
         $extension = strtolower(end($split));
