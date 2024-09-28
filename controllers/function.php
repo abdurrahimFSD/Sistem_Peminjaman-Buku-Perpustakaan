@@ -51,16 +51,17 @@ function bukuCreate($data, $file) {
     } else {
         if ($file['foto']['error'] == UPLOAD_ERR_NO_FILE) {
             $foto = 'book-default.jpg';
+        } else {
+            $split = explode('.', $file['foto']['name']);
+            $extension = strtolower(end($split));
+            $foto = $isbn.'.'.$extension;
+    
+            $fotoDirectory = "../uploads/images/buku/";
+            $tmpFile = $file['foto']['tmp_name'];
+    
+            move_uploaded_file($tmpFile, $fotoDirectory.$foto);
         }
-        $split = explode('.', $file['foto']['name']);
-        $extension = strtolower(end($split));
-        $foto = $isbn.'.'.$extension;
-
-        $fotoDirectory = "../uploads/images/buku/";
-        $tmpFile = $file['foto']['tmp_name'];
-
-        move_uploaded_file($tmpFile, $fotoDirectory.$foto);
-
+        
         // Query SQL untuk menambahkan data buku baru
         $stmt = $connection->prepare("INSERT INTO buku (judul_buku, isbn, tahun_terbit, penulis, kategori, foto) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $judulBuku, $isbn, $tahunTerbit, $penulis, $kategori, $foto);
