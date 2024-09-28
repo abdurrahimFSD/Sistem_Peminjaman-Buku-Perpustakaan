@@ -110,7 +110,7 @@ if (document.getElementById('peminjamanCreateForm')) {
                 });
             } else if (response === 'fileBukanGambar') {
                 Swal.fire({
-                    
+                    title: 'Gagal',
                 })
             }
         })
