@@ -109,7 +109,9 @@ if (document.getElementById('peminjamanCreateForm')) {
                     window.location.href = './index.php?page=bukuData';
                 });
             } else if (response === 'fileBukanGambar') {
-                
+                Swal.fire({
+                    
+                })
             }
         })
     })
