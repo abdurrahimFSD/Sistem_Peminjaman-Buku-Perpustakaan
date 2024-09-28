@@ -100,6 +100,8 @@ if (document.getElementById('peminjamanCreateForm')) {
                     text: `Kode Isbn ${existingIsbn} sudah ada, tidak boleh sama`,
                     icon: 'warning'
                 });
+            } else if (response === 'successBukuCreate') {
+                
             }
         })
     })
@@ -244,9 +246,4 @@ if (document.getElementById('deleteButtonAnggota')) {
             }
         })
     }
-}
-
-
-if (strpos($result, 'duplicateIsbn') === false) {
-    echo 'duplicateIsbn:' . $result; // Mengembalikan ISBN yang sudah ada
 }
