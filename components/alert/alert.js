@@ -105,6 +105,8 @@ if (document.getElementById('peminjamanCreateForm')) {
                     title: 'Berhasil',
                     text: 'Data buku berhasil ditambahkan',
                     icon: 'success'
+                }).then(() => {
+                    
                 })
             }
         })
