@@ -112,7 +112,8 @@ if (document.getElementById('peminjamanCreateForm')) {
                 Swal.fire({
                     title: 'Gagal',
                     text: 'File yang anda upload bukan gambar',
-                })
+                    icon: 'error'
+                });
             }
         })
     })
