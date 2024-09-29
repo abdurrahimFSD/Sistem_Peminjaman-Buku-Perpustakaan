@@ -109,6 +109,10 @@ function bukuUpdate($data, $file) {
         $existingIsbn = mysqli_fetch_assoc($resultCekIsbn);
         return $existingIsbn['isbn']; // Mengembalikan ISBN yang sudah ada
     }
+
+    // Mengambil foto yang ada sebelumnya
+    $fotoLama = $data['fotoLama'];
+    $foto = $fotoLama; // Menggunakan foto lama secara default
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
