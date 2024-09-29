@@ -116,7 +116,7 @@ if (document.getElementById('peminjamanCreateForm')) {
                 });
             } else if (response === 'fileBesar') {
                 Swal.fire({
-                    
+                    title: 'Gagal',
                 })
             }
         })
