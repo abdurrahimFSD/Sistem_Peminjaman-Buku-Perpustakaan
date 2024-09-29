@@ -89,10 +89,13 @@ if (isset($_GET['id_buku'])) {
                         }
                         ?>
                         <img id="imgPreview" src="<?= $fotoPath; ?>" alt="Pratinjau Foto" class="mt-3" style="max-width: 100px;">
+                        
+                        <!-- Hidden input untuk menyimpan foto lama -->
+                        <input type="hidden" name="fotoLama" value="<?= htmlspecialchars($bukuData['foto']); ?>">
+
                         <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="hapusFoto" <?= ($bukuData['foto'] === 'book-default.jpg') ? 'style="display: none;"' : ''; ?> >Hapus File</button>
 
                         <div id="fileError" class="text-danger mt-2" style="display: none;"></div>
-                        <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="hapusFoto" style="display: none;">Hapus File</button>
                     </div>
                     <a href="?page=bukuData" class="d-inline-flex justify-content-center align-items-center btn btn-outline-secondary me-2">
                         <iconify-icon icon="fluent:arrow-left-24-filled" class="me-1 fs-5"></iconify-icon>Kembali
