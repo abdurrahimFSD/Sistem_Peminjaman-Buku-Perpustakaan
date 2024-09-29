@@ -149,6 +149,8 @@ function bukuUpdate($data, $file) {
     } else {
         return 'error'; // Mengembalikan error jika gagal
     }
+
+    $stmt->close();
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
