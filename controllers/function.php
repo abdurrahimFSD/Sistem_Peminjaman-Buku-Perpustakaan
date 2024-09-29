@@ -102,6 +102,7 @@ function bukuUpdate($data, $file) {
 
     // Mengecek apakah kode isbn sudah ada
     $queryCekIsbn = "SELECT * FROM buku WHERE isbn = '$isbn' AND id_buku != '$idBuku'";
+    $resultCekIsbn = mysqli_query($connection, $queryCekIsbn);
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
