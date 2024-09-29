@@ -103,6 +103,12 @@ function bukuUpdate($data, $file) {
     // Mengecek apakah kode isbn sudah ada
     $queryCekIsbn = "SELECT * FROM buku WHERE isbn = '$isbn' AND id_buku != '$idBuku'";
     $resultCekIsbn = mysqli_query($connection, $queryCekIsbn);
+
+    if (mysqli_num_rows($resultCekIsbn) > 0) {
+        // Mengembalikan pesan jika ISBN sudah ada
+        $existingIsbn = mysqli_fetch_assoc($resultCekIsbn);
+        return $existingIsbn['isbn']; // Mengembalikan ISBN yang sudah ada
+    }
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
