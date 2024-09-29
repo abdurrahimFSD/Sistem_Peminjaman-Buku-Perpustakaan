@@ -114,6 +114,8 @@ if (document.getElementById('peminjamanCreateForm')) {
                     text: 'File yang anda upload bukan gambar',
                     icon: 'error'
                 });
+            } else if (response === 'fileBesar') {
+
             }
         })
     })
