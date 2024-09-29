@@ -122,6 +122,11 @@ function bukuUpdate($data, $file) {
         if (!in_array($mimeType, $allowedTypes)) {
             return 'fileTidakValid'; // Mengembalikan pesan jika file bukan gambar
         }
+
+        // Mengecek ukuran file (maksimal 2MB)
+        if ($file['foto']['size'] > 2 * 1024 * 1024) {
+            return 'fileBesar'; // Mengembalikan pesan jika file terlalu besar
+        }
     }
 }
 
