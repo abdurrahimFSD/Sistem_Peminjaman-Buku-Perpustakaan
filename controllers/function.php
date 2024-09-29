@@ -113,6 +113,10 @@ function bukuUpdate($data, $file) {
     // Mengambil foto yang ada sebelumnya
     $fotoLama = $data['fotoLama'];
     $foto = $fotoLama; // Menggunakan foto lama secara default
+
+    if ($file['foto']['error'] != UPLOAD_ERR_NO_FILE) {
+        
+    }
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
