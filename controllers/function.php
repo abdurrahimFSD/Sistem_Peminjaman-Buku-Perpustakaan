@@ -135,6 +135,9 @@ function bukuUpdate($data, $file) {
 
         $fotoDirectory = "../uploads/images/buku/";
         $tmpFile = $file['foto']['tmp_name'];
+
+        // Memindahkan file ke direktori yang dituju
+        move_uploaded_file($tmpFile, $fotoDirectory . $foto);
     }
 }
 
