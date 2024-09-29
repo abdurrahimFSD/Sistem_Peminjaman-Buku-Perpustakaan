@@ -63,6 +63,7 @@ function bukuCreate($data, $file) {
                 return 'fileBesar'; // Mengembalikan pesan ukuran file terlalu besar
             }
             
+            // Proses upload jika ukuran dan tipe file valid
             $split = explode('.', $file['foto']['name']);
             $extension = strtolower(end($split));
             $foto = $isbn.'.'.$extension;
