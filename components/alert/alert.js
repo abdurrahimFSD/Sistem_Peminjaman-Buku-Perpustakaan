@@ -117,6 +117,7 @@ if (document.getElementById('peminjamanCreateForm')) {
             } else if (response === 'fileBesar') {
                 Swal.fire({
                     title: 'Gagal',
+                    text: 'File yang anda upload melebihi 2MB',
                 })
             }
         })
