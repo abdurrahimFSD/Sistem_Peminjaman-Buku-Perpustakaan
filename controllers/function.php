@@ -127,6 +127,11 @@ function bukuUpdate($data, $file) {
         if ($file['foto']['size'] > 2 * 1024 * 1024) {
             return 'fileBesar'; // Mengembalikan pesan jika file terlalu besar
         }
+
+        // Mengubah nama foto
+        $split = explode('.', $file['foto']['name']);
+        $extension = strtolower(end($split));
+        $foto = $isbn . '.' . $extension;
     }
 }
 
