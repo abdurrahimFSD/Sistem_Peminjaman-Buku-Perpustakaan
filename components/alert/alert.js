@@ -115,7 +115,9 @@ if (document.getElementById('peminjamanCreateForm')) {
                     icon: 'error'
                 });
             } else if (response === 'fileBesar') {
-
+                Swal.fire({
+                    
+                })
             }
         })
     })
