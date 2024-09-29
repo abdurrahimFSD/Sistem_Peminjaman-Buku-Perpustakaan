@@ -99,6 +99,9 @@ function bukuUpdate($data, $file) {
     $tahunTerbit = $data['tahunTerbit'];
     $penulis = $data['penulis'];
     $kategori = $data['kategori'];
+
+    // Mengecek apakah kode isbn sudah ada
+    $queryCekIsbn = "SELECT * FROM buku WHERE isbn = '$isbn' AND id_buku != '$idBuku'";
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
