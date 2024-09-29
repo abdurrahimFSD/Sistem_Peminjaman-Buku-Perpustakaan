@@ -132,6 +132,9 @@ function bukuUpdate($data, $file) {
         $split = explode('.', $file['foto']['name']);
         $extension = strtolower(end($split));
         $foto = $isbn . '.' . $extension;
+
+        $fotoDirectory = "../uploads/images/buku/";
+        $tmpFile = $file['foto']['tmp_name'];
     }
 }
 
