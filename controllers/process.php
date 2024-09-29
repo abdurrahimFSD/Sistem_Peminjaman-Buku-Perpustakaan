@@ -13,10 +13,11 @@ if (isset($_POST['simpan'])) {
             echo 'successBukuCreate';
         } elseif ($result == 'fileTidakValid') {
             echo 'fileBukanGambar';
+        } elseif ($result == 'fileBesar') {
+            echo 'fileBesar';
         } elseif (is_string($result)) { // Cek apakah hasilnya adalah string (ISBN yang ada)
             echo 'duplicateIsbn:' . $result; // Mengembalikan ISBN yang sudah ada
         }
-
     } elseif ($_POST['simpan'] == 'bukuUpdate') {   // Jika tombol simpan adalah bukuUpdate
         // Memanggil function bukuUpdate
         $result = bukuUpdate($_POST, $_FILES);
