@@ -115,7 +115,13 @@ function bukuUpdate($data, $file) {
     $foto = $fotoLama; // Menggunakan foto lama secara default
 
     if ($file['foto']['error'] != UPLOAD_ERR_NO_FILE) {
-        
+        // Mengecek tipe file
+        $mimeType = mime_content_type($file['foto']['tmp_name']);
+        $allowedTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/svg+xml'];
+
+        if (!in_array($mimeType, $allowedTypes)) {
+            return 'fileTidakValid'; // Mengembalikan pesan jika file bukan gambar
+        }
     }
 }
 
