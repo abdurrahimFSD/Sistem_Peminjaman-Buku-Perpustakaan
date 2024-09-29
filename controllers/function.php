@@ -139,6 +139,10 @@ function bukuUpdate($data, $file) {
         // Memindahkan file ke direktori yang dituju
         move_uploaded_file($tmpFile, $fotoDirectory . $foto);
     }
+
+     // Query SQL untuk memperbarui data buku
+     $stmt = $connection->prepare("UPDATE buku SET judul_buku = ?, isbn = ?, tahun_terbit = ?, penulis = ?, kategori = ?, foto = ? WHERE id_buku = ?");
+     $stmt->bind_param("ssssssi", $judulBuku, $isbn, $tahunTerbit, $penulis, $kategori, $foto, $idBuku);
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
