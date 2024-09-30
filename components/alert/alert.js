@@ -203,7 +203,7 @@ if (document.getElementById('anggotaUpdateForm')) {
     })
 } else if (document.getElementById('bukuUpdateForm')) {
     document.getElementById('bukuUpdateForm').addEventListener('submit', function(event) {
-        
+        event.preventDefault();
     })
 }
 
