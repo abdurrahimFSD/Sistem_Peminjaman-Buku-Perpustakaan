@@ -27,8 +27,6 @@ if (isset($_POST['simpan'])) {
             echo 'successBukuUpdate';
         } elseif (strpos($result, 'duplicateIsbn|') === 0) {
             echo $result;
-        } elseif ($result == 'error') {
-            echo 'errorBukuUpdate';
         }
     } elseif ($_POST['simpan'] == 'anggotaCreate') {
         // Memanggil function anggotaCreate
