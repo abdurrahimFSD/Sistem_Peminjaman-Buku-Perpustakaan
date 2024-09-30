@@ -25,7 +25,9 @@ if (isset($_POST['simpan'])) {
         // Jika result mengembalikan success
         if ($result == 'success') {
             echo 'successBukuUpdate';
-        } 
+        } elseif ($result == 'fileTidakValid') {
+            echo 'fileBukanGambar';
+        }
     } elseif ($_POST['simpan'] == 'anggotaCreate') {
         // Memanggil function anggotaCreate
         $result = anggotaCreate($_POST);
