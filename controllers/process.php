@@ -27,6 +27,8 @@ if (isset($_POST['simpan'])) {
             echo 'successBukuUpdate';
         } elseif ($result == 'fileTidakValid') {
             echo 'fileBukanGambar';
+        } elseif ($result == 'fileBesar') {
+            echo 'fileBesar';
         }
     } elseif ($_POST['simpan'] == 'anggotaCreate') {
         // Memanggil function anggotaCreate
