@@ -212,7 +212,17 @@ if (document.getElementById('anggotaUpdateForm')) {
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
-                
+                const form = document.getElementById('bukuUpdateForm');
+                const formData = new FormData(form);
+
+                fetch('./controllers/process.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(response => {
+                    
+                })
             }
         })
     })
