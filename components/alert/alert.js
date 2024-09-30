@@ -211,7 +211,9 @@ if (document.getElementById('anggotaUpdateForm')) {
             confirmButtonText: 'Simpan',
             cancelButtonText: 'Batal'
         }).then((result) => {
-            
+            if (result.isConfirmed) {
+                
+            }
         })
     })
 }
