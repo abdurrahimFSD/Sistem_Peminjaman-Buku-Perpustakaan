@@ -225,6 +225,8 @@ if (document.getElementById('anggotaUpdateForm')) {
                         Swal.fire('Tersimpan', '', 'success').then(() => {
                             window.location.href = './index.php?page=bukuData';
                         });
+                    } else if (response === 'fileBukanGambar') {
+                        Swal.fire('Gagal', 'File yang anda upload bukan gambar', 'error');
                     }
                 })
             }
