@@ -221,7 +221,11 @@ if (document.getElementById('anggotaUpdateForm')) {
                 })
                 .then(response => response.text())
                 .then(response => {
-                    
+                    if (response === 'successBukuUpdate') {
+                        Swal.fire('Tersimpan', '', 'success').then(() => {
+                            window.location.href = './index.php?page=bukuData';
+                        });
+                    }
                 })
             }
         })
