@@ -227,6 +227,8 @@ if (document.getElementById('anggotaUpdateForm')) {
                         });
                     } else if (response === 'fileBukanGambar') {
                         Swal.fire('Gagal', 'File yang anda upload bukan gambar', 'error');
+                    } else if (response === 'fileBesar') {
+                        Swal.fire('Gagal', 'File yang anda upload melebihi 2MB', 'error');
                     }
                 })
             }
