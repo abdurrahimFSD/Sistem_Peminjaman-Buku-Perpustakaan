@@ -210,6 +210,8 @@ if (document.getElementById('anggotaUpdateForm')) {
             showCancelButton: true,
             confirmButtonText: 'Simpan',
             cancelButtonText: 'Batal'
+        }).then((result) => {
+            
         })
     })
 }
