@@ -323,6 +323,7 @@ if (document.getElementById('deleteButtonAnggota')) {
         }).then((result) => {
             if (result.isConfirmed) {
                 fetch(`./controllers/process.php?id_buku=${id}`)
+                .then(response => response.text())
             }
         })
     }
