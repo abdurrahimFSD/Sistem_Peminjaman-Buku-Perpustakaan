@@ -238,6 +238,9 @@ if (document.getElementById('anggotaUpdateForm')) {
                         });
                     }
                 })
+                .catch(error => {
+                    
+                })
             }
         })
     })
