@@ -325,7 +325,11 @@ if (document.getElementById('deleteButtonAnggota')) {
                 fetch(`./controllers/process.php?id_buku=${id}`)
                 .then(response => response.text())
                 .then(response => {
-                    
+                    if (response === 'successBukuDelete') {
+                        Swal.fire('Dihapus', 'Data buku berhasil dihapus', 'success').then(() => {
+                            window.location.reload();
+                        })
+                    }
                 })
             }
         })
