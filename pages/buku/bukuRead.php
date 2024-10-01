@@ -97,7 +97,7 @@ $bukuData = fetchData('buku');
                                             <a href="?page=bukuUpdate&id_buku=<?= $row['id_buku']; ?>" class="btn btn-outline-warning btn-sm d-inline-flex mx-1" data-bs-toggle="tooltip" data-bs-title="Edit" aria-label="Edit">
                                                 <iconify-icon icon="tabler:pencil" class="fs-5"></iconify-icon>
                                             </a>
-                                            <a href="#" id="deleteButtonBuku" class="btn btn-outline-danger btn-sm d-inline-flex delete" data-bs-toggle="tooltip" data-bs-title="Hapus" aria-label="Hapus">
+                                            <a href="#" id="deleteButtonBuku" class="btn btn-outline-danger btn-sm d-inline-flex delete" data-bs-toggle="tooltip" data-bs-title="Hapus" aria-label="Hapus" onclick="confirmDelete('<?= $row['id_buku']; ?>')">
                                                 <iconify-icon icon="tabler:trash" class="fs-5"></iconify-icon>
                                             </a>
                                         </div>
