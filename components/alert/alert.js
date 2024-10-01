@@ -329,6 +329,8 @@ if (document.getElementById('deleteButtonAnggota')) {
                         Swal.fire('Dihapus', 'Data buku berhasil dihapus', 'success').then(() => {
                             window.location.reload();
                         })
+                    } else if (response === 'errorBukuDelete') {
+                        Swal.fire('Gagal', 'Data buku gagal dihapus', 'error');
                     }
                 })
             }
