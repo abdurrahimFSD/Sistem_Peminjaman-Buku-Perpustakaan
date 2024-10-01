@@ -242,7 +242,7 @@ if (document.getElementById('anggotaUpdateForm')) {
                     Swal.fire('Gagal', 'Terjadi Kesalahan', 'error');
                 })
             } else if (result.isDismissed) {
-                
+                Swal.fire('Perubahan dibatalkan', '', 'info');
             }
         })
     })
