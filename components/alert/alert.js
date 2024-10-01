@@ -239,7 +239,7 @@ if (document.getElementById('anggotaUpdateForm')) {
                     }
                 })
                 .catch(error => {
-                    
+                    Swal.fire('Gagal', 'Terjadi Kesalahan', 'error');
                 })
             }
         })
