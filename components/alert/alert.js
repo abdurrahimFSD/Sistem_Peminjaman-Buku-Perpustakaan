@@ -231,6 +231,11 @@ if (document.getElementById('anggotaUpdateForm')) {
                         Swal.fire('Gagal', 'File yang anda upload melebihi 2MB', 'error');
                     } else if (response.startsWith('duplicateIsbn:')) {
                         const existingIsbn = response.split(':')[1];
+                        Swal.fire({
+                            title: 'Gagal',
+                            text: `Kode Isbn ${existingIsbn} sudah ada, tidak boleh sama`,
+                            icon: 'warning'
+                        });
                     }
                 })
             }
