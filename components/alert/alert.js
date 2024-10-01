@@ -230,7 +230,7 @@ if (document.getElementById('anggotaUpdateForm')) {
                     } else if (response === 'fileBesar') {
                         Swal.fire('Gagal', 'File yang anda upload melebihi 2MB', 'error');
                     } else if (response.startsWith('duplicateIsbn:')) {
-                        
+                        const existingIsbn = response.split(':')[1];
                     }
                 })
             }
