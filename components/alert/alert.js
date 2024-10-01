@@ -311,6 +311,8 @@ if (document.getElementById('deleteButtonAnggota')) {
     }
 } else if (document.getElementById('deleteButtonBuku')) {
     function confirmDelete(id) {
-        
+        Swal.fire({
+            
+        })
     }
 }
