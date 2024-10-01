@@ -324,6 +324,9 @@ if (document.getElementById('deleteButtonAnggota')) {
             if (result.isConfirmed) {
                 fetch(`./controllers/process.php?id_buku=${id}`)
                 .then(response => response.text())
+                .then(response => {
+                    
+                })
             }
         })
     }
