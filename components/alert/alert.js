@@ -229,6 +229,8 @@ if (document.getElementById('anggotaUpdateForm')) {
                         Swal.fire('Gagal', 'File yang anda upload bukan gambar', 'error');
                     } else if (response === 'fileBesar') {
                         Swal.fire('Gagal', 'File yang anda upload melebihi 2MB', 'error');
+                    } else if (response.startsWith('duplicateIsbn:')) {
+                        
                     }
                 })
             }
