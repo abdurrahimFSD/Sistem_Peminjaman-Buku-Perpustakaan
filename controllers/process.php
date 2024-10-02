@@ -92,5 +92,7 @@ if (isset($_GET['id_anggota'])) {
     } else {
         echo "errorPeminjamanDelete";
     }
+} elseif (isset($_GET['id_buku'])) {
+    
 }
 ?>
