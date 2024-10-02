@@ -166,6 +166,11 @@ function bukuDelete($idBuku) {
     // Menyiapkan query SQL untuk menghapus data buku
     $stmt = $connection->prepare("DELETE FROM buku WHERE id_buku = ?");
     $stmt->bind_param("i", $idBuku);
+
+    // Menjalankan query
+    if ($stmt->execute()) {
+        return true;
+    }
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
