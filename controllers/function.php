@@ -170,6 +170,8 @@ function bukuDelete($idBuku) {
     // Menjalankan query
     if ($stmt->execute()) {
         return true;
+    } else {
+        return false;
     }
 }
 
