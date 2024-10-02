@@ -118,7 +118,7 @@ function bukuUpdate($data, $file) {
     if ($file['foto']['error'] != UPLOAD_ERR_NO_FILE) {
         // Hapus foto lama jika ada
         if (file_exists("../uploads/images/buku/" . $fotoLama)) {
-           
+            unlink("../uploads/images/buku/" . $fotoLama); // Menghapus foto lama dari server
         }
         
         // Mengecek tipe file
