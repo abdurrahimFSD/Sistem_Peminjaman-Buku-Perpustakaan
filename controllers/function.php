@@ -162,6 +162,9 @@ function bukuDelete($idBuku) {
     $data = mysqli_fetch_assoc($sqlSelectData);
 
     unlink("../uploads/images/buku/".$data['foto']);
+
+    // Menyiapkan query SQL untuk menghapus data buku
+    $stmt = $connection->prepare("DELETE FROM buku WHERE id_buku = ?");
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
