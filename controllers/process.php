@@ -97,6 +97,8 @@ if (isset($_GET['id_anggota'])) {
 
     if ($result) {
         echo "successBukuDelete";
+    } else {
+        echo "errorBukuDelete";
     }
 }
 ?>
