@@ -156,6 +156,8 @@ function bukuUpdate($data, $file) {
 // Function bukuDelete untuk menghapus data buku
 function bukuDelete($idBuku) {
     global $connection;
+
+    $querySelectData = "SELECT foto FROM buku WHERE id_buku = $idBuku";
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
