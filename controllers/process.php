@@ -94,5 +94,9 @@ if (isset($_GET['id_anggota'])) {
     }
 } elseif (isset($_GET['id_buku'])) {
     $result = bukuDelete($_GET['id_buku']);
+
+    if ($result) {
+        echo "successBukuDelete";
+    }
 }
 ?>
