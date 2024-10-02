@@ -160,6 +160,8 @@ function bukuDelete($idBuku) {
     $querySelectData = "SELECT foto FROM buku WHERE id_buku = $idBuku";
     $sqlSelectData = mysqli_query($connection, $querySelectData);
     $data = mysqli_fetch_assoc($sqlSelectData);
+
+    unlink("../uploads/images/buku/".$data['foto']);
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
