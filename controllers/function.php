@@ -116,6 +116,11 @@ function bukuUpdate($data, $file) {
 
     // Memeriksa apakah ada file foto yang diunggah
     if ($file['foto']['error'] != UPLOAD_ERR_NO_FILE) {
+        // Hapus foto lama jika ada
+        if (file_exists("../uploads/images/buku/" . $fotoLama)) {
+           
+        }
+        
         // Mengecek tipe file
         $mimeType = mime_content_type($file['foto']['tmp_name']);
         $allowedTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/svg+xml'];
