@@ -114,6 +114,7 @@ function bukuUpdate($data, $file) {
     $fotoLama = $data['fotoLama'];
     $foto = $fotoLama; // Menggunakan foto lama secara default
 
+    // Memeriksa apakah ada file foto yang diunggah
     if ($file['foto']['error'] != UPLOAD_ERR_NO_FILE) {
         // Mengecek tipe file
         $mimeType = mime_content_type($file['foto']['tmp_name']);
