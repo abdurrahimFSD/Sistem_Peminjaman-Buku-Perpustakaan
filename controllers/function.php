@@ -144,6 +144,10 @@ function bukuUpdate($data, $file) {
 
         // Memindahkan file ke direktori yang dituju
         move_uploaded_file($tmpFile, $fotoDirectory . $foto);
+    } else {
+        // Jika foto dihapus, set foto ke foto default
+        $foto = 'book-default.jpg';
+        unlink("../uploads/images/buku/" . $fotoLama);
     }
 
     // Query SQL untuk memperbarui data buku
