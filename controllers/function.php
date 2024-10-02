@@ -158,6 +158,7 @@ function bukuDelete($idBuku) {
     global $connection;
 
     $querySelectData = "SELECT foto FROM buku WHERE id_buku = $idBuku";
+    $sqlSelectData = mysqli_query($connection, $querySelectData);
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
