@@ -155,7 +155,7 @@ function bukuUpdate($data, $file) {
 
 // Function bukuDelete untuk menghapus data buku
 function bukuDelete($idBuku) {
-    
+    global $connection;
 }
 
 // Function anggotaCreate untuk menambahkan data anggota baru ke database
