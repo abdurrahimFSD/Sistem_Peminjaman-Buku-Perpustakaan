@@ -333,6 +333,9 @@ if (document.getElementById('deleteButtonAnggota')) {
                         Swal.fire('Gagal', 'Data buku gagal dihapus', 'error');
                     }
                 })
+                .catch(error => {
+                    
+                })
             }
         })
     }
