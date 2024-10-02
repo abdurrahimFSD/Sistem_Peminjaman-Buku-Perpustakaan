@@ -93,6 +93,6 @@ if (isset($_GET['id_anggota'])) {
         echo "errorPeminjamanDelete";
     }
 } elseif (isset($_GET['id_buku'])) {
-    
+    $result = bukuDelete($_GET['id_buku']);
 }
 ?>
