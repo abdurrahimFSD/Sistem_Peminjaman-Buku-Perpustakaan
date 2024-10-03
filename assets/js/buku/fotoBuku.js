@@ -58,8 +58,6 @@ function hapusFoto() {
         imgPreview.style.display = 'block';
     }
 
-    imgPreview.src = './assets/images/book/book-default.jpg'; // Mengganti dengan foto default
-    imgPreview.style.display = 'block'; // Tampilkan foto default
     hapusFotoButton.style.display = 'none'; // Menyembunyikan tombol hapus
 }
 
