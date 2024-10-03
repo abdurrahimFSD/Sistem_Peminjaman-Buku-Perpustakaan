@@ -48,6 +48,7 @@ function hapusFoto() {
     fileError.style.display = 'none'; // Sembunyikan pesan error
 
     const urlParams = new URLSearchParams(window.location.search);
+    const getParam = urlParams.get('page');
 
     imgPreview.src = './assets/images/book/book-default.jpg'; // Mengganti dengan foto default
     imgPreview.style.display = 'block'; // Tampilkan foto default
