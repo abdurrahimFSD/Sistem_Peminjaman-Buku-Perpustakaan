@@ -54,7 +54,7 @@ function hapusFoto() {
         imgPreview.style.display = 'none';
         imgPreview.src = '';
     } else {
-        
+        imgPreview.src = './assets/images/book/book-default.jpg';
     }
 
     imgPreview.src = './assets/images/book/book-default.jpg'; // Mengganti dengan foto default
