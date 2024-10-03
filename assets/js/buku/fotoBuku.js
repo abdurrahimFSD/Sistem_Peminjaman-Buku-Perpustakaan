@@ -51,7 +51,7 @@ function hapusFoto() {
     const getParam = urlParams.get('page');
 
     if (getParam === 'bukuCreate') {
-        
+        imgPreview.style.display = 'none';
     }
 
     imgPreview.src = './assets/images/book/book-default.jpg'; // Mengganti dengan foto default
