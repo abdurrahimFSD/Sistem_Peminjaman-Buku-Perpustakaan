@@ -14,6 +14,9 @@
             case 'home':
                 $pageTitle = 'Dashboard';
                 break;
+            case 'anggotaData':
+                $pageTitle = 'Data Anggota';
+                break;
         }
     }
     ?>
