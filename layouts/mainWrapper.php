@@ -17,6 +17,36 @@
             case 'anggotaData':
                 $pageTitle = 'Data Anggota';
                 break;
+            case 'anggotaCreate':
+                $pageTitle = 'Tambah Data Anggota';
+                break;
+            case 'anggotaUpdate':
+                $pageTitle = 'Edit Data Anggota';
+                break;
+            case 'bukuData':
+                $pageTitle = 'Data Buku';
+                break;
+            case 'bukuCreate':
+                $pageTitle = 'Tambah Data Buku';
+                break;
+            case 'bukuUpdate':
+                $pageTitle = 'Edit Data Buku';
+                break;
+            case 'bukuDetail':
+                $pageTitle = 'Detail Data Buku';
+                break;
+            case 'peminjamanData':
+                $pageTitle = 'Data Peminjaman';
+                break;
+            case 'peminjamanCreate':
+                $pageTitle = 'Tambah Data Peminjaman';
+                break;
+            case 'peminjamanUpdate':
+                $pageTitle = 'Edit Data Peminjaman';
+                break;
+            case 'peminjamanDetail':
+                $pageTitle = 'Detail Data Peminjaman';
+                break;
         }
     }
     ?>
