@@ -21,7 +21,7 @@
     }
     ?>
     
-    <title>Admin Dahsboard</title>
+    <title><?php echo $pageTitle; ?></title>
 
     <!-- Core Css -->
     <link rel="stylesheet" href="./assets/css/custom.css">
