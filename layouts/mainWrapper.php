@@ -8,6 +8,12 @@
 
     <?php
     $pageTitle = 'Dashboard';
+
+    if (isset($_GET['page'])) {
+        switch ($_GET['page']) {
+            
+        }
+    }
     ?>
     
     <title>Admin Dahsboard</title>
