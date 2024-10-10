@@ -39,7 +39,7 @@ if (isset($_POST['simpan'])) {
         // Jika result mengembalikan success
         if ($result == 'success') {
             echo 'successAnggotaCreate';
-        } else {
+        } elseif ($result == 'error') {
             echo 'errorAnggotaCreate';
         }
     } elseif ($_POST['simpan'] == 'anggotaUpdate') {
