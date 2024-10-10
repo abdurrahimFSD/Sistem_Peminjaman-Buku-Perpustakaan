@@ -49,7 +49,7 @@ if (isset($_POST['simpan'])) {
         // Jika result mengembalikan success
         if ($result == 'success') {
             echo 'successAnggotaUpdate';
-        } else {
+        } elseif ($result == 'error') {
             echo 'errorAnggotaUpdate';
         }
     } elseif ($_POST['simpan'] == 'peminjamanCreate') {
