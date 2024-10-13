@@ -120,6 +120,12 @@ if (document.getElementById('peminjamanCreateForm')) {
                     text: 'File yang anda upload melebihi 2MB',
                     icon: 'error'
                 });
+            } else if (response === 'errorBukuCreate') {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Gagal menambahkan data buku',
+                    icon: 'error'
+                });
             }
         })
     })
