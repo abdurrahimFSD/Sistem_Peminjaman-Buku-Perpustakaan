@@ -31,6 +31,8 @@ if (isset($_POST['simpan'])) {
             echo 'fileBukanGambar';
         } elseif ($result == 'fileBesar') {
             echo 'fileBesar';
+        } elseif ($result == 'error')  {
+            echo 'errorBukuUpdate';
         } elseif (is_string($result)) { // Cek apakah hasilnya adalah string (ISBN yang ada)
             echo 'duplicateIsbn:' . $result; // Mengembalikan ISBN yang sudah ada
         }
