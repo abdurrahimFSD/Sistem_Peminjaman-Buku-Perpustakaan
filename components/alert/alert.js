@@ -242,6 +242,8 @@ if (document.getElementById('anggotaUpdateForm')) {
                             text: `Kode Isbn ${existingIsbn} sudah ada, tidak boleh sama`,
                             icon: 'warning'
                         });
+                    } else if (response === 'errorBukuUpdate') {
+                        Swal.fire('Gagal', '', 'error');
                     }
                 })
                 .catch(error => {
