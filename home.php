@@ -6,7 +6,7 @@ include('./controllers/function.php');
 <div class="body-wrapper ">
     <div class="container-fluid">
         
-        <h1>Halaman Dashboard</h1>
+        
 
     </div>
 </div>
