@@ -344,5 +344,6 @@ function getTotalBuku() {
     $queryGetTotalBuku = "SELECT COUNT(id_buku) AS total_buku FROM buku";
     $resultGetTotalBuku = mysqli_query($connection, $queryGetTotalBuku);
     $dataGetTotalBuku = mysqli_fetch_assoc($resultGetTotalBuku);
+    return $dataGetTotalBuku['total_buku'];
 }
 ?>
