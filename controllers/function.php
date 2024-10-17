@@ -337,4 +337,9 @@ function peminjamanaDelete($idPinjam) {
     // Menutup statement
     $stmt->close();
 }
+
+// Dashboard
+function getTotalBuku() {
+    
+}
 ?>
