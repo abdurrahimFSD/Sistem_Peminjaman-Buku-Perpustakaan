@@ -340,6 +340,6 @@ function peminjamanaDelete($idPinjam) {
 
 // Dashboard
 function getTotalBuku() {
-    
+    global $connection;
 }
 ?>
