@@ -372,5 +372,6 @@ function getTotalBukuTerlambat() {
     $queryGetTotalBukuTerlambat = "SELECT COUNT(id_pinjam) AS total_buku_terlambat FROM peminjaman WHERE status = 'Terlambat'";
     $resultGetTotalBukuTerlambat = mysqli_query($connection, $queryGetTotalBukuTerlambat);
     $dataGetTotalBukuTerlambat = mysqli_fetch_assoc($resultGetTotalBukuTerlambat);
+    return $dataGetTotalBukuTerlambat['total_buku_terlambat'];
 }
 ?>
