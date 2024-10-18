@@ -352,5 +352,6 @@ function getTotalBuku() {
 function getTotalAnggota() {
     global $connection;
     $queryGetTotalAnggota = "SELECT COUNT(id_anggota) AS total_anggota FROM anggota";
+    $resultGetTotalAnggota = mysqli_query($connection, $queryGetTotalAnggota);
 }
 ?>
