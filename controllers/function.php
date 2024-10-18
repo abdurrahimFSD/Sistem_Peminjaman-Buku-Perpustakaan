@@ -347,4 +347,9 @@ function getTotalBuku() {
     $dataGetTotalBuku = mysqli_fetch_assoc($resultGetTotalBuku);
     return $dataGetTotalBuku['total_buku'];
 }
+
+// Function getTotalAnggota untuk mendapatkan total anggota
+function getTotalAnggota() {
+    
+}
 ?>
