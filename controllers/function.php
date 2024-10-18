@@ -370,5 +370,6 @@ function getTotalBukuDipinjam() {
 function getTotalBukuTerlambat() {
     global $connection;
     $queryGetTotalBukuTerlambat = "SELECT COUNT(id_pinjam) AS total_buku_terlambat FROM peminjaman WHERE status = 'Terlambat'";
+    $resultGetTotalBukuTerlambat = mysqli_query($connection, $queryGetTotalBukuTerlambat);
 }
 ?>
