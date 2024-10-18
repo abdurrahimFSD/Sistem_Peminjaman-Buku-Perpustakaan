@@ -359,6 +359,6 @@ function getTotalAnggota() {
 
 // Function getTotalBukuDipinjam untuk mendapatkan total buku dipinjam
 function getTotalBukuDipinjam() {
-    
+    global $connection;
 }
 ?>
