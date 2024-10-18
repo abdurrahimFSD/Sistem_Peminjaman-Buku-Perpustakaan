@@ -356,4 +356,9 @@ function getTotalAnggota() {
     $dataGetTotalAnggota = mysqli_fetch_assoc($resultGetTotalAnggota);
     return $dataGetTotalAnggota['total_anggota'];
 }
+
+// Function getTotalBukuDipinjam untuk mendapatkan total buku dipinjam
+function getTotalBukuDipinjam() {
+    
+}
 ?>
