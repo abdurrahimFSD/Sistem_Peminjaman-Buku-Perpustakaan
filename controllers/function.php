@@ -350,6 +350,6 @@ function getTotalBuku() {
 
 // Function getTotalAnggota untuk mendapatkan total anggota
 function getTotalAnggota() {
-    
+    global $connection;
 }
 ?>
