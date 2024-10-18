@@ -368,6 +368,6 @@ function getTotalBukuDipinjam() {
 
 // Function getTotalBukuTerlamat untuk mendapatkan total buku terlambat
 function getTotalBukuTerlambat() {
-    
+    global $connection;
 }
 ?>
