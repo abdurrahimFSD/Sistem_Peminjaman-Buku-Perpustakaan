@@ -360,5 +360,6 @@ function getTotalAnggota() {
 // Function getTotalBukuDipinjam untuk mendapatkan total buku dipinjam
 function getTotalBukuDipinjam() {
     global $connection;
+    $queryGetTotalBukuDipinjam = "SELECT COUNT(id_pinjam) AS total_buku_dipinjam FROM peminjaman WHERE status = 'Dipinjam'";
 }
 ?>
