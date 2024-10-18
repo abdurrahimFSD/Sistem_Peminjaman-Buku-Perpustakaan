@@ -365,4 +365,9 @@ function getTotalBukuDipinjam() {
     $dataGetTotalBukuDipinjam = mysqli_fetch_assoc($resultGetTotalBukuDipinjam);
     return $dataGetTotalBukuDipinjam['total_buku_dipinjam'];
 }
+
+// Function getTotalBukuTerlamat untuk mendapatkan total buku terlambat
+function getTotalBukuTerlambat() {
+    
+}
 ?>
