@@ -369,5 +369,6 @@ function getTotalBukuDipinjam() {
 // Function getTotalBukuTerlamat untuk mendapatkan total buku terlambat
 function getTotalBukuTerlambat() {
     global $connection;
+    $queryGetTotalBukuTerlambat = "SELECT COUNT(id_pinjam) AS total_buku_terlambat FROM peminjaman WHERE status = 'Terlambat'";
 }
 ?>
