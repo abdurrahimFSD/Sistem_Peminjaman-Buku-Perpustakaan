@@ -339,6 +339,7 @@ function peminjamanaDelete($idPinjam) {
 }
 
 // Dashboard
+// Function getTotalBuku untuk mendapatkan total buku
 function getTotalBuku() {
     global $connection;
     $queryGetTotalBuku = "SELECT COUNT(id_buku) AS total_buku FROM buku";
