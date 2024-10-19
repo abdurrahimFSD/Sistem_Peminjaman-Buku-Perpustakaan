@@ -17,7 +17,9 @@ include('./controllers/function.php');
                                 <iconify-icon icon="tabler:book-2" class="fs-6"></iconify-icon>
                             </div>
                             <div class="align-self-center">
-                                <h4 class="card-title mb-1">20</h4>
+                                <h4 class="card-title mb-1">
+                                    <?= getTotalBuku(); ?>
+                                </h4>
                                 <p class="card-subtitle">Total Buku</p>
                             </div>
                         </div>
