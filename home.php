@@ -27,6 +27,26 @@ include('./controllers/function.php');
                 </div>
             </div>
             <!-- Card End Total Buku -->
+
+            <!-- Card Start Total Anggota -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-bottom border-primary">
+                    <div class="card-body">
+                        <div class="d-flex flex-row gap-6 align-items-center">
+                            <div class="round-40 rounded-circle text-white d-flex align-items-center justify-content-center text-bg-primary">
+                                <iconify-icon icon="tabler:users" class="fs-6"></iconify-icon>
+                            </div>
+                            <div class="align-self-center">
+                                <h4 class="card-title mb-1">
+                                    <?= getTotalAnggota(); ?>
+                                </h4>
+                                <p class="card-subtitle">Total Anggota</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card End Total Anggota -->
             
         </div>
 
