@@ -89,6 +89,15 @@ include('./controllers/function.php');
             
         </div>
 
+
+        <!-- Start Grafik peminjaman buku -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div id="peminjamanChart"></div>
+            </div>
+        </div>
+        <!-- End Grafik peminjaman buku -->
+
     </div>
 </div>
 <!-- Body Wrapper End -->
