@@ -59,6 +59,10 @@
     <script src="./assets/libs/datatable/datatables.min.js"></script>
     <script src="./assets/js/datatable/datatable.init.js"></script>
 
+    <!-- ApexChart -->
+    <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="./components/charts/chart.js"></script>
+    
     <!-- Alert -->
     <script src="./components/alert/alert.js"></script>
 
