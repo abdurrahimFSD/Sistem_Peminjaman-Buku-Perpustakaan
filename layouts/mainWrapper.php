@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light" data-layout="vertical">
+<html lang="en" data-bs-theme="light" data-layout="vertical" id="htmlRoot">
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
