@@ -374,4 +374,30 @@ function getTotalBukuTerlambat() {
     $dataGetTotalBukuTerlambat = mysqli_fetch_assoc($resultGetTotalBukuTerlambat);
     return $dataGetTotalBukuTerlambat['total_buku_terlambat'];
 }
+
+// Query untuk menghitung jumlah peminjaman per bulan
+$query = "SELECT 
+            MONTH(tanggal_pinjam) AS bulan, 
+            COUNT(id_pinjam) AS jumlah_peminjaman
+          FROM peminjaman
+          WHERE YEAR(tanggal_pinjam) = YEAR(CURDATE()) 
+          GROUP BY bulan";
+
+$result = mysqli_query($connection, $query);
+
+$peminjamanData = [];
+
+while ($row = mysqli_fetch_assoc($result)) {
+    $peminjamanData[(int)$row['bulan']] = (int)$row['jumlah_peminjaman'];
+}
+
+// Mengisi bulan yang tidak ada peminjaman dengan 0
+for ($i = 1; $i <= 12; $i++) {
+    if (!isset($peminjamanData[$i])) {
+        $peminjamanData[$i] = 0;
+    }
+}
+
+// Kirim data ke JavaScript dalam format JSON
+echo json_encode($peminjamanData);
 ?>
