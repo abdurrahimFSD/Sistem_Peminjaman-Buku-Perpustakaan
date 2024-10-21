@@ -1,4 +1,5 @@
-function updateChartTheme(mode) {
+ // Fungsi untuk memperbarui warna chart berdasarkan mode
+ function updateChartTheme(mode, chartData) {
     var textColor = (mode === 'dark') ? '#ffffff' : '#000000'; // Putih untuk dark mode, hitam untuk light mode
 
     var options = {
@@ -8,7 +9,7 @@ function updateChartTheme(mode) {
         },
         series: [{
             name: 'Jumlah Peminjaman',
-            data: [12, 19, 3, 5, 2, 3, 4, 4, 4, 5, 1, 8]
+            data: chartData // Data peminjaman dari database
         }],
         xaxis: {
             categories: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
@@ -55,9 +56,25 @@ function updateChartTheme(mode) {
     chart.render();
 }
 
+// Fungsi untuk mengambil data dari database menggunakan AJAX
+function fetchDataAndRenderChart(mode) {
+    fetch('./controllers/process.php') // Panggil file PHP untuk mengambil data
+        .then(response => response.json())
+        .then(data => {
+            // Ubah data JSON ke array
+            var chartData = [
+                data[1], data[2], data[3], data[4], data[5], data[6],
+                data[7], data[8], data[9], data[10], data[11], data[12]
+            ];
+            
+            // Render chart dengan data dari database
+            updateChartTheme(mode, chartData);
+        });
+}
+
 // Deteksi mode awal saat halaman dimuat
 var currentMode = document.getElementById('htmlRoot').getAttribute('data-bs-theme');
-updateChartTheme(currentMode);
+fetchDataAndRenderChart(currentMode); // Render chart berdasarkan mode saat ini
 
 // Event listener untuk mendeteksi perubahan tema
 var observer = new MutationObserver(function(mutations) {
@@ -65,7 +82,7 @@ var observer = new MutationObserver(function(mutations) {
         if (mutation.attributeName === 'data-bs-theme') {
             var newMode = document.getElementById('htmlRoot').getAttribute('data-bs-theme');
             document.querySelector("#peminjamanChart").innerHTML = ''; // Hapus chart yang lama
-            updateChartTheme(newMode); // Render chart dengan mode yang baru
+            fetchDataAndRenderChart(newMode); // Render chart dengan mode yang baru
         }
     });
 });
