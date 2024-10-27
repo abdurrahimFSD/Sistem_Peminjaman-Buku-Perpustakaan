@@ -33,4 +33,31 @@ function signup($username, $email, $password) {
         }
     }
 }
+
+// Function signin untuk login
+function signin($username, $password) {
+    global $connection;
+
+    $query = "SELECT * FROM users WHERE username = ?";
+    $stmt = $connection->prepare($query);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row['password'])) {
+            // Menyimpan data user ke dalam session
+            session_start();
+            $_SESSION['user_id'] = $row['id_user'];
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['email'] = $row['email'];
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
+
 ?>
