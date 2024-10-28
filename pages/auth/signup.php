@@ -1,3 +1,33 @@
+<?php
+include('../../controllers/authController.php');
+
+$error = "";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $signUpResult = signup($username, $email, $password);
+
+    if ($signUpResult === true) {
+        echo json_encode(["success" => true]);
+        exit();
+    } elseif ($signUpResult === 'Username sudah terdaftar') {
+        $error = "Username sudah terdaftar";
+        echo json_encode(["success" => false, "message" => $error]);
+        exit();
+    } elseif ($signUpResult === 'Email sudah terdaftar') {
+        $error = "Email sudah terdaftar";
+        echo json_encode(["success" => false, "message" => $error]);
+        exit();
+    } else {
+        $error = "Gagal mendaftar, coba lagi!";
+        echo json_encode(["success" => false, "message" => $error]);
+        exit();
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
