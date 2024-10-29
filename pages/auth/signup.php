@@ -80,7 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign Up</button>
+                                    <button type="submit" id="signupButton" class="btn btn-primary w-100 py-8 mb-4 rounded-2">
+                                        <span id="signupIcon" class="spinner-border spinner-border-sm" style="display: none;" role="status" aria-hidden="true"></span>
+                                        <span id="signupText">Sign Up</span>
+                                    </button>
                                     <div class="d-flex align-items-center">
                                         <p class="fs-4 mb-0 text-dark">Already have an Account?</p>
                                         <a class="text-primary fw-medium ms-2" href="./signin.php">Sign In</a>
