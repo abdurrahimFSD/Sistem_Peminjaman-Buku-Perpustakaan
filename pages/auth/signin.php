@@ -1,3 +1,29 @@
+<?php
+include('../../controllers/authController.php');
+
+session_start();
+if (isset($_SESSION['user_id'])) {
+    header("Location: ../../");
+    exit();
+}
+
+$error = ""; // Inisialisasi variabel error
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    if (signin($username, $password)) {
+        echo json_encode(["success" => true]);
+        exit();
+    } else {
+        $error = "Username atau Password salah!";
+        echo json_encode(["success" => false, "message" => $error]);
+        exit();
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
