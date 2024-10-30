@@ -90,6 +90,86 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </div>
     <!-- End Main Wrapper -->
+
+
+    <script>
+    document.getElementById('signinForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah form dari submit default
+        const signinButton = document.getElementById('signinButton');
+        const signinText = document.getElementById('signinText');
+        const signinIcon = document.getElementById('signinIcon');
+
+        // Membersihkan pesan kesalahan sebelumnya
+        document.querySelector('.text-danger').innerHTML = '';
+
+        // Mengatur ulang ikon dan teks tombol sebelum mulai proses login
+        signinIcon.classList.remove('bi', 'bi-check-lg', 'bi-x-lg');
+        signinIcon.classList.add('spinner-border', 'spinner-border-sm');
+        signinIcon.style.display = 'inline-block';
+        signinText.textContent = 'Signing In';
+
+        // Mengirim data form via AJAX
+        const formData = new FormData(this);
+
+        fetch('', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Menjaga spinner berputar setidaknya selama 1 detik
+            setTimeout(() => {
+                if (data.success) {
+                    // Jika login berhasil
+                    signinIcon.classList.remove('spinner-border', 'spinner-border-sm');
+                    signinIcon.classList.add('bi', 'bi-check-lg'); // Menggunakan ikon Bootstrap
+                    signinText.textContent = 'Success';
+
+                    // Redirect ke halaman utama setelah 1 detik
+                    setTimeout(function() {
+                        window.location.href = "../../";
+                    }, 1000);
+                } else {
+                    // Jika login gagal
+                    signinIcon.classList.remove('spinner-border', 'spinner-border-sm');
+                    signinIcon.classList.add('bi', 'bi-x-lg'); // Menggunakan ikon gagal
+                    signinText.textContent = 'Failed';
+
+                    // Tampilkan pesan error
+                    document.querySelector('.text-danger').innerHTML = `<p>${data.message}</p>`;
+
+                    // Mengembalikan tombol ke keadaan awal setelah 2 detik
+                    setTimeout(function() {
+                        signinIcon.style.display = 'none';
+                        signinIcon.classList.remove('bi-x-lg'); // Menghapus ikon gagal
+                        signinText.textContent = 'Sign In';
+                    }, 2000);
+                }
+            }, 1000); // Menjaga spinner selama setidaknya 1 detik
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            signinIcon.classList.remove('spinner-border', 'spinner-border-sm');
+            signinIcon.classList.add('bi', 'bi-x-lg'); // Menggunakan ikon gagal
+            signinText.textContent = 'Error';
+
+            // Tampilkan pesan error umum
+            document.querySelector('.text-danger').innerHTML = `<p>Terjadi kesalahan pada koneksi. Silakan coba lagi.</p>`;
+
+            // Mengembalikan tombol ke keadaan awal setelah 2 detik
+            setTimeout(function() {
+                signinIcon.style.display = 'none';
+                signinIcon.classList.remove('bi-x-lg'); // Menghapus ikon gagal
+                signinText.textContent = 'Sign In';
+            }, 2000);
+        });
+    });
+    </script>
     
 </body>
 </html>
