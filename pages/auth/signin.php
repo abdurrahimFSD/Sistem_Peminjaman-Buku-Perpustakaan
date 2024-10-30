@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <a href="#" class="text-nowrap logo-img text-center d-block mb-4 w-100">
                                     <span class="fw-bolder fs-7">SignIn</span>
                                 </a>
-                                <form id="signupForm" method="POST">
+                                <form id="signinForm" method="POST">
                                     <div class="mb-3">
                                         <label for="username" class="form-label">Username</label>
                                         <input type="text" class="form-control" id="username" name="username" required aria-describedby="textHelp" placeholder="admin1">
@@ -66,6 +66,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     <div class="mb-4">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" id="password" name="password" required placeholder="**********">
+                                        <div class="text-danger mt-1 fw-bold">
+                                            <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
+                                        </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign In</button>
                                     <div class="d-flex align-items-center">
