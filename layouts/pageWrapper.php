@@ -85,9 +85,12 @@
                                                 <div class="d-flex align-items-center py-9 mx-7 border-bottom">
                                                     <img src="./assets/images/profile/user-1.jpg" class="rounded-circle" width="80" height="80" alt="modernize-img" />
                                                     <div class="ms-3">
-                                                        <h5 class="mb-1 fs-3">Mathew Anderson</h5>
+                                                        <h5 class="mb-1 fs-3">
+                                                            <?php echo $_SESSION['username']; ?>
+                                                        </h5>
                                                         <p class="mb-0 d-flex align-items-center gap-2 text-break">
-                                                            <iconify-icon icon="tabler:mail" class="fs-4"></iconify-icon>abdurrahim22student@gmail.com
+                                                            <iconify-icon icon="tabler:mail" class="fs-4"></iconify-icon>
+                                                            <?php echo $_SESSION['email']; ?>
                                                         </p>
                                                     </div>
                                                 </div>
